@@ -3,9 +3,9 @@ title = "Alex homespace"
 theme = "pulp"
 canonifyurls = true
 hasCJKLanguage = true
+googleAnalytics = "UA-156069333-1"
 # pygmentsCodefences = true
 # pygmentsUseClasses = true
-# googleAnalytics = "{your tracking code}"
 
 [taxonomies]
   series = "series"
