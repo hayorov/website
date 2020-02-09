@@ -1,47 +1,46 @@
-baseURL = "https://hayorov.ru/"
-title = "Alex homespace"
-theme = "pulp"
-canonifyurls = true
-hasCJKLanguage = true
-googleAnalytics = "UA-156069333-1"
-# pygmentsCodefences = true
-# pygmentsUseClasses = true
+baseurl = "https://hayorov.ru/"
+languageCode = "en"
 
-[taxonomies]
-  series = "series"
+title = ""
+theme = "hyde-hyde"
+
+googleAnalytics = "UA-156069333-1"
 
 [params]
-    author = "Alex Khaerov"
-    avatar = "avatar.jpg"
+    author = "Alex Khaerov "
+    title = "Title"
+    authorimage = "/img/avatar.jpg"
     description = """
-        real since 1989
+        Alex Khaerov ✨
+
+
     """
-    publicationYear = "2019"
-    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
-    # singlePageDateFormat = "January 2, 2006"
-    # custom_css = ["/css/custom.css"]
-    # custom_js = ["/js/custom.js"]
+    highlightjs = true
+    highlightjsstyle = "github"
+    showBuiltWith = true
+    copyright = "hayorov"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
-[outputs]
-    section = ["JSON", "HTML"]
+[params.social]
+    linkedin = "alexkhaerov"
+	twitter = "hayorov"
+	github = "hayorov"
+    telegram = "hayorov"
+    medium = "hayorov"
+    email = "i@hayorov.ru"
+    gravatar = "i@hayorov.ru"
+    keybase = "hayorov"
+    instagram = "hayorov"
+
+## Main Menu
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 300
+    url = "/about"
 
 [[menu.main]]
-    identifier = "twitter"
-    # name = "Twitter"
-    pre = "<i class='fab fa-twitter fa-lg'></i>"
-    url = "https://twitter.com/hayorov"
-    weight = 20
-
-[[menu.main]]
-    identifier = "github"
-    # name = "GitHub"
-    pre = "<i class='fab fa-github fa-lg'></i>"
-    url = "https://github.com/hayorov"
-    weight = 30
-
-[[menu.main]]
-    identifier = "email"
-    # name = "Email"
-    pre = "<i class='fa fa-envelope fa-lg'></i>"
-    url = "mailto:i@hayorov.ru"
-    weight = 40
+    name = "Blog Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts"

@@ -1,0 +1,21 @@
+{{ define "header" }}
+  {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+<p align="center" style="font-size:64px;">👋</p>
+    {{ with .Site.GetPage "/about" }}
+    <article>
+      {{ .Content }}
+    </article>
+    {{ end }}
+  {{ partial "pagination.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ if .Site.GoogleAnalytics }}
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ partial "footer/font-awesome-js.html" . }}
+{{ end }}
