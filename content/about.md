@@ -2,7 +2,7 @@
 title = "About Me"
 +++
 
-I'm a seasoned professional with 10 years of experience in technical leadership and project management roles - responsible for designing, architecting and leading the development of large and mid-scale distributed systems in classic software (virtualization), cloud supply channel distribution and decentralized digital ledger.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a seasoned professional with 10 years of experience in technical leadership and project management roles - responsible for designing, architecting and leading the development of large and mid-scale distributed systems in classic software (virtualization), cloud supply channel distribution and decentralized digital ledger.
 
 Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class infrastructure stacks: including build and CI/CD pipelines, resource management, networking, request routing, service discovery, load balancing and more.
 
@@ -57,3 +57,5 @@ I’m a public speaker at tech conferences. It helps me sniff the wind about new
 #### Hobby and Spare Time
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m an engineer deep down and read popular science, a core contributor to [helm-gcs project](https://github.com/hayorov/helm-gcs). Constantly improve my public speaking. I love to cycle my road bicycle, and finally, a fan of laptop stickers.
+
+{{< strava 39930728 17a9e3933fcd8007222210caa30300a6bf60087c >}}
