@@ -6,7 +6,7 @@ title = "About Me"
 
 Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class infrastructure stacks: including build and CI/CD pipelines, resource management, networking, request routing, service discovery, load balancing and more.
 
-![gitgub-map-2019](/img/github-map-2019.png "GitHub Heat Map 2019")
+{{< gh-calendar hayorov >}}
 
 #### Core expertise
 
