@@ -4,13 +4,13 @@ title = "About Me"
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a seasoned professional with 10 years of experience in technical leadership and project management roles - responsible for designing, architecting and leading the development of large and mid-scale distributed systems in classic software (virtualization), cloud supply channel distribution and decentralized digital ledger.
 
-Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class infrastructure stacks: including build and CI/CD pipelines, resource management, networking, request routing, service discovery, load balancing and more.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class infrastructure stacks: including build and CI/CD pipelines, resource management, networking, request routing, service discovery, load balancing and more.
 
 {{< gh-calendar hayorov >}}
 
 #### Core expertise
 
-platforms development with technical management, projects from scratch, microservices, cloud-native and, Kubernetes.
+platforms development with technical management, projects from scratch, microservices, cloud-native and distributed systems. Languages: Python (Flask/Django), Go.
 
 #### Professional experience
 
@@ -35,7 +35,7 @@ I’m a public speaker at tech conferences. It helps me sniff the wind about new
 |------|-------------------------------------------------------------------------|-----------|
 | 2020 | FOSSASIA: Cloud-native pipelines with Tekton (workshop)                 | Singapore |
 | 2019 | [DevOps Conf: Could Containers Be Secured?](https://www.youtube.com/watch?v=QltHmfevCo8&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=16)                               | Moscow    |
-|      | [PUGS: Entangled In Dependencies: Pipenv&Poetry](https://speakerdeck.com/hayorov/entangled-in-dependencies-pipenv-and-poetry)                      | Singapore |
+|      | [PUGS: Entangled In Dependencies: Pipenv & Poetry](https://speakerdeck.com/hayorov/entangled-in-dependencies-pipenv-and-poetry)                      | Singapore |
 |      | ["Family budget" In Minutes With Chainstack](https://speakerdeck.com/hayorov/family-budget-in-minutes-with-chainstack) | Singapore |
 |      | [Singapore K8s: Istio - Welcome To New Service Mesh Era](https://speakerdeck.com/hayorov/welcome-to-the-service-mesh-era)                   | Singapore |
 |      | [Quorum In Minutes With Chainstack](https://speakerdeck.com/hayorov/quorum-in-minutes-with-chainstack) | Singapore|
@@ -48,7 +48,7 @@ I’m a public speaker at tech conferences. It helps me sniff the wind about new
 |      | [MoscowPython: Browser Voxel 3D Game in Python](https://www.youtube.com/watch?v=WIIRiT1NfQ0&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=11) | Moscow |
 | 2017 | [MoscowPython: Promises And Service Worker For Pythonist](https://www.youtube.com/watch?v=h5BpiDyC9rk&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=2) | Moscow |
 |      | [PyCon Russia: Amazing AppEngine](https://www.youtube.com/watch?v=8RZgIcEpSHA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=9) | Moscow |
-|      | [MoscowPythonJunior: Types&Pyhon](https://www.youtube.com/watch?v=kHrt-8b3f2E&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=10) | Moscow |
+|      | [MoscowPythonJunior: Types & Python](https://www.youtube.com/watch?v=kHrt-8b3f2E&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=10) | Moscow |
 |      | [HighLoad: Voxel 3D Game with VR](https://www.youtube.com/watch?v=WIIRiT1NfQ0&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=11) | Moscow |
 |      | [MoscowPython: Heading into Microservices and Istio](https://www.youtube.com/watch?v=RyMAwQD85bU&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=6) | Moscow |
 | 2016| [MoscowPython: Understanding PaaS](https://www.youtube.com/watch?v=wTKjfwnqKnA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=5) | Moscow |
