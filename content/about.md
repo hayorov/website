@@ -8,9 +8,9 @@ title = "About Me"
 
 {{< gh-calendar hayorov >}}
 
-#### Core expertise
+#### Relevant buzzwords
 
-platforms development with technical management, projects from scratch, microservices, cloud-native and distributed systems. Languages: Python (Flask/Django), Go.
+Platforms development with technical management, projects from scratch, microservices, cloud-native and distributed systems. Languages: Python (Flask/Django), Go.
 
 #### Professional experience
 
