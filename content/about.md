@@ -31,28 +31,7 @@ University of Telecommunications and Informatics, Russia.
 
 I’m a public speaker at tech conferences. It helps me sniff the wind about new technologies and find new connections.
 
-|      | Topic                                                                   | Location  |
-|------|-------------------------------------------------------------------------|-----------|
-| 2020 | FOSSASIA: Cloud-native pipelines with Tekton (workshop)                 | Singapore |
-| 2019 | [DevOps Conf: Could Containers Be Secured?](https://www.youtube.com/watch?v=QltHmfevCo8&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=16)                               | Moscow    |
-|      | [PUGS: Entangled In Dependencies: Pipenv & Poetry](https://speakerdeck.com/hayorov/entangled-in-dependencies-pipenv-and-poetry)                      | Singapore |
-|      | ["Family budget" In Minutes With Chainstack](https://speakerdeck.com/hayorov/family-budget-in-minutes-with-chainstack) | Singapore |
-|      | [Singapore K8s: Istio - Welcome To New Service Mesh Era](https://speakerdeck.com/hayorov/welcome-to-the-service-mesh-era)                   | Singapore |
-|      | [Quorum In Minutes With Chainstack](https://speakerdeck.com/hayorov/quorum-in-minutes-with-chainstack) | Singapore|
-|      | [Podcast: The Value of K8s For Pythonista](https://www.youtube.com/watch?v=Hzpp9SLKCWM&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=4) | Moscow |
-|      | [RIT: Helm Security (Kubernetes package manager)](https://www.youtube.com/watch?v=_8zNTJ1_R5I&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=4)                          | Moscow    |
-|      | [Singapore K8s Meetup: Helm Or Not To Helm?](https://www.youtube.com/watch?v=T1YkO1K__eA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=2)                              | Singapore |
-|      | [PyCon Russia: Bye, Bye Virtualenv And What’s New In Python 3.8](https://www.youtube.com/watch?v=L2OpzwloTDI&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=15)          | Moscow    |
-| 2018 | [RIT: Fundamentals of Kubernetes Network](https://www.youtube.com/watch?v=T1YkO1K__eA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=2&)| Moscow |
-|      | [MoscowPython: Heading Into Pipenv](https://www.youtube.com/watch?v=JNT1u3Ri3YY&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=8) | Moscow |
-|      | [MoscowPython: Browser Voxel 3D Game in Python](https://www.youtube.com/watch?v=WIIRiT1NfQ0&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=11) | Moscow |
-| 2017 | [MoscowPython: Promises And Service Worker For Pythonist](https://www.youtube.com/watch?v=h5BpiDyC9rk&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=2) | Moscow |
-|      | [PyCon Russia: Amazing AppEngine](https://www.youtube.com/watch?v=8RZgIcEpSHA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=9) | Moscow |
-|      | [MoscowPythonJunior: Types & Python](https://www.youtube.com/watch?v=kHrt-8b3f2E&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=10) | Moscow |
-|      | [HighLoad: Voxel 3D Game with VR](https://www.youtube.com/watch?v=WIIRiT1NfQ0&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=11) | Moscow |
-|      | [MoscowPython: Heading into Microservices and Istio](https://www.youtube.com/watch?v=RyMAwQD85bU&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=6) | Moscow |
-| 2016| [MoscowPython: Understanding PaaS](https://www.youtube.com/watch?v=wTKjfwnqKnA&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=5) | Moscow |
-|     | [MoscowPython: Deploying To AppEngine](https://www.youtube.com/watch?v=wHrD-WVEK6I&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=13) | Moscow |
+{{< include-talks >}}
 
 #### Hobby and Spare Time
 

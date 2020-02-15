@@ -36,11 +36,18 @@ googleAnalytics = "UA-156069333-1"
 [[menu.main]]
     name = "About Me"
     identifier = "about"
-    weight = 300
+    weight = 10
     url = "/about"
+
+## Main Menu
+[[menu.main]]
+    name = "My Talks"
+    identifier = "talks"
+    weight = 20
+    url = "/talks"
 
 [[menu.main]]
     name = "Blog Posts"
-    weight = 100
+    weight = 30
     identifier = "posts"
     url = "/posts"
