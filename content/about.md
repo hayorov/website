@@ -27,7 +27,7 @@ title = "About Me"
 2006-2011 Master's degree (CS), *Computer Systems Networking and Telecommunications*
 University of Telecommunications and Informatics, Russia.
 
-### Patents
+#### Patents
 
 - US20180300115A1: [Technologies for creating and distributing integration connectors in a cloud service brokerage system](https://patents.google.com/patent/US20180300115A1/en?inventor=Khaerov)
 - US20180191718A1: [Technologies for securely extending cloud service apis in a cloud service marketplace](https://patents.google.com/patent/US20180191718A1/en?inventor=Khaerov&oq=inventor:Khaerov)
