@@ -4,7 +4,7 @@ title = "About Me"
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seasoned professional with 10 years of experience in technical leadership and project management roles - responsible for designing, architecting and leading the development of large and mid-scale distributed systems in classic software (virtualization), cloud supply channel distribution (marketplace) and decentralized digital ledger.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class solutions like [OpenVZ](https://openvz.org/) and [Ingram Micro Automated Cloud Marketplace](https://www.ingrammicrocloud.com/in/en/blogs/ingram-micro-cloud-launches-automated-cloud-marketplace-platform-portugal/).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms, while mentoring both junior and senior engineers so that together we could implement world-class solutions like [OpenVZ](https://openvz.org/), [Parallels Business Automation](http://download.parallels.com/summit/emea2009/presentations/Parallels_Automation_Portfolio.pdf), [Ingram Micro CloudBlue Connect](https://www.arnnet.com.au/article/664964/ingram-cloudblue-offers-connect-standalone-product/) and [Chainstack](https://chainstack.com).
 
 {{< gh-calendar hayorov >}}
 
@@ -17,9 +17,9 @@ title = "About Me"
 | Period | Position |
 |----------|-------------------------------------------------------------------------|
 | Sep 2018 – Present | **Development Leader**, [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore A technological startup, multi-cloud, multi-protocol Platform as a Service. Rapidly building, deploying, and managing decentralized networks and services for enterprises and independent developers. |
-| Dec 2015 – Sep 2018 | **Manager of Development**, Ingram Micro Automated Marketplace. Delivering global technology and supply chain services to support cloud aggregation, data center management, logistics, technology distribution, mobility device.|
+| Dec 2015 – Sep 2018 | **Manager of Development**, Ingram Micro Cloud. Delivering global technology and supply chain services to support cloud aggregation, data center management, logistics, technology distribution, mobility devices.|
 | May 2013 – Deс 2015 | **Team Leader (DevOps)**, [Parallels], Moscow, Russia Parallels Desktop for Mac, is a software providing hardware virtualization for Macintosh computers with Intel processors.|
-| Jun 2011 – May 2013 | **Senior Software Engineer**, [Parallels](https://parallels.com), Moscow, Russia [OpenVZ (Virtuozzo)](https://www.virtuozzo.com/) linux containers technology developed by Parallels. An ancestor of LXC and docker solution.|
+| Jun 2011 – May 2013 | **Senior Software Engineer**, [Parallels](https://parallels.com), Moscow, Russia [OpenVZ (Virtuozzo)](https://www.virtuozzo.com/) Linux containers technology developed by Parallels. An ancestor of LXC and Docker solutions.|
 | May 2010 – Jun 2011 | **Hosting Support Engineer**, REG.RU, Moscow, Russia [REG.RU](https://reg.ru) is the biggest domain registrar and hosting company in Russia.|
 
 #### Education
