@@ -41,6 +41,6 @@ I speak publicly at technical conferences. It helps me sniff the wind about new 
 
 #### Hobby and Spare Time
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m an engineer deep down and read popular science, a core contributor to [helm-gcs project](https://github.com/hayorov/helm-gcs). Constantly improve my public speaking. I love to cycle my road bicycle, and finally, a huge fan of laptop stickers [[1](https://twitter.com/hayorov/status/1045241072966914048/photo/1)] [[2](https://twitter.com/hayorov/status/1087288585877807104/photo/1)] [[3](https://twitter.com/hayorov/status/1035828822556528640/photo/1)].
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m an engineer deep down and read popular science, a core contributor to [helm-gcs project](https://github.com/hayorov/helm-gcs). Constantly improve my public speaking. I love to cycle my road bicycle, and finally, a huge fan of laptop stickers - [devlids.com](https://devlids.com/lids/hayorov).
 
 {{< strava 39930728 17a9e3933fcd8007222210caa30300a6bf60087c >}}
