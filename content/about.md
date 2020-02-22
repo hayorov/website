@@ -18,7 +18,7 @@ title = "About Me"
 |----------|-------------------------------------------------------------------------|
 | Sep 2018 – Present | **Development Leader**, [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore A technological startup, multi-cloud, multi-protocol Platform as a Service. Rapidly building, deploying, and managing decentralized networks and services for enterprises and independent developers. |
 | Dec 2015 – Sep 2018 | **Manager of Development**, Ingram Micro Cloud. Delivering global technology and supply chain services to support cloud aggregation, data center management, logistics, technology distribution, mobility devices.|
-| May 2013 – Deс 2015 | **Team Leader (DevOps)**, [Parallels], Moscow, Russia Parallels Desktop for Mac, is a software providing hardware virtualization for Macintosh computers with Intel processors.|
+| May 2013 – Deс 2015 | **Team Leader (DevOps)**, [Parallels](https://parallels.com), Moscow, Russia Parallels Desktop for Mac, is a software providing hardware virtualization for Macintosh computers with Intel processors.|
 | Jun 2011 – May 2013 | **Senior Software Engineer**, [Parallels](https://parallels.com), Moscow, Russia [OpenVZ (Virtuozzo)](https://www.virtuozzo.com/) Linux containers technology developed by Parallels. An ancestor of LXC and Docker solutions.|
 | May 2010 – Jun 2011 | **Hosting Support Engineer**, REG.RU, Moscow, Russia [REG.RU](https://reg.ru) is the biggest domain registrar and hosting company in Russia.|
 
