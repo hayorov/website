@@ -1,5 +1,5 @@
 +++
-title = "Speshial laptop sticker pack"
+title = "Special laptop sticker pack for my tekton workshop"
 date = "2020-03-13"
 +++
 
