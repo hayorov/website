@@ -8,17 +8,13 @@ googleAnalytics = "UA-156069333-1"
 
 [params]
     author = "Alex Khaerov "
-    title = "Title"
+    title = ""
     authorimage = "/img/avatar.jpg"
-    description = """
-        Alex Khaerov ✨
-
-
-    """
+    description = """Alex Khaerov ✨"""
     highlightjs = true
     highlightjsstyle = "github"
     showBuiltWith = true
-    copyright = "hayorov"
+    copyright = "Alex Khaerov"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
 [params.social]
@@ -39,7 +35,6 @@ googleAnalytics = "UA-156069333-1"
     weight = 10
     url = "/about"
 
-## Main Menu
 [[menu.main]]
     name = "My Talks"
     identifier = "talks"
