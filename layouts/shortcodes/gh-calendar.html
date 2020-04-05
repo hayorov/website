@@ -69,6 +69,9 @@
 
 <script>
   GitHubCalendar(".calendar", "{{ index .Params 0 }}", {
-    responsive: true
+    responsive: true,
+    proxy: function (url) {
+      return "https://hayorov.appspot.com/req?method=GET&url=" + url;
+   }
   });
 </script>
