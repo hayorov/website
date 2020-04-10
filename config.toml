@@ -42,7 +42,13 @@ googleAnalytics = "UA-156069333-1"
     url = "/talks"
 
 [[menu.main]]
-    name = "Blog Posts"
+    name = "Publications"
+    identifier = "publications"
     weight = 30
+    url = "/publications"
+
+[[menu.main]]
+    name = "Blog Posts"
+    weight = 40
     identifier = "posts"
     url = "/posts"
