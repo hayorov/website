@@ -5,6 +5,7 @@ title = ""
 theme = "hyde-hyde"
 
 googleAnalytics = "UA-156069333-1"
+enableRobotsTXT = "true"
 
 [params]
     author = "Alex Khaerov "
@@ -27,6 +28,10 @@ googleAnalytics = "UA-156069333-1"
     gravatar = "i@hayorov.ru"
     keybase = "hayorov"
     instagram = "hayorov"
+
+[sitemap]
+  ChangeFreq = "weekly"
+  Priority = ".7"
 
 ## Main Menu
 [[menu.main]]
