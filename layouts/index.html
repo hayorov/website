@@ -1,20 +1,20 @@
 {{ define "header" }}
-  {{ partial "header.html" . }}
+{{ partial "header.html" . }}
 {{ end }}
 
 {{ define "content" }}
 <p class="text-center bighand">👋</p>
-    {{ with .Site.GetPage "/about" }}
-    <article>
-      {{ .Content }}
-    </article>
-    {{ end }}
+{{ with .Site.GetPage "/about" }}
+<article>
+  {{ .Content }}
+</article>
+{{ end }}
 {{ end }}
 
 {{ define "footer" }}
-  {{ if .Site.GoogleAnalytics }}
-    <!-- Google Analytics -->
-    {{ template "_internal/google_analytics_async.html" . }}
-  {{ end }}
-  {{ partial "footer/font-awesome-js.html" . }}
+{{ if .Site.GoogleAnalytics }}
+<!-- Google Analytics -->
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+{{ partial "footer/font-awesome-js.html" . }}
 {{ end }}
