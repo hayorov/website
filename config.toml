@@ -35,6 +35,12 @@ enableRobotsTXT = "true"
 
 ## Main Menu
 [[menu.main]]
+    name = "🦠 signs"
+    weight = 100
+    identifier = "covid"
+    url = "/covid"
+
+[[menu.main]]
     name = "About Me"
     identifier = "about"
     weight = 10
