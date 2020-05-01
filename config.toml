@@ -38,7 +38,7 @@ enableRobotsTXT = "true"
     name = "🦠 signs"
     weight = 100
     identifier = "covid"
-    url = "/covid"
+    url = "/posts/covid-signs"
 
 [[menu.main]]
     name = "About Me"
