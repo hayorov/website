@@ -47,8 +47,8 @@
 }
 
 .site__description {
-  font-size: 1.285rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .social {
@@ -59,13 +59,8 @@
   }
 }
 
-.img--circle {
-	border-radius: 50%;
-}
-
 .img--headshot {
-	height: 115px;
-	width: 115px;
+	max-width: 160px;
 }
 
 .img--caption {
