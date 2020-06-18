@@ -15,7 +15,7 @@ enableRobotsTXT = "true"
     description = """Alex Khaerov"""
     highlightjs = true
     highlightjsstyle = "github"
-    showBuiltWith = true
+    showBuiltWith = false
     copyright = "Alex Khaerov"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 

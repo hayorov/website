@@ -1,3 +1,4 @@
+{{ with .Site.Params.showBuiltWith }}
 {{ with .Site.Params.copyright }}
 <div class="bottom-copyright" style="position:absolute;bottom:0;">
   <div class="copyright">
@@ -5,7 +6,6 @@
     {{ end }}{{ end }}{{ now.Format "2006"}} {{ . | safeHTML }}
   </div>
   {{ end }}
-  {{ with .Site.Params.showBuiltWith }}
   <div class="builtwith">
     Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
   </div>
