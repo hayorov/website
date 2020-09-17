@@ -59,8 +59,13 @@
   }
 }
 
+.img--circle {
+    border-radius: 90%;
+}
+
 .img--headshot {
-	max-width: 160px;
+  height: 180px;
+	width: 180px;
 }
 
 .img--caption {
