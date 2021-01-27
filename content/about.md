@@ -2,13 +2,13 @@
 title = "About Me"
 +++
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seasoned professional with 10+ years of experience in technical leadership and project management roles - responsible for designing, architecting and leading the development of large and mid-scale distributed systems in classic software (virtualization), cloud supply channel distribution (marketplace) and decentralized digital ledger.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seasoned engineer with ten years of experience in software development and technical leadership. Responsible for designing and leading implementation of large and mid-scale distributed systems in virtualization, cloud supply channel distribution (marketplace), and decentralized digital ledger with a focus on infrastructure and ultimate automation.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms while mentoring both junior and senior engineers so that together we could implement world-class solutions like [OpenVZ](https://openvz.org/), [Parallels Business Automation](http://download.parallels.com/summit/emea2009/presentations/Parallels_Automation_Portfolio.pdf), [Ingram Micro CloudBlue Connect](https://www.arnnet.com.au/article/664964/ingram-cloudblue-offers-connect-standalone-product/) and [Chainstack](https://chainstack.com).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my career, I've been driving projects from ideas and proofs-of-concept to real-world solutions and platforms while mentoring both junior and senior engineers so that together we could implement world-class solutions like [OpenVZ](https://openvz.org/), [Parallels Business Automation](http://download.parallels.com/summit/emea2009/presentations/Parallels_Automation_Portfolio.pdf), [Ingram Micro CloudBlue Connect](https://www.arnnet.com.au/article/664964/ingram-cloudblue-offers-connect-standalone-product/) and [Chainstack](https://chainstack.com) not overlooking programming and debugging.
 
 #### Core competence
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transforming business requirements into software solutions, platforms development technical management, projects from scratch or legacy monsters no matter what, heavy on distributed systems, mostly cloud-native. Relevant tech stack: Python (Flask/Django/Postgres), Go, Kubeflow, MongoDB. In love with kubernetes and GCP/Azure cloud providers.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transforming business requirements into software solutions from scratch, also work with legacy monsters no matter what, heavy on distributed systems, mostly cloud-native and SRE/DevOps, always with toil elimination in mind. Python (Flask/Django/Postgres), Go, Kubeflow, MongoDB. In love with Kubernetes, GCP/Azure, HashiCorp Terraform, and Prometheus/Grafana advanced adept.
 
 #### Professional experience
 
