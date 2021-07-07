@@ -1,4 +1,4 @@
-# Hayorov webspace
+# Alex Khaerov webspace
 
 [hayorov.me](https://hayorov.me)
 
