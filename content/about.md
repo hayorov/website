@@ -2,7 +2,7 @@
 title = "About Me"
 +++
 
-_[Print friendly one page CV, PDF](https://hayorov.me/cv/alex-khaerov-sh-v1.pdf)_
+\[[ 🖨️ friendly one-page resume, PDF ](https://hayorov.me/cv/alex-khaerov-sh-v1.pdf)\]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A seasoned professional with more than ten years of experience in software development and technical leadership. Responsible for designing and leading implementation of large and mid-scale distributed systems in virtualization, cloud supply channel distribution (marketplace), and decentralized digital ledger with a focus on infrastructure and ultimate automation.
 
@@ -16,7 +16,7 @@ _[Print friendly one page CV, PDF](https://hayorov.me/cv/alex-khaerov-sh-v1.pdf)
 
 | Period              | Position                                                                                                                                                                                                                                                                                                                             |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Dec 2019            | **Sr. Manager Cloud and Site Reliability Engineering**, [Prudential](https://www.prudential.com.sg/), Singapore<br>British multinational life insurance and financial services company.                                                                                                                                                 |
+| Dec 2019            | **Sr. Manager Cloud and Site Reliability Engineering**, [Prudential](https://www.prudential.com.sg/), Singapore<br>British multinational life insurance and financial services company.                                                                                                                                              |
 | Sep 2018 – Dec 2019 | **Software Engineering Manager**, [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore<br>A technological startup, multi-cloud, multi-protocol Platform as a Service. Rapidly building, deploying, and managing decentralized networks and services for enterprises and independent developers. |
 | Dec 2015 – Sep 2018 | **Software Engineering Manager,**, Ingram Micro Cloud. Irvine, CA<br>Delivering global technology and supply chain services to support cloud aggregation, data center management, logistics, technology distribution, mobility devices.                                                                                              |
 | May 2011 – Deс 2015 | **DevOps Manager & Sr. Software Developer**, [Parallels](https://parallels.com), Moscow, Russia<br>Parallels Desktop for Mac, is a software providing hardware virtualization for Macintosh computers with Intel processors.                                                                                                         |
