@@ -1,11 +1,19 @@
 .sidebar {
-  background: $sidebar-color;
-  color: rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.5);
-  padding: 2rem 1rem;
+  background-image: linear-gradient(
+      rgba(35, 48, 87, 0.3) 0%,
+      rgba(39, 69, 97, 0.3) 12%,
+      rgba(33, 65, 74, 0.8) 39%,
+      rgba(2, 3, 3, 0.6) 74%,
+      rgb(18, 20, 20) 96%
+    ),
+    url("/site-static/sidebar-background.jpg");
+  padding: 1rem 1rem;
   text-align: center;
+  p {
+    color: $gray-0;
+  }
   a {
-    color: $gray-1;
+    color: $gray-0;
     border: none;
     &:hover {
       color: $link-color;
@@ -19,7 +27,7 @@
   }
   .author-image {
     display: block;
-    margin-top: 4px;
+    margin-top: 0px;
   }
 }
 
@@ -52,6 +60,9 @@
 }
 
 .social {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
   text-align: center;
   a {
     padding: 0 4px;
@@ -60,16 +71,16 @@
 }
 
 .img--circle {
-    border-radius: 90%;
+  border-radius: 90%;
 }
 
 .img--headshot {
   height: 180px;
-	width: 180px;
+  width: 180px;
 }
 
 .img--caption {
-	font-style: italic;
+  font-style: italic;
 }
 
 %small-center-text {
@@ -80,9 +91,9 @@
 
 .copyright {
   padding-top: 1rem;
-	@extend %small-center-text;
+  @extend %small-center-text;
 }
 .builtwith {
-  padding-top: .2rem;
+  padding-top: 0.2rem;
   @extend %small-center-text;
 }
