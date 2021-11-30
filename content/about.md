@@ -26,6 +26,13 @@ title = "About Me"
 2006-2011 Master's degree (CS), _Computer Systems Networking and Telecommunications_
 University of Telecommunications and Informatics, Russia.
 
+#### Latest badges
+
+- [HashiCorp Certified: Terraform Associate](https://www.credly.com/badges/16331cd7-3c14-41f9-afd0-717f5a216485/public_url)
+- [Kubernetes Networking and Security using Calico](https://courses.academy.tigera.io/certificates/39ae5d6f9dc748fd8946d8e7632bb00a)
+- [TipleByte DevOps Certificate](https://triplebyte.com/tb/aleksandr-khaerov-ezmxjbu/certificate/track/devops)
+
+
 #### Patents
 
 - US20180300115A1: [Technologies for creating and distributing integration connectors in a cloud service brokerage system](https://patents.google.com/patent/US20180300115A1/en?inventor=Khaerov)
