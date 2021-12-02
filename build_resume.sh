@@ -2,11 +2,13 @@
 
 set -euf -o pipefail
 
-SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+SCRIPTPATH="$(
+    cd -- "$(dirname "$0")" >/dev/null 2>&1
+    pwd -P
+)"
 
 BUILD_HASH=$(git rev-parse --short HEAD)
 BUILD_DATE=$(git show -s --format=%ci)
-
 
 set +x
 
@@ -20,7 +22,3 @@ sed -i '' -e "s/[[GIT_DATE]]/${BUILD_DATE}/g" "${SCRIPTPATH}/content/resume-foot
 echo "Render static PDF from .md"
 mdpdf "${SCRIPTPATH}/content/resume.md" "${SCRIPTPATH}/static/cv/alex-khaerov-resume-latest.pdf" --format=A4 \
     --header content/resume-header.html --footer content/resume-footer.html
-
-echo "Buil hugo"
-find . -name _gen -exec rm -rf {} +
-hugo --gc --minify --enableGitInfo
