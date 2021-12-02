@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "mdpdf": "2.1.2"
+    "mdpdf": "^2.1.2"
   }
 }
