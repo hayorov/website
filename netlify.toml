@@ -1,7 +1,7 @@
 [build]
 publish = "public"
 command = "./build_resume.sh && find . -name _gen -exec rm -rf {} + && hugo --gc --minify --enableGitInfo"
-HUGO_VERSION = "0.90.0"
+HUGO_VERSION = "0.90.2"
 
 [context.production.environment]
 HUGO_ENV = "production"
