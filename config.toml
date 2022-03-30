@@ -1,71 +1,68 @@
 baseurl = "https://hayorov.me/"
 languageCode = "en"
-
 title = "Alex Khaerov"
 theme = "hyde-hyde"
-
 googleAnalytics = "UA-156069333-1"
 enableRobotsTXT = "true"
 
 [params]
-    author = "Alex Khaerov "
-    title = ""
-    since = "2019"
-    authorimage = "/ava_with_bike.png"
-    description = """Alex Khaerov"""
-    highlightjs = true
-    highlightjsstyle = "github"
-    showBuiltWith = false
-    copyright = "Alex Khaerov"
-    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+author = "Alex Khaerov "
+title = ""
+since = "2019"
+authorimage = "/ava_with_bike.png"
+description = """Alex Khaerov"""
+highlightjs = true
+highlightjsstyle = "github"
+showBuiltWith = false
+copyright = "Alex Khaerov"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
 [params.social]
-    linkedin = "alexkhaerov"
-	twitter = "hayorov"
-	github = "hayorov"
-    telegram = "hayorov"
-    medium = "hayorov"
-    gravatar = "i@hayorov.me"
-    keybase = "hayorov"
-    instagram = "hayorov"
+linkedin = "alexkhaerov"
+twitter = "hayorov"
+github = "hayorov"
+telegram = "hayorov"
+medium = "hayorov"
+gravatar = "i@hayorov.me"
+keybase = "hayorov"
 
 [sitemap]
-  ChangeFreq = "weekly"
-  Priority = ".7"
+ChangeFreq = "weekly"
+Priority = ".7"
 
 ## Main Menu
 [[menu.main]]
-    name = "🦠"
-    weight = 100
-    identifier = "covid"
-    url = "/posts/covid-signs"
+name = "🦠"
+weight = 100
+identifier = "covid"
+url = "/posts/covid-signs"
 
 [[menu.main]]
-    name = "Cycling"
-    identifier = "cycling"
-    weight = 15
-    url = "/cycling"
+name = "Cycling"
+identifier = "cycling"
+weight = 15
+url = "/cycling"
 
 [[menu.main]]
-    name = "About Me"
-    identifier = "about"
-    weight = 10
-    url = "/about"
+name = "About Me"
+identifier = "about"
+weight = 10
+url = "/about"
 
 [[menu.main]]
-    name = "My Talks"
-    identifier = "talks"
-    weight = 20
-    url = "/talks"
+name = "My Talks"
+identifier = "talks"
+weight = 20
+url = "/talks"
 
 [[menu.main]]
-    name = "Publications"
-    identifier = "publications"
-    weight = 30
-    url = "/publications"
+name = "Publications"
+identifier = "publications"
+weight = 30
+url = "/publications"
 
 [[menu.main]]
-    name = "Blog Posts"
-    weight = 40
-    identifier = "posts"
-    url = "/posts"
+name = "Blog Posts"
+weight = 40
+identifier = "posts"
+url = "/posts"
