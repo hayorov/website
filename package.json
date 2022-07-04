@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "ansi-regex": "6.0.1",
-    "mdpdf": "^2.1.2",
+    "mdpdf": "2.1.2",
     "nth-check": "2.1.1",
     "trim-newlines": "4.0.2",
     "yargs-parser": "21.0.1"
