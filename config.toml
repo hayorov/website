@@ -2,7 +2,7 @@ baseurl = "https://hayorov.me/"
 languageCode = "en"
 title = "Alex Khaerov"
 theme = "hyde-hyde"
-googleAnalytics = "UA-156069333-1"
+googleAnalytics = "G-757Y123ZRP"
 enableRobotsTXT = "true"
 
 [params]
