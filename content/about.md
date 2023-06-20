@@ -2,7 +2,7 @@
 title = "About Me"
 +++
 
-## 🖨️ [Short Resume (PDF)](https://hayorov.me/cv/alex-khaerov-resume-latest.pdf)
+## 🖨️ [Short Resume (PDF)](https://hayorov.me/cv/alex-khaerov-resume-2p-j23-001-static.pdf)
 
 {{< include-resume >}}
 
