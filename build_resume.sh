@@ -7,6 +7,9 @@ SCRIPTPATH="$(
     pwd -P
 )"
 
+echo "Install deps"
+npx puppeteer browsers install chrome
+
 BUILD_HASH=$(git rev-parse --short HEAD)
 BUILD_DATE=$(git show -s --format=%ci)
 
