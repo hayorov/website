@@ -32,16 +32,10 @@ Priority = ".7"
 
 ## Main Menu
 [[menu.main]]
-name = "🦠"
-weight = 100
-identifier = "covid"
-url = "/posts/covid-signs"
-
-[[menu.main]]
-name = "Cycling"
-identifier = "cycling"
-weight = 15
-url = "/cycling"
+name = "Blog Posts"
+weight = 40
+identifier = "posts"
+url = "/posts"
 
 [[menu.main]]
 name = "About Me"
@@ -62,7 +56,13 @@ weight = 30
 url = "/publications"
 
 [[menu.main]]
-name = "Blog Posts"
-weight = 40
-identifier = "posts"
-url = "/posts"
+name = "Cycling"
+identifier = "cycling"
+weight = 15
+url = "/cycling"
+
+[[menu.main]]
+name = "🦠"
+weight = 100
+identifier = "covid"
+url = "/posts/covid-signs"
