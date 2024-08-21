@@ -1,7 +1,6 @@
 [build]
-publish = "public"
-command = "./build_resume.sh && find . -name _gen -exec rm -rf {} + && hugo --gc --minify --enableGitInfo"
-HUGO_VERSION = "0.127.0"
+publish = "public""
+HUGO_VERSION = "0.133.0"
 
 [context.production.environment]
 HUGO_ENV = "production"
@@ -9,12 +8,6 @@ HUGO_ENABLEGITINFO = "true"
 
 [context.split1.environment]
 HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "./build_resume.sh && find . -name _gen -exec rm -rf {} + && hugo --gc --minify --enableGitInfo --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy]
-command = "./build_resume.sh && find . -name _gen -exec rm -rf {} + && hugo --gc --minify --enableGitInfo -b $DEPLOY_PRIME_URL"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
