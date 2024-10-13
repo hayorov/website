@@ -11,14 +11,14 @@ I excel in turning business requirements into effective software solutions, whet
 ## 👔 Professional Experience
 
 - **Director, Cloud Foundation**
-   [Prudential, GT Engineering](https://www.prudential.com.sg/), Singapore\
+  [Prudential, GT Engineering](https://www.prudential.com.sg/), Singapore\
    _Dec 2019 – Present_\
    I lead the development of our cloud infrastructure foundations and global network backbones. My focus is on both people and technology leadership, shaping our Infrastructure Developer Platform (IDP) and promoting best practices through infrastructure engineering.
   In my role, I manage the creation and upkeep of our cloud infrastructure and global networks. I also advise on and curate engineering operations to continuously improve our systems.
   I am committed to building scalable, secure, and efficient cloud solutions that support our developers and drive business success. My work fosters a collaborative and innovative environment where technology and teamwork go hand in hand.
 
 - **Software Engineering Manager**
-   [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore\
+  [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore\
    _Sep 2018 – Dec 2019_\
    I had the unique opportunity to shape the direction of a nascent engineering team focused on infrastructure-intensive cloud services for digital ledger technology. My responsibilities ranged from talent acquisition and team management to the strategic planning and execution of our technology road map.
   I successfully assembled and led a high-performing global engineering team, guided by the principles of cloud-native and micro service-oriented platform architecture. We worked in close collaboration with product managers and owners to align our technical initiatives with the company's strategic priorities.
@@ -26,7 +26,7 @@ I excel in turning business requirements into effective software solutions, whet
   Through this role, I honed my ability to work under pressure and deliver exceptional results within tight deadlines. I was instrumental in driving the projects from conception to successful launch, proving my capacity to operate strategically, shape robust technology solutions, and contribute significantly to the company's growth plans. In essence, I led from the front, uniting leadership skills, technical expertise, and strategic foresight to achieve remarkable results.
 
 - **Software Engineering Manager**
-   Ingram Micro Cloud, Irvine, CA\
+  Ingram Micro Cloud, Irvine, CA\
    _Dec 2015 – Sep 2018_\
    I oversaw both the technical and operational aspects of a dynamic Software Development Unit consisting of approximately 35 developers across three teams, including one remote.
   My day-to-day responsibilities encompassed comprehensive project management – from planning and architectural design to execution of development projects in coordination with program managers and various other departments. I was deeply involved in the technical aspects, participating in code reviews and acceptance testing to ensure the delivery of high-quality software solutions.
@@ -35,7 +35,7 @@ I excel in turning business requirements into effective software solutions, whet
   Throughout my tenure, I effectively combined leadership skills, technical acumen, and strategic planning to drive progress, innovation, and team growth.
 
 - **DevOps Manager & Sr. Software Developer**
-   [Parallels](https://parallels.com), Moscow, Russia\
+  [Parallels](https://parallels.com), Moscow, Russia\
    _May 2011 – Deс 2015_\
    I had the unique opportunity to work on the Parallels Business Automation product.
   In my dual role, I led a multi-disciplinary team of engineers to develop and enhance the infrastructure and virtualization aspects of the product. I contributed both as a hands-on engineer and a strategic leader, focusing on the seamless integration of development and operations for efficient workflows and high-quality software solutions.
