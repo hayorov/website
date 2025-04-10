@@ -1,6 +1,16 @@
 {
+  "name": "alexkhaerov-webspace",
+  "version": "1.0.0",
+  "description": "Personal website of Alex Khaerov",
+  "author": "Alex Khaerov",
+  "license": "MIT",
   "engines": {
     "node": ">=20"
+  },
+  "scripts": {
+    "build": "hugo",
+    "dev": "hugo server -D",
+    "clean": "rm -rf public"
   },
   "dependencies": {
     "ansi-regex": "6.1.0",
