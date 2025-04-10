@@ -1,12 +1,12 @@
 ## 👤 About Me
 
-I am a seasoned software development leader with over 12 years of experience in technical leadership and designing large-scale distributed systems. I lead the development of our cloud infrastructure and global network backbones, focusing on both people and technology. 🌍💻
+I’m a technology leader with over 14 years of experience in cloud infrastructure and platform engineering, specializing in large-scale distributed systems and public cloud services. I currently lead the Cloud Foundation team at Prudential, where I drive the development of enterprise-grade cloud platforms and global network backbones—balancing strategic vision with hands-on technical leadership. 🌍💻
 
-I have a proven track record with companies like [OpenVZ](https://openvz.org/), [Parallels Business Automation](http://download.parallels.com/summit/emea2009/presentations/Parallels_Automation_Portfolio.pdf), [Ingram Micro CloudBlue Connect](https://www.arnnet.com.au/article/664964/ingram-cloudblue-offers-connect-standalone-product/), and [Chainstack](https://chainstack.com).. I specialize in building and managing cloud infrastructure, virtual environments, and distributed systems. ☁️🔧
+I’ve made impactful contributions at companies like OpenVZ, Parallels, Ingram Micro CloudBlue Connect, and Chainstack. My core strengths lie in designing and scaling resilient infrastructure, enabling DevOps practices, and developing self-service platforms that support rapid innovation. ☁️🔧
 
-I also advise on and manage engineering operations to improve our systems continuously. My interests and expertise include GenAI solutions for infrastructure engineering, smart operations, and sustainable self-serve platforms. 🤖🌱
+My current interests include GenAI-driven automation for infrastructure engineering, smart operations, and building sustainable internal developer platforms. I also serve as an advisor and mentor, shaping engineering culture and operational excellence across teams. 🤖🌱
 
-I excel in turning business requirements into effective software solutions, whether starting from scratch or working with existing systems. My goal is to support our developers and drive business success by fostering a collaborative and innovative environment. 🚀👥
+As a frequent conference speaker and open-source contributor, I’m passionate about bridging the gap between complex business needs and practical engineering solutions. Whether leading from the front or behind the scenes, I thrive on empowering developers and creating the conditions for long-term success. 🚀👥
 
 ## 👔 Professional Experience
 
