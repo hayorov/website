@@ -30,33 +30,39 @@ Priority = ".7"
 
 ## Main Menu
 [[menu.main]]
-name = "Blog Posts"
+name = "📝 Blog Posts"
 weight = 40
 identifier = "posts"
 url = "/posts"
 
 [[menu.main]]
-name = "About Me"
+name = "👤 About Me"
 identifier = "about"
 weight = 10
 url = "/about"
 
 [[menu.main]]
-name = "My Talks"
+name = "🎤 My Talks"
 identifier = "talks"
 weight = 20
 url = "/talks"
 
 [[menu.main]]
-name = "Publications"
+name = "📚 Publications"
 identifier = "publications"
 weight = 30
 url = "/publications"
 
 [[menu.main]]
-name = "Cycling"
-identifier = "cycling"
+name = "🛸 FPV & UAV"
+identifier = "fpv"
 weight = 15
+url = "/fpv"
+
+[[menu.main]]
+name = "🚴‍♂️ Cycling"
+identifier = "cycling"
+weight = 16
 url = "/cycling"
 
 [[menu.main]]
