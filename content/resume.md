@@ -1,12 +1,14 @@
 ## 👤 About Me
 
-I’m a technology leader with over 14 years of experience in cloud infrastructure and platform engineering, specializing in large-scale distributed systems and public cloud services. I currently lead the Cloud Foundation team at Prudential, where I drive the development of enterprise-grade cloud platforms and global network backbones—balancing strategic vision with hands-on technical leadership. 🌍💻
+Technology leader with 14+ years of experience in cloud infrastructure and platform engineering, specializing in large-scale distributed systems and public cloud services. Recognized for driving innovation in cloud-native architectures, self-service platforms, and AI-driven automation. Proven track record of leading global engineering teams, fostering DevOps culture, and shaping industry best practices. Key contributor to open-source projects, a frequent speaker at international conferences, and holder of multiple patents in cloud integration technologies.
 
-I’ve made impactful contributions at companies like OpenVZ, Parallels, Ingram Micro CloudBlue Connect, and Chainstack. My core strengths lie in designing and scaling resilient infrastructure, enabling DevOps practices, and developing self-service platforms that support rapid innovation. ☁️🔧
+## ⭐️ Core Competencies
 
-My current interests include GenAI-driven automation for infrastructure engineering, smart operations, and building sustainable internal developer platforms. I also serve as an advisor and mentor, shaping engineering culture and operational excellence across teams. 🤖🌱
-
-As a frequent conference speaker and open-source contributor, I’m passionate about bridging the gap between complex business needs and practical engineering solutions. Whether leading from the front or behind the scenes, I thrive on empowering developers and creating the conditions for long-term success. 🚀👥
+- **Enterprise Cloud Strategy & Innovation** – Driving the evolution of public cloud services for large-scale enterprise adoption.
+- **Technology & Business Alignment** – Bridging technical innovation with business objectives to create competitive differentiation.
+- **Cloud-Native Architectures & AI-Driven Automation** – Implementing cutting-edge distributed systems and GenAI solutions.
+- **Engineering & Operations Leadershi** – Leading global teams to drive cloud infrastructure, security, and DevOps at scale.
+- **SaaS, PaaS & IaaS Development** – Designing and deploying scalable, resilient cloud platforms with multi-tenant capabilities.
 
 ## 👔 Professional Experience
 
@@ -44,8 +46,11 @@ As a frequent conference speaker and open-source contributor, I’m passionate a
 
 ## 🎓 Education
 
-2006-2011 Master's degree (CS), _Computer Systems Networking and Telecommunications_
-University of Telecommunications and Informatics, Russia.
+2025-2026 Master of Business Administration, _MBA_
+Quantic School of Business and Technology, US.
+
+2006-2011 M.Eng (Master of Engineering), _Communication networks and systems_
+Volga State University of Telecommunications and Informatics, Russia.
 
 ## 🎖️ Professional Qualifications
 
