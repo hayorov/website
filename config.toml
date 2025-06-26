@@ -16,6 +16,7 @@ highlightjsstyle = "github"
 showBuiltWith = false
 copyright = "Alex Khaerov"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+ga4_id = "G-757Y123ZRP"
 
 [params.social]
 linkedin = "alexkhaerov"
