@@ -4,6 +4,7 @@ title = "Alex Khaerov"
 theme = "hyde-hyde"
 enableRobotsTXT = "true"
 disqusShortname = "alexkhaerov"
+googleAnalytics = ""
 
 [params]
 author = "Alex Khaerov "
