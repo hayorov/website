@@ -4,6 +4,7 @@ publish = "public"
 
 [build.environment]
 HUGO_VERSION = "0.147.9"
+HUGO_INSTALL_EXTENDED = "true"
 
 [context.production.environment]
 HUGO_ENV = "production"
