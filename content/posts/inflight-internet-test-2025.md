@@ -1,6 +1,6 @@
 +++
-title: "In-Flight Internet Reality Check (2025): China Southern Airlines — Shanghai to Singapore"
-date: 2025-06-22
+title = "In-Flight Internet Reality Check (2025): China Southern Airlines — Shanghai to Singapore"
+date = 2025-06-22
 +++
 
 > ✈️ Tested on: China Southern Airlines  
