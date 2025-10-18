@@ -1,7 +1,6 @@
 <div class="strava">
-    <div
-        style="display:flex;align-items:flex-start;flex-wrap:nowrap;height:100%;justify-content:space-between;align-items:center;">
-        <div style="width:73%">
+    <div class="strava-container">
+        <div class="strava-heatmap">
             <div class="rides-img">
                 <a href="https://www.strava.com/athletes/{{ index .Params 0 }}">
                     <img src="/rides/static-31-12-2021.jpg" alt="Alex's rides heatmap">
@@ -10,8 +9,8 @@
             </div>
         </div>
         {{ if or (.Get 0) }}
-        <div style="width:25%">
-            <iframe style="border: none; background-color: transparent; overflow: hidden;" height="180" width="260"
+        <div class="strava-summary">
+            <iframe class="strava-iframe" style="border: none; background-color: transparent; overflow: hidden;"
                 src="https://www.strava.com/athletes/{{ index .Params 0 }}/activity-summary/{{ index .Params 1 }}">
             </iframe>
         </div>

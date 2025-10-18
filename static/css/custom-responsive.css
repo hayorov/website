@@ -1,0 +1,226 @@
+/* Custom Responsive Design Enhancements */
+
+/* ==========================================================================
+   Tables - Responsive Design
+   ========================================================================== */
+
+/* Wrapper for tables to enable horizontal scrolling on mobile */
+.content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure table cells have proper spacing on mobile */
+@media (max-width: 767px) {
+    table {
+        font-size: 80%;
+    }
+
+    td, th {
+        padding: 0.4rem 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    /* Make very wide tables scrollable */
+    .content table {
+        width: 100%;
+        border: 1px solid #e5e5e5;
+    }
+}
+
+/* ==========================================================================
+   Strava Widget - Responsive Design
+   ========================================================================== */
+
+.strava-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.strava-heatmap {
+    flex: 1 1 70%;
+    min-width: 0;
+}
+
+.strava-summary {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.strava-iframe {
+    width: 260px;
+    height: 180px;
+    max-width: 100%;
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 767px) {
+    .strava-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .strava-heatmap {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .strava-summary {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .strava-iframe {
+        width: 100%;
+        max-width: 320px;
+        height: 160px;
+    }
+}
+
+/* Tablet: Adjust proportions */
+@media (min-width: 768px) and (max-width: 991px) {
+    .strava-heatmap {
+        flex: 1 1 65%;
+    }
+
+    .strava-iframe {
+        width: 240px;
+        height: 160px;
+    }
+}
+
+/* ==========================================================================
+   Gallery - Responsive Design
+   ========================================================================== */
+
+/* Mobile: Reduce gallery image height */
+@media (max-width: 767px) {
+    div.gallery a img {
+        height: 200px !important;
+    }
+}
+
+/* Small mobile: Even smaller images */
+@media (max-width: 480px) {
+    div.gallery a img {
+        height: 150px !important;
+    }
+
+    div.gallery {
+        gap: 5px;
+    }
+
+    div.gallery a {
+        margin: 3px;
+    }
+}
+
+/* Tablet: Medium height */
+@media (min-width: 768px) and (max-width: 991px) {
+    div.gallery a img {
+        height: 300px !important;
+    }
+}
+
+/* ==========================================================================
+   Touch-Friendly Improvements
+   ========================================================================== */
+
+/* Larger tap targets for mobile */
+@media (max-width: 767px) {
+    .sidebar-nav-item {
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+    .social a {
+        padding: 0.5rem 0.75rem;
+        font-size: 1.3rem;
+    }
+
+    /* Ensure links have enough spacing */
+    a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+/* ==========================================================================
+   Content Spacing Optimizations
+   ========================================================================== */
+
+/* Better spacing on mobile */
+@media (max-width: 767px) {
+    .content {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 1.85rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Reduce margin on lists */
+    ul, ol {
+        padding-left: 1.2rem;
+    }
+}
+
+/* ==========================================================================
+   Image Responsiveness
+   ========================================================================== */
+
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Avatar/Profile images */
+.img--headshot {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+@media (min-width: 768px) {
+    .img--headshot {
+        width: 115px !important;
+        height: 115px !important;
+    }
+}
+
+/* ==========================================================================
+   Print Optimizations
+   ========================================================================== */
+
+@media print {
+    .strava-summary,
+    .strava-iframe {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}

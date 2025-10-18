@@ -4,3 +4,4 @@ public/
 node_modules
 resources/_gen
 static/cv/alex-khaerov-resume-latest.pdf
+.hugo_build.lock
