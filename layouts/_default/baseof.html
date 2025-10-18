@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{ block "header" . }}{{ end }}
+    <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+    {{ partial "sidebar.html" . }}
+        <div class="content container">
+            {{ block "content" . }}{{ end }}
+        </div>
+        {{ block "footer" . }}{{ end }}
+
+        {{- if and (eq hugo.Environment "production") (site.Params.ga4_id) }}
+        <!-- Google Analytics 4 -->
+        {{ partial "ga4.html" . }}
+        {{- end }}
+    </body>
+</html>

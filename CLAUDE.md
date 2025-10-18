@@ -55,11 +55,13 @@ Located in `layouts/`:
   - `foldergallery.html` - Creates image galleries from folder contents
   - `biketimeline.html` - Creates an elegant timeline visualization for bike photos
 - `layouts/partials/` - Template overrides:
-  - `ga4.html` - Google Analytics 4 integration
+  - `ga4.html` - Google Analytics 4 integration with privacy settings
   - `header.html` - Custom header template
   - `sidebar.html` - Custom sidebar template
   - `page-list/` - Custom list page templates
   - `page-single/` - Custom single page templates
+- `layouts/_default/` - Default layout overrides:
+  - `baseof.html` - Base template that includes GA4 on all pages (production only)
 
 ### Theme
 
@@ -159,6 +161,7 @@ Minimal Node.js setup (requires Node >= 20):
 ### Supported Date Formats in Bike Timeline
 
 The biketimeline shortcode parses dates from filenames. Currently supported:
+
 - `Jul21` → July 2021
 - `Nov21` → November 2021
 - `Apr23` → April 2023
@@ -166,3 +169,19 @@ The biketimeline shortcode parses dates from filenames. Currently supported:
 - `Jul25` → July 2025
 
 To add new dates, update the date parsing logic in `layouts/shortcodes/biketimeline.html`.
+
+## Analytics & Tracking
+
+### Google Analytics 4
+
+The site uses Google Analytics 4 (GA4) with privacy-focused settings:
+
+- **GA4 ID**: Configured in `config.toml` as `ga4_id = "G-757Y123ZRP"`
+- **Production Only**: GA4 only loads when `hugo.Environment == "production"`
+- **Privacy Settings**:
+  - IP anonymization enabled (`anonymize_ip: true`)
+  - Secure cookies with SameSite flag
+  - Google Signals disabled (no cross-device tracking)
+  - Ad personalization disabled
+
+**Implementation**: GA4 is loaded via `layouts/_default/baseof.html` and implemented in `layouts/partials/ga4.html`, ensuring tracking on all pages (not just homepage).
