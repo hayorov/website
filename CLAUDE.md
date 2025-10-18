@@ -29,7 +29,7 @@ hugo                  # Build site for production
 ### Configuration
 
 - **Main config**: `config.toml` - Contains site settings, menu structure, social links, and theme parameters
-- **Netlify**: `netlify.toml` - Specifies Hugo version (0.147.9 extended), build commands, and redirects (.ru → .me)
+- **Netlify**: `netlify.toml` - Specifies Hugo version (0.151.2 extended), build commands, and redirects (.ru → .me)
 - **Base URL**: https://hayorov.me/
 
 ### Content Structure
@@ -51,8 +51,9 @@ Located in `layouts/`:
 - `layouts/shortcodes/` - Custom Hugo shortcodes:
   - `include-resume.html` - Embeds content from `/resume` page
   - `include-talks.html` - Embeds content from `/talks` page
-  - `strava.html` - Embeds Strava activity widget
+  - `strava.html` - Embeds Strava activity widget and heatmap
   - `foldergallery.html` - Creates image galleries from folder contents
+  - `biketimeline.html` - Creates an elegant timeline visualization for bike photos
 - `layouts/partials/` - Template overrides:
   - `ga4.html` - Google Analytics 4 integration
   - `header.html` - Custom header template
@@ -67,6 +68,10 @@ Uses `hyde-hyde` theme (in `themes/hyde-hyde/`). Custom layouts in root `layouts
 ### Static Assets
 
 - `static/` - Images, favicons, and other static files served at site root
+  - `static/css/custom-responsive.css` - Custom responsive CSS for tables, galleries, Strava widgets, and mobile optimizations
+  - `static/cycling/` - Bike photos for timeline (format: `##BikeNameMonYY.jpg`)
+  - `static/rides/` - Strava heatmap images
+  - `static/favico/` - Favicon files for all platforms
 - `public/` - Generated site output (gitignored, created by Hugo build)
 
 ## Content Authoring
@@ -88,8 +93,10 @@ Content here...
 
 - `{{< include-resume >}}` - Include resume content
 - `{{< include-talks >}}` - Include talks list
-- `{{< strava activity_id token >}}` - Embed Strava activity
-- `{{< foldergallery "path/to/images" >}}` - Create image gallery
+- `{{< strava activity_id token >}}` - Embed Strava activity widget with heatmap
+- `{{< strava >}}` - Embed Strava heatmap only (without activity widget)
+- `{{< foldergallery "path/to/images" >}}` - Create image gallery from a folder
+- `{{< biketimeline src="folder" >}}` - Create timeline from bike photos (photos must follow naming: `##BikeNameMonYY.jpg`)
 
 ## Deployment
 
@@ -97,7 +104,7 @@ The site auto-deploys to Netlify on push to master branch:
 
 - Build command: `hugo`
 - Publish directory: `public`
-- Hugo version: 0.147.9 (extended)
+- Hugo version: 0.151.2 (extended)
 - Production environment variables set in `netlify.toml`
 
 ## Menu Structure
@@ -124,3 +131,38 @@ Minimal Node.js setup (requires Node >= 20):
 - Main branch: `master`
 - Clean working directory (no uncommitted changes)
 - Standard commit messages based on recent history
+
+## Code Quality & Maintenance
+
+### Best Practices
+
+- **No duplicate code**: Styles are centralized - responsive rules in `custom-responsive.css`, component-specific styles in shortcode files
+- **Clean repository**: `.DS_Store` files are gitignored and regularly removed
+- **Optimized CSS**: Redundant rules removed, properties consolidated
+- **Consistent formatting**: Use `0` instead of `0px`, remove unnecessary units
+- **Responsive design**: Mobile-first approach with breakpoints at 767px (mobile), 768-991px (tablet), 992px+ (desktop)
+
+### File Naming Conventions
+
+- **Bike timeline photos**: `##BikeNameMonYY.jpg` (e.g., `00BigBlueJul21.jpg`, `01BigBlueNov21.jpg`)
+  - First 2 digits: sorting order
+  - Name: descriptive bike name
+  - Month/Year: abbreviated (e.g., Jul21, Nov21, Apr23)
+- **Strava heatmaps**: `static-DD-MM-YYYY.jpg` (e.g., `static-31-12-2021.jpg`)
+
+### Dependencies
+
+- **Fancybox 3.5.7**: Used for image lightbox galleries (loaded via CDN in shortcodes)
+- **jQuery 3.4.1**: Required for Fancybox (loaded via CDN in shortcodes)
+- **Custom CSS**: All custom styles in `/static/css/custom-responsive.css`
+
+### Supported Date Formats in Bike Timeline
+
+The biketimeline shortcode parses dates from filenames. Currently supported:
+- `Jul21` → July 2021
+- `Nov21` → November 2021
+- `Apr23` → April 2023
+- `Apr25` → April 2025
+- `Jul25` → July 2025
+
+To add new dates, update the date parsing logic in `layouts/shortcodes/biketimeline.html`.
