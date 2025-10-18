@@ -49,10 +49,6 @@
         }
     }
 
-    .timeline-item:nth-child(odd) {
-        flex-direction: row;
-    }
-
     .timeline-item:nth-child(even) {
         flex-direction: row-reverse;
     }
@@ -147,17 +143,16 @@
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    /* Hover effects */
     .timeline-item:hover .timeline-marker {
         transform: translateX(-50%) scale(1.4);
-        border-width: 3px;
         border-color: #000;
         box-shadow: 0 0 0 6px rgba(255,255,255,0.95), 0 4px 16px rgba(0,0,0,0.25);
     }
 
-    /* Animate connectors on hover */
     .timeline-item:hover .timeline-date::after {
-        background: linear-gradient(to right, rgba(0,0,0,0.25), rgba(0,0,0,0.4));
         height: 3px;
+        background: linear-gradient(to right, rgba(0,0,0,0.25), rgba(0,0,0,0.4));
     }
 
     .timeline-item:nth-child(even):hover .timeline-date::after {
@@ -212,13 +207,12 @@
 
     .timeline-content img {
         width: 100%;
-        height: 400px;
+        height: 100%;
         display: block;
         object-fit: cover;
         object-position: center;
         transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         filter: brightness(1) contrast(1.02) saturate(1.05);
-        background: #f8f8f8;
     }
 
     .timeline-content a:hover {
