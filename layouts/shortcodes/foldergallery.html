@@ -57,13 +57,16 @@
 <div class="gallery">
     {{ $gallaryName := .Get "src" }}
     {{ $path := print "static" "/" $gallaryName }}
-    {{ range (readDir $path)  }}
-    {{ $src :=  print $gallaryName "/" .Name }}
-    <figure>
-        <a data-fancybox="gallery" href="{{ $src | absURL }}"><img src="{{ $src | absURL }}"></a>
-        <figcaption>
-            <h6>{{ .Name }}</h6>
-        </figcaption>
-    </figure>
+    {{ range (readDir $path) }}
+        {{ $ext := path.Ext .Name | lower }}
+        {{ if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".gif") (eq $ext ".webp") (eq $ext ".bmp") (eq $ext ".svg") }}
+            {{ $src := print $gallaryName "/" .Name }}
+            <figure>
+                <a data-fancybox="gallery" href="{{ $src | absURL }}"><img src="{{ $src | absURL }}" alt="{{ .Name }}"></a>
+                <figcaption>
+                    <h6>{{ .Name }}</h6>
+                </figcaption>
+            </figure>
+        {{ end }}
     {{ end }}
 </div>

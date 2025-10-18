@@ -206,6 +206,25 @@ img {
 }
 
 /* ==========================================================================
+   Disqus Branding Removal
+   ========================================================================== */
+
+/* Hide Disqus branding text */
+.dsq-brlink,
+#dsq-brlink,
+a.dsq-brlink,
+a[href*="disqus.com"][class*="brlink"],
+.logo-disqus {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide "powered by Disqus" footer that gets injected */
+#disqus_thread a[href*="disqus.com"]:not([href*="embed"]) {
+    display: none !important;
+}
+
+/* ==========================================================================
    Print Optimizations
    ========================================================================== */
 
