@@ -351,6 +351,9 @@
             {{ else if findRE "Jul25" $filename }}
                 {{ $month = "July" }}
                 {{ $year = "2025" }}
+            {{ else if findRE "Oct25" $filename }}
+                {{ $month = "October" }}
+                {{ $year = "2025" }}
             {{ end }}
 
             <div class="timeline-item">

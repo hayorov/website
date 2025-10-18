@@ -184,6 +184,7 @@ The biketimeline shortcode parses dates from filenames. Currently supported:
 - `Apr23` → April 2023
 - `Apr25` → April 2025
 - `Jul25` → July 2025
+- `Oct25` → October 2025
 
 To add new dates, update the date parsing logic in `layouts/shortcodes/biketimeline.html`.
 
@@ -202,3 +203,23 @@ The site uses Google Analytics 4 (GA4) with privacy-focused settings:
   - Ad personalization disabled
 
 **Implementation**: GA4 is loaded via `layouts/_default/baseof.html` and implemented in `layouts/partials/ga4.html`, ensuring tracking on all pages (not just homepage).
+
+## Site Version Footer
+
+The site includes a fixed footer bar at the bottom of every page showing build and version information.
+
+### Displayed Information
+
+- **Built**: Timestamp when the site was built (e.g., "2025-10-19 00:06:32 +08")
+- **Commit**: Git commit hash with link to GitHub (production only, requires `HUGO_ENABLEGITINFO=true`)
+- **Updated**: Last git commit date (production only)
+- **Hugo**: Hugo version used to build the site (e.g., "0.151.2")
+- **Environment**: Shows dev/staging environment when not in production
+
+### Implementation
+
+- **Partial**: `layouts/partials/site-version.html` - Generates version info from Hugo and Git data
+- **Styling**: `static/css/custom-responsive.css` - Fixed footer with dark theme and monospace font
+- **Position**: Fixed at bottom of page, auto-adjusts on mobile (stacks vertically)
+
+The footer uses git commit information when `HUGO_ENABLEGITINFO=true` is set in the build environment (configured in `netlify.toml`).

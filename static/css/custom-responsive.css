@@ -216,6 +216,36 @@ img {
 
 
 /* ==========================================================================
+   Site Version in Sidebar
+   ========================================================================== */
+
+.site-version-sidebar {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.site-version-sidebar .version-line {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.site-version-sidebar a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+}
+
+.site-version-sidebar a:hover {
+    opacity: 1;
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
    Disqus Branding Removal
    ========================================================================== */
 
