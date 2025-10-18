@@ -52,12 +52,21 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .strava-iframe {
     width: 260px;
     height: 180px;
     max-width: 100%;
+    overflow: hidden;
+    border: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.strava-iframe::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
 }
 
 /* Mobile: Stack vertically */
