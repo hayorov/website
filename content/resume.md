@@ -7,7 +7,7 @@ Technology leader with 14+ years of experience in cloud infrastructure and platf
 - **Enterprise Cloud Strategy & Innovation** – Driving the evolution of public cloud services for large-scale enterprise adoption.
 - **Technology & Business Alignment** – Bridging technical innovation with business objectives to create competitive differentiation.
 - **Cloud-Native Architectures & AI-Driven Automation** – Implementing cutting-edge distributed systems and GenAI solutions.
-- **Engineering & Operations Leadershi** – Leading global teams to drive cloud infrastructure, security, and DevOps at scale.
+- **Engineering & Operations Leadership** – Leading global teams to drive cloud infrastructure, security, and DevOps at scale.
 - **SaaS, PaaS & IaaS Development** – Designing and deploying scalable, resilient cloud platforms with multi-tenant capabilities.
 
 ## 👔 Professional Experience
@@ -38,7 +38,7 @@ Technology leader with 14+ years of experience in cloud infrastructure and platf
 
 - **DevOps Manager & Sr. Software Developer**
   [Parallels](https://parallels.com), Moscow, Russia\
-   _May 2011 – Deс 2015_\
+   _May 2011 – Dec 2015_\
    I had the unique opportunity to work on the Parallels Business Automation product.
   In my dual role, I led a multi-disciplinary team of engineers to develop and enhance the infrastructure and virtualization aspects of the product. I contributed both as a hands-on engineer and a strategic leader, focusing on the seamless integration of development and operations for efficient workflows and high-quality software solutions.
   As a DevOps manager, I implemented strategies and processes to foster a culture of continuous integration and deployment, which expedited the development cycle while maintaining high standards of reliability and stability. I worked closely with other teams to bridge gaps and improve communication, fostering an environment of collaboration and collective problem-solving.
