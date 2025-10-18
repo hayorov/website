@@ -1,24 +1,101 @@
+# Netlify Build Configuration
 [build]
-command = "hugo"
-publish = "public"
+  command = "hugo --minify --gc"
+  publish = "public"
 
 [build.environment]
-HUGO_VERSION = "0.151.2"
-HUGO_INSTALL_EXTENDED = "true"
+  HUGO_VERSION = "0.151.2"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+  NODE_VERSION = "20"
 
-[context.production.environment]
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+# Production context
+[context.production]
+  [context.production.environment]
+    HUGO_ENV = "production"
 
-[context.split1.environment]
-HUGO_ENV = "production"
+# Deploy Preview context
+[context.deploy-preview]
+  command = "hugo --minify --gc --buildFuture -b $DEPLOY_PRIME_URL"
+  [context.deploy-preview.environment]
+    HUGO_ENV = "staging"
 
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+# Branch Deploy context
+[context.branch-deploy]
+  command = "hugo --minify --gc -b $DEPLOY_PRIME_URL"
 
-# .ru -> .me
+# Development context
+[context.dev]
+  [context.dev.environment]
+    HUGO_ENV = "development"
+
+# Headers for all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "interest-cohort=()"
+
+# Security headers for HTML pages
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src https://www.strava.com"
+
+# Cache control for static assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favico/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache control for images
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects
+# Domain redirect: .ru -> .me
 [[redirects]]
-from = "https://hayorov.ru"
-to = "https://hayorov.me"
-status = 301
-force = true
+  from = "https://hayorov.ru/*"
+  to = "https://hayorov.me/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://hayorov.ru/*"
+  to = "https://hayorov.me/:splat"
+  status = 301
+  force = true
+
+# Plugins
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"

@@ -30,7 +30,7 @@ hugo                  # Build site for production
 
 - **Main config**: `config.toml` - Contains site settings, menu structure, social links, and theme parameters
 - **Netlify**: `netlify.toml` - Specifies Hugo version (0.151.2 extended), build commands, and redirects (.ru → .me)
-- **Base URL**: https://hayorov.me/
+- **Base URL**: <https://hayorov.me/>
 
 ### Content Structure
 
@@ -104,10 +104,27 @@ Content here...
 
 The site auto-deploys to Netlify on push to master branch:
 
-- Build command: `hugo`
-- Publish directory: `public`
-- Hugo version: 0.151.2 (extended)
-- Production environment variables set in `netlify.toml`
+- **Build command**: `hugo --minify --gc` (with garbage collection and minification)
+- **Publish directory**: `public`
+- **Hugo version**: 0.151.2 (extended)
+- **Node version**: 20
+- **Production environment**: `HUGO_ENV=production`, `HUGO_ENABLEGITINFO=true`
+
+### Modern Netlify Features
+
+The `netlify.toml` configuration includes:
+
+- **Build Optimization**: Minification and garbage collection enabled
+- **Deploy Previews**: Separate staging environment with future content enabled
+- **Security Headers**:
+  - X-Frame-Options, X-XSS-Protection, X-Content-Type-Options
+  - Content Security Policy (CSP) for HTML pages
+  - Referrer-Policy and FLoC blocking
+- **Performance**:
+  - Aggressive caching (1 year) for static assets with `immutable` flag
+  - Separate cache rules for CSS, JS, images, and favicons
+- **Redirects**: HTTP and HTTPS redirects from hayorov.ru to hayorov.me with `:splat` pattern
+- **Quality Monitoring**: Netlify Lighthouse plugin for automated performance audits
 
 ## Menu Structure
 
