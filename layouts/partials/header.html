@@ -1,5 +1,10 @@
 <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
+    <!-- DNS Prefetch and Preconnect for Performance -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     {{ partial "header/meta.html" . }}
     {{ partial "header/styles.html" . }}
     {{ `<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,5 +32,6 @@
     <meta name="theme-color" content="#ffffff">
     {{ partial "header/feeds.html" . }}
     <link rel="stylesheet" href="/css/custom-responsive.css">
+    {{ partial "structured-data.html" . }}
     {{ partial "header/custom.html" }}
 </head>

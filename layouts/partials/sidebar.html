@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div class="sidebar">
+<aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
   <div class="container {{ with .Site.Params.sidebarSticky }}sidebar-sticky{{ end }}">
     <div class="sidebar-about">
       <span class="site__title">
@@ -31,13 +31,15 @@
       </p>
     </div>
     <div class="collapsible-menu">
-      <input type="checkbox" id="menuToggle">
+      <input type="checkbox" id="menuToggle" aria-label="Toggle navigation menu">
       <label for="menuToggle"></label>
-      <div class="menu-content">
-        {{ partial "sidebar/menu.html" . }}
-        {{ partial "sidebar/social.html" . }}
-      </div>
+      <nav aria-label="Main navigation">
+        <div class="menu-content">
+          {{ partial "sidebar/menu.html" . }}
+          {{ partial "sidebar/social.html" . }}
+        </div>
+      </nav>
     </div>
     {{ partial "sidebar/copyright.html" . }}
   </div>
-</div>
+</aside>

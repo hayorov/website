@@ -12,12 +12,18 @@ title = ""
 since = "2019"
 authorimage = "/ava_with_bike.png"
 description = """Alex Khaerov"""
+
+[params.meta]
+description = "Alex Khaerov - Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
+keywords = "Alex Khaerov, DevOps, Kubernetes, Engineering Leadership, Public Speaking, Cloud Infrastructure, Cycling, FPV, UAV, Singapore"
+
 highlightjs = true
 highlightjsstyle = "github"
 showBuiltWith = false
 copyright = "Alex Khaerov"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 ga4_id = "G-757Y123ZRP"
+og_image = "/ava_with_bike.png"
 
 [params.social]
 linkedin = "alexkhaerov"

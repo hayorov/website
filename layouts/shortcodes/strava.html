@@ -1,17 +1,34 @@
+{{/*
+  Strava Shortcode
+
+  Usage:
+    - With activity widget: {{< strava "athlete_id" "activity_token" >}}
+    - Heatmap only: {{< strava >}}
+
+  Parameters:
+    - Param 0 (optional): Strava athlete ID
+    - Param 1 (optional): Activity summary token
+    - Param 2 (optional): Heatmap date string (e.g., "Dec 31, 2021")
+
+  Displays Strava cycling heatmap and optionally an activity summary widget.
+  All styling is in /static/css/custom-responsive.css under "Strava Widget".
+*/}}
 <div class="strava">
     <div class="strava-container">
         <div class="strava-heatmap">
             <div class="rides-img">
                 <a href="https://www.strava.com/athletes/{{ index .Params 0 }}">
-                    <img src="/rides/static-31-12-2021.jpg" alt="Alex's rides heatmap">
+                    <img src="/rides/static-31-12-2021.jpg" alt="Cycling activity heatmap showing rides around Singapore and Southeast Asia">
                 </a>
-                <div class="botton-right-text">as of Dec 31, 2021</div>
+                <div class="bottom-right-text">as of Dec 31, 2021</div>
             </div>
         </div>
         {{ if or (.Get 0) }}
         <div class="strava-summary">
-            <iframe class="strava-iframe" style="border: none; background-color: transparent; overflow: hidden;"
-                src="https://www.strava.com/athletes/{{ index .Params 0 }}/activity-summary/{{ index .Params 1 }}">
+            <iframe class="strava-iframe"
+                    title="Strava activity summary widget"
+                    style="border: none; background-color: transparent; overflow: hidden;"
+                    src="https://www.strava.com/athletes/{{ index .Params 0 }}/activity-summary/{{ index .Params 1 }}">
             </iframe>
         </div>
         {{ end }}

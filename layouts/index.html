@@ -12,9 +12,5 @@
 {{ end }}
 
 {{ define "footer" }}
-{{ if and (eq hugo.Environment "production") (site.Params.ga4_id) }}
-<!-- Google Analytics -->
-{{ partial "ga4.html" . }}
-{{ end }}
 {{ partial "footer/font-awesome-js.html" . }}
 {{ end }}

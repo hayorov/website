@@ -2,10 +2,11 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{ block "header" . }}{{ end }}
     <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     {{ partial "sidebar.html" . }}
-        <div class="content container">
+        <main id="main-content" class="content container" role="main">
             {{ block "content" . }}{{ end }}
-        </div>
+        </main>
         {{ block "footer" . }}{{ end }}
 
         {{- if and (eq hugo.Environment "production") (site.Params.ga4_id) }}

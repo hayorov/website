@@ -1,8 +1,4 @@
 {{ $include_toc := .Params.include_toc}}
-{{ if .Site.Config.Services.Disqus.Shortname }}
-  <!-- Google Analytics -->
-  {{ template "_internal/google_analytics.html" . }}
-{{ end }}
 {{ partial "footer/font-awesome-js.html" . }}
 {{ partial "highlight-js.html" . }}
 {{ with .Site.Params.toc }}

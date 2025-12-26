@@ -1,39 +1,18 @@
-<style>
-    figure {
-        margin: 0;
-    }
+{{/*
+  Folder Gallery Shortcode
 
-    figcaption {
-        display: none;
-    }
+  Usage: {{< foldergallery "path/to/images" >}}
 
-    div.gallery {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  Parameters:
+    - src (required): Path to image directory (relative to /static)
 
-    div.gallery a {
-        flex-grow: 1;
-        object-fit: cover;
-        margin: 5px;
-        display: flex;
-        text-decoration: none;
-        border: 0 none;
-    }
+  Supported formats: .jpg, .jpeg, .png, .gif, .webp, .bmp, .svg
 
-    div.gallery a img {
-        height: 450px;
-        object-fit: cover;
-        flex-grow: 1;
-        border-radius: 0;
-        margin: 0;
-    }
-</style>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  Creates a responsive flexbox gallery with Fancybox lightbox functionality.
+  Images are lazy-loaded for better performance.
+  All styling is in /static/css/custom-responsive.css under "Gallery Styles".
+*/}}
+{{ partial "gallery-deps.html" . }}
 
 <div class="gallery">
     {{ $gallaryName := .Get "src" }}
@@ -43,7 +22,7 @@
         {{ if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".gif") (eq $ext ".webp") (eq $ext ".bmp") (eq $ext ".svg") }}
             {{ $src := print $gallaryName "/" .Name }}
             <figure>
-                <a data-fancybox="gallery" href="{{ $src | absURL }}"><img src="{{ $src | absURL }}" alt="{{ .Name }}"></a>
+                <a data-fancybox="gallery" href="{{ $src | absURL }}"><img src="{{ $src | absURL }}" alt="{{ .Name | replaceRE `\.(jpg|jpeg|png|gif|webp|bmp|svg)$` `` | humanize }}" loading="lazy" decoding="async"></a>
                 <figcaption>
                     <h6>{{ .Name }}</h6>
                 </figcaption>

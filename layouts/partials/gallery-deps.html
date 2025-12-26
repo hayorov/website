@@ -1,0 +1,6 @@
+{{- if not (.Page.Scratch.Get "galleryDepsLoaded") -}}
+{{- .Page.Scratch.Set "galleryDepsLoaded" true -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{{- end -}}

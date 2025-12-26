@@ -155,11 +155,13 @@ Minimal Node.js setup (requires Node >= 20):
 
 ### Best Practices
 
-- **No duplicate code**: Styles are centralized - responsive rules in `custom-responsive.css`, component-specific styles in shortcode files
+- **No duplicate code**: All styles centralized in `custom-responsive.css` (no inline styles in shortcodes)
+- **Shared dependencies**: jQuery and Fancybox loaded once via shared partial `layouts/partials/gallery-deps.html`
 - **Clean repository**: `.DS_Store` files are gitignored and regularly removed
 - **Optimized CSS**: Redundant rules removed, properties consolidated
 - **Consistent formatting**: Use `0` instead of `0px`, remove unnecessary units
 - **Responsive design**: Mobile-first approach with breakpoints at 767px (mobile), 768-991px (tablet), 992px+ (desktop)
+- **Accessibility**: WCAG 2.1 AA compliant with skip links, ARIA labels, semantic HTML, and proper focus indicators
 
 ### File Naming Conventions
 
@@ -171,9 +173,10 @@ Minimal Node.js setup (requires Node >= 20):
 
 ### Dependencies
 
-- **Fancybox 3.5.7**: Used for image lightbox galleries (loaded via CDN in shortcodes)
-- **jQuery 3.4.1**: Required for Fancybox (loaded via CDN in shortcodes)
-- **Custom CSS**: All custom styles in `/static/css/custom-responsive.css`
+- **Fancybox 3.5.7**: Image lightbox galleries (loaded via shared partial `gallery-deps.html`)
+- **jQuery 3.4.1**: Required for Fancybox (loaded with `defer` attribute for performance)
+- **Custom CSS**: `/static/css/custom-responsive.css` (includes all shortcode styles, no inline CSS)
+- **CDN Resource Hints**: Preconnect to `cdn.jsdelivr.net` and `www.googletagmanager.com` for faster loading
 
 ### Supported Date Formats in Bike Timeline
 
@@ -187,6 +190,59 @@ The biketimeline shortcode parses dates from filenames. Currently supported:
 - `Oct25` → October 2025
 
 To add new dates, update the date parsing logic in `layouts/shortcodes/biketimeline.html`.
+
+## Known Issues & Technical Debt
+
+### Resolved in Recent Refactor (2025-12)
+- ✅ Duplicate GA4 loading on homepage (now loads once in baseof.html)
+- ✅ Inline CSS in shortcodes (352 lines extracted to custom-responsive.css)
+- ✅ Duplicate jQuery/Fancybox loading (consolidated to shared partial `gallery-deps.html`)
+- ✅ Missing accessibility attributes (added ARIA labels, skip links, semantic HTML)
+- ✅ Missing SEO meta descriptions (added site-wide and page-specific support)
+- ✅ Missing structured data (added JSON-LD Schema.org Person markup)
+- ✅ No lazy loading on gallery images (added with `decoding="async"`)
+- ✅ Typo: "botton-right-text" → "bottom-right-text"
+- ✅ Deprecated Google Analytics UA references removed
+- ✅ Color contrast issues fixed (timeline dates, sidebar opacity)
+- ✅ Missing Open Graph images (added default and page-specific support)
+- ✅ No resource hints for CDN (added dns-prefetch and preconnect)
+- ✅ Poor alt text quality (improved to be descriptive, not just filenames)
+- ✅ No documentation in shortcodes (added comprehensive usage docs)
+
+## Testing & Quality Assurance
+
+### Pre-deployment Checklist
+1. Run `npm run build` - ensure no Hugo errors
+2. Run `npm run dev` - verify pages render correctly
+3. Test Lighthouse (Performance, SEO, Accessibility, Best Practices)
+4. Cross-browser testing (Chrome, Firefox, Safari)
+5. Mobile responsive testing (320px, 768px, 1024px viewports)
+6. Verify GA4 tracking (production only)
+7. Check all shortcodes render correctly
+
+### Accessibility Standards
+- WCAG 2.1 AA compliance
+- Skip navigation link present (`<a href="#main-content" class="skip-link">`)
+- Semantic HTML landmarks (`<main>`, `<nav>`, `<aside>`)
+- ARIA labels on interactive elements (menu toggle, sidebar)
+- Color contrast ratio ≥ 4.5:1 (timeline dates: #545454, sidebar: opacity 0.85)
+- Alt text on all images (descriptive, uses `humanize` filter for gallery images)
+- Keyboard navigation support with visible focus indicators (2px #4A9EFF outline)
+- Iframe titles for screen readers
+
+### Performance Optimizations
+- Lazy loading on all gallery images (`loading="lazy" decoding="async"`)
+- Deferred JavaScript loading (`defer` attribute on jQuery and Fancybox)
+- CDN resource hints (dns-prefetch and preconnect)
+- CSS caching enabled (all styles in external file)
+- No inline styles (all extracted to custom-responsive.css)
+
+### SEO Best Practices
+- Meta descriptions on all pages (site-wide fallback + page-specific)
+- Structured data (JSON-LD Schema.org Person type)
+- Open Graph images (default + page-specific)
+- Meta keywords configured
+- Semantic HTML structure
 
 ## Analytics & Tracking
 
@@ -202,7 +258,7 @@ The site uses Google Analytics 4 (GA4) with privacy-focused settings:
   - Google Signals disabled (no cross-device tracking)
   - Ad personalization disabled
 
-**Implementation**: GA4 is loaded via `layouts/_default/baseof.html` and implemented in `layouts/partials/ga4.html`, ensuring tracking on all pages (not just homepage).
+**Implementation**: GA4 is loaded via `layouts/_default/baseof.html` only (previously had duplicate in index.html) and implemented in `layouts/partials/ga4.html`, ensuring site-wide tracking without duplication.
 
 ## Site Version Footer
 
