@@ -16,8 +16,8 @@ enableRobotsTXT = true
 
   [params.author]
     name = "Alex Khaerov"
-    image = "ava_memoji.png"
-    headline = "Engineering Leader, Speaker, Builder."
+    image = "ava_with_bike.jpg"
+    headline = "Engineering Leader, Builder, Speaker."
     bio = "Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
     links = [
       { linkedin = "https://linkedin.com/in/alexkhaerov" },
