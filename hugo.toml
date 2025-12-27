@@ -1,0 +1,85 @@
+baseURL = "https://hayorov.me/"
+languageCode = "en"
+title = "Alex Khaerov"
+theme = "blowfish"
+enableRobotsTXT = true
+
+[params]
+  colorScheme = "congo"
+  defaultTheme = "dark"
+  defaultBackgroundImage = "background.svg"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableImageCopy = true
+  enableTypewriter = true
+  customCSS = ["custom.css"]
+
+  [params.author]
+    name = "Alex Khaerov"
+    image = "ava_memoji.png"
+    headline = "Engineering Leader, Speaker, Builder."
+    bio = "Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
+    links = [
+      { linkedin = "https://linkedin.com/in/alexkhaerov" },
+      { twitter = "https://twitter.com/hayorov" },
+      { github = "https://github.com/hayorov" },
+      { email = "mailto:alex@hayorov.me" }
+    ]
+
+  [params.homepage]
+    layout = "background"
+    layoutBackgroundBlur = true
+
+  [params.article]
+    showAuthor = false
+
+  [params.header]
+    layout = "basic"
+
+  [params.footer]
+    showCopyright = true
+    showTheme = false
+    showPoweredBy = false
+
+[menu]
+  [[menu.main]]
+    name = "📝 Blog Posts"
+    weight = 40
+    identifier = "posts"
+    url = "/posts"
+
+  [[menu.main]]
+    name = "👤 About Me"
+    identifier = "about"
+    weight = 10
+    url = "/about"
+
+  [[menu.main]]
+    name = "🎤 My Talks"
+    identifier = "talks"
+    weight = 20
+    url = "/talks"
+
+  [[menu.main]]
+    name = "📚 Publications"
+    identifier = "publications"
+    weight = 30
+    url = "/publications"
+
+  [[menu.main]]
+    name = "🛸 FPV & UAV"
+    identifier = "fpv"
+    weight = 15
+    url = "/fpv"
+
+  [[menu.main]]
+    name = "🚴‍♂️ Cycling"
+    identifier = "cycling"
+    weight = 16
+    url = "/cycling"
+
+  [[menu.main]]
+    name = "🦠"
+    weight = 100
+    identifier = "covid"
+    url = "/posts/covid-signs"

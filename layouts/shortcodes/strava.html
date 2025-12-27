@@ -1,36 +1,40 @@
 {{/*
-  Strava Shortcode
+Strava Shortcode
 
-  Usage:
-    - With activity widget: {{< strava "athlete_id" "activity_token" >}}
-    - Heatmap only: {{< strava >}}
+Usage:
+- With activity widget: {{< strava "athlete_id" "activity_token">}}
+  - Heatmap only: {{< strava>}}
 
-  Parameters:
+    Parameters:
     - Param 0 (optional): Strava athlete ID
     - Param 1 (optional): Activity summary token
     - Param 2 (optional): Heatmap date string (e.g., "Dec 31, 2021")
 
-  Displays Strava cycling heatmap and optionally an activity summary widget.
-  All styling is in /static/css/custom-responsive.css under "Strava Widget".
-*/}}
-<div class="strava">
-    <div class="strava-container">
+    Displays Strava cycling heatmap and optionally an activity summary widget.
+    All styling is in /static/css/custom-responsive.css under "Strava Widget".
+    */}}
+    <div class="strava">
+      <div class="strava-container">
         <div class="strava-heatmap">
-            <div class="rides-img">
-                <a href="https://www.strava.com/athletes/{{ index .Params 0 }}">
-                    <img src="/rides/static-31-12-2021.jpg" alt="Cycling activity heatmap showing rides around Singapore and Southeast Asia">
-                </a>
-                <div class="bottom-right-text">as of Dec 31, 2021</div>
-            </div>
+          <div class="rides-img">
+            {{ $athleteId := .Get 0 | default "" }}
+            {{ $token := .Get 1 | default "" }}
+            {{ $date := .Get 2 | default "Dec 31, 2021" }}
+
+            <a href="https://www.strava.com/athletes/{{ $athleteId }}" target="_blank" rel="noopener noreferrer">
+              <img src="/rides/static-31-12-2021.jpg" style="margin: 0 auto;"
+                alt="Cycling activity heatmap showing rides around Singapore and Southeast Asia">
+            </a>
+            <div class="bottom-right-text">as of {{ $date }}</div>
+          </div>
         </div>
-        {{ if or (.Get 0) }}
+        {{ if and $athleteId $token }}
         <div class="strava-summary">
-            <iframe class="strava-iframe"
-                    title="Strava activity summary widget"
-                    style="border: none; background-color: transparent; overflow: hidden;"
-                    src="https://www.strava.com/athletes/{{ index .Params 0 }}/activity-summary/{{ index .Params 1 }}">
-            </iframe>
+          <iframe class="strava-iframe" title="Strava activity summary widget"
+            style="border: none; background-color: transparent; overflow: hidden; width: 280px;"
+            src="https://www.strava.com/athletes/{{ $athleteId }}/activity-summary/{{ $token }}">
+          </iframe>
         </div>
         {{ end }}
+      </div>
     </div>
-</div>
