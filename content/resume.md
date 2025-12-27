@@ -1,5 +1,3 @@
-## 👤 About Me
-
 Technology leader with 14+ years of experience in cloud infrastructure and platform engineering, specializing in large-scale distributed systems and public cloud services. Recognized for driving innovation in cloud-native architectures, self-service platforms, and AI-driven automation. Proven track record of leading global engineering teams, fostering DevOps culture, and shaping industry best practices. Key contributor to open-source projects, a frequent speaker at international conferences, and holder of multiple patents in cloud integration technologies.
 
 ## ⭐️ Core Competencies

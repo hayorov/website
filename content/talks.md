@@ -1,5 +1,6 @@
 +++
 title = "My Talks"
+date = "2021-07-03"
 +++
 
 I have had the privilege to speak at numerous conferences and meetups across the globe. Here are some of my contributions:
