@@ -16,13 +16,14 @@ enableRobotsTXT = true
 
   [params.author]
     name = "Alex Khaerov"
-    image = "ava_with_bike.jpg"
+    image = "ava_gen2.png"
     headline = "Engineering Leader, Builder, Speaker."
     bio = "Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
     links = [
       { linkedin = "https://linkedin.com/in/alexkhaerov" },
       { twitter = "https://twitter.com/hayorov" },
       { github = "https://github.com/hayorov" },
+      { medium = "https://akhaerov.medium.com" },
       { email = "mailto:alex@hayorov.me" }
     ]
 
