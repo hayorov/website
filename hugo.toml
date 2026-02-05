@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
   [params.author]
     name = "Alex Khaerov"
-    image = "ava_gen2.png"
+    image = "ava_gen3.png"
     headline = "Engineering Leader, Builder, Speaker."
     bio = "Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
     links = [
