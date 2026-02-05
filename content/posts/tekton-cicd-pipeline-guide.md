@@ -1,6 +1,6 @@
 +++
 title = "Step-by-Step: Setting Up a CI/CD Pipeline Using Tekton"
-date = "2026-02-06"
+date = "2026-02-05"
 +++
 
 Setting up a **CI/CD pipeline** with **Tekton** transforms how you handle continuous integration and delivery in Kubernetes environments. This guide walks you through every step - from installation to running a production-ready pipeline - using the latest Tekton practices as of early 2026, enabling you to automate builds, tests, scans, and deployments efficiently on your cluster.
