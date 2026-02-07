@@ -151,6 +151,49 @@ Minimal Node.js setup (requires Node >= 20):
 - Clean working directory (no uncommitted changes)
 - Standard commit messages based on recent history
 
+## Security & Environment Variables
+
+### Environment Variables (.env)
+
+**CRITICAL**: `.env` files contain private development secrets and **MUST NEVER** be:
+- Committed to the repository
+- Shared publicly or via chat/email
+- Exposed in screenshots or documentation
+- Pushed to remote repositories
+
+### Best Practices
+
+1. **Local Development Secrets**
+   - Store sensitive values (API keys, tokens, passwords) in `.env` files
+   - `.env` is already in `.gitignore` - verify it stays there
+   - Use `.env.example` (without actual values) to document required variables
+
+2. **Production Secrets**
+   - Use Netlify UI to set environment variables for production
+   - Never store production secrets in `netlify.toml` or any committed file
+   - Access via `process.env.VARIABLE_NAME` in build scripts
+
+3. **What Belongs in .env**
+   - API keys (Google Analytics, Strava, external services)
+   - Authentication tokens
+   - Database credentials (if applicable)
+   - Any sensitive configuration values
+
+4. **What NOT to Put in .env**
+   - Public configuration (use `hugo.toml` or `netlify.toml`)
+   - Non-sensitive build settings
+   - Hugo version numbers or public URLs
+
+### Verification Checklist
+
+Before committing:
+- ✅ Run `git status` and ensure `.env` is NOT listed
+- ✅ Check `.gitignore` includes `.env`
+- ✅ Verify no secrets in `hugo.toml` or `netlify.toml`
+- ✅ Use Netlify UI for production environment variables
+
+**Remember**: Once a secret is committed to git, it's in the history forever. Even if deleted later, it can be retrieved from commit history. Treat all secrets as compromised if accidentally committed and rotate them immediately.
+
 ## Code Quality & Maintenance
 
 ### Best Practices
