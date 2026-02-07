@@ -3,7 +3,7 @@ title: "Home"
 date: 2023-01-01
 ---
 
-## 👋 Welcome!
+
 
 I’m Alex, a senior engineering leader with 10+ years of experience designing and operating large-scale distributed systems.
 

@@ -30,6 +30,9 @@ enableRobotsTXT = true
   [params.homepage]
     layout = "background"
     layoutBackgroundBlur = true
+    showRecent = true
+    showRecentItems = 3
+    cardView = false
 
   [params.article]
     showAuthor = false
