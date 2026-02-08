@@ -677,3 +677,31 @@ div.gallery a img {
 .text-lg {
     line-height: var(--tw-leading, var(--text-lg--line-height));
 }
+
+/* ==========================================================================
+   Top Navigation Menu - Prevent text wrapping on tablet screens
+   ========================================================================== */
+
+.main-menu nav a span {
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-menu nav {
+        gap: 0.75rem;
+    }
+
+    .main-menu nav a span.text-base {
+        font-size: 0.8125rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .main-menu nav {
+        gap: 0.875rem;
+    }
+
+    .main-menu nav a span.text-base {
+        font-size: 0.875rem;
+    }
+}
