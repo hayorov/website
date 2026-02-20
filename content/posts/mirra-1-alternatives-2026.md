@@ -1,6 +1,6 @@
 +++
 title = "Mirra 1 Alternatives in 2026"
-date = "2026-02-20"
+date = "2026-02-19"
 +++
 
 I still love my decade-old Herman Miller Mirra 1. It is breathable, adjustable, and has a design that feels timeless. If you want the full story, see [My Favorite Chair: Herman Miller Mirra 1](https://hayorov.me/posts/my-favorite-chair-24/). The Mirra 1 is discontinued, parts are harder to find, and that pushed me to research what I would buy in 2026.
@@ -41,6 +41,8 @@ This is a practical, engineer-style roundup. Marketing claims are loud, but neut
 | Pros | Cons |
 | --- | --- |
 | Breathable mesh and flexible back.<br>Height and depth adjustable lumbar support with 4D arms.<br>Lighter frame and friendlier seat edge than the Aeron. | Armrests can feel wide for smaller users.<br>Butterfly back adds cost and is harder to clean. |
+
+{{< foldergallery src="mirra2" >}}
 
 **Why it works as a Mirra 1 alternative:** It is the most direct successor, preserving the original feel while improving adjustability.
 
