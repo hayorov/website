@@ -1,9 +1,11 @@
 <script>
   (function() {
     var loaded = false;
+    var events = ['scroll', 'click', 'touchstart', 'keydown'];
     function loadGA() {
       if (loaded) return;
       loaded = true;
+      events.forEach(function(e) { removeEventListener(e, loadGA, {capture: true}); });
       var s = document.createElement('script');
       s.async = true;
       s.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}';
@@ -14,10 +16,7 @@
       gtag('js', new Date());
       gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}');
     }
-    if (typeof requestIdleCallback === 'function') {
-      requestIdleCallback(loadGA, { timeout: 3000 });
-    } else {
-      setTimeout(loadGA, 2000);
-    }
+    events.forEach(function(e) { addEventListener(e, loadGA, {capture: true, once: true}); });
+    setTimeout(loadGA, 5000);
   })();
 </script>

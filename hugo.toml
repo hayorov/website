@@ -20,6 +20,7 @@ googleAnalytics = "G-757Y123ZRP"
   description = "Alex Khaerov — technology leader building cloud platforms, developer infrastructure, and engineering teams at scale. Director of Cloud Foundation at Prudential, Singapore."
   keywords = ["DevOps", "Kubernetes", "cloud infrastructure", "platform engineering", "Singapore", "Alex Khaerov"]
   enableStructuredBreadcrumbs = true
+  disableImageZoom = true
 
   [params.author]
     name = "Alex Khaerov"

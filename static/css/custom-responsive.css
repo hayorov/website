@@ -1,6 +1,22 @@
 /* Custom Responsive Design Enhancements */
 
 /* ==========================================================================
+   Rendering Performance Optimizations
+   ========================================================================== */
+
+/* Promote backdrop-blur overlay to GPU layer to reduce main-thread rendering */
+.single_hero_background {
+    will-change: opacity;
+    contain: strict;
+}
+
+/* Reduce rendering work for below-fold content */
+.prose {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+}
+
+/* ==========================================================================
    Skip Link for Accessibility
    ========================================================================== */
 
