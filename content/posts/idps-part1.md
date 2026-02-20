@@ -1,6 +1,8 @@
 +++
 title = "Part 1 | IDPs: What Comes to Your Mind?"
 date = "2024-06-13"
+description = "Internal Developer Platforms vs Infrastructure Developer Platforms: differences, similarities, and roles in modern platform engineering."
+tags = ["platform-engineering", "devops", "idp"]
 +++
 
 When you hear the term “IDP,” what springs to mind? For many, it conjures images of Identity Providers, but in the realm of infrastructure and platform engineering, IDP means something quite different. Here I delve into the world of Internal Developer Platforms (IDPs) and Infrastructure Developer Platforms, examining their similarities, differences, and the unique roles they play in modern software development.

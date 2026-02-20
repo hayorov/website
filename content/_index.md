@@ -3,9 +3,10 @@ title: "Home"
 date: 2023-01-01
 ---
 
+I'm Alex — a technology leader building cloud platforms and engineering organizations at scale.
 
-I’m Alex, a senior engineering leader with 10+ years of experience designing and operating large-scale distributed systems.
+At [Prudential](https://www.prudential.com.sg/) in Singapore, I lead cloud infrastructure, global networking, and developer platforms — shaping how teams ship, scale, and operate across regions. My work spans platform engineering, AI-driven automation, and engineering culture.
 
-I lead cloud infrastructure and global network platforms, working across architecture, execution, and engineering leadership, focusing on both people and technology. 
+15+ years in infrastructure · 3 [US patents](https://patents.google.com/?inventor=Khaerov) · [MBA](https://quantic.edu) · [conference speaker](/talks/) · [open-source contributor](https://github.com/hayorov)
 
-Previously: __Parallels__ · __Ingram Micro__ · __Chainstack__
+Previously: __Chainstack__ · __Ingram Micro Cloud__ · __Parallels__

@@ -1,6 +1,8 @@
 +++
 title = "Challenge #1: Modify a table data"
 date = "2020-05-02"
+description = "Python coding challenge: normalize table row lengths by filling missing labels with null values."
+tags = ["python", "coding-challenge"]
 +++
 
 ### Given the next structure that represents a data table

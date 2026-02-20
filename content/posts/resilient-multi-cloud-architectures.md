@@ -1,6 +1,8 @@
 +++
 title = "Building Resilient Multi-Cloud Architectures in 2026"
 date = "2026-02-16"
+description = "Engineering guide to building resilient multi-cloud architectures with Kubernetes, observability, and platform engineering."
+tags = ["multi-cloud", "kubernetes", "architecture", "devops"]
 +++
 
 Cloud adoption now spans far beyond single providers. In Singapore and across the globe, engineering teams are asked to keep platforms reliable across public, private, regional, and edge clouds. In 2026, resilience is the real reason multi-cloud exists: continuity, predictable performance, and the ability to adapt when providers shift priorities or fail in new ways.

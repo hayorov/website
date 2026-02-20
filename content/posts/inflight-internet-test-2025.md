@@ -1,6 +1,8 @@
 +++
 title = "In-Flight Internet Reality Check (2025): China Southern Airlines — Shanghai to Singapore"
 date = 2025-06-22
+description = "Real-world speed test of China Southern Airlines in-flight Wi-Fi on Shanghai to Singapore route. Usable for lightweight tasks."
+tags = ["travel", "review"]
 +++
 
 > ✈️ Tested on: China Southern Airlines  

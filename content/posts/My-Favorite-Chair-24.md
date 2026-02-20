@@ -1,6 +1,8 @@
 +++
 title = "My Favorite Chair: Herman Miller Mirra 1"
 date = "2024-06-15"
+description = "A decade-long review of the Herman Miller Mirra 1 ergonomic chair covering durability, mesh replacement, and long-term value."
+tags = ["ergonomics", "review", "workspace"]
 +++
 
 As someone who spends the majority of their time sitting at a desk, often with a laptop or during teleconferences, having a reliable and ergonomic chair is essential. Recently, I upgraded my desk to be adjustable, allowing me to alternate between sitting and standing. But that's a topic for another blog post.

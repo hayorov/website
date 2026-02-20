@@ -17,12 +17,15 @@ googleAnalytics = "G-757Y123ZRP"
   enableImageCopy = true
   enableTypewriter = true
   customCSS = ["custom.css"]
+  description = "Alex Khaerov — technology leader building cloud platforms, developer infrastructure, and engineering teams at scale. Director of Cloud Foundation at Prudential, Singapore."
+  keywords = ["DevOps", "Kubernetes", "cloud infrastructure", "platform engineering", "Singapore", "Alex Khaerov"]
+  enableStructuredBreadcrumbs = true
 
   [params.author]
     name = "Alex Khaerov"
     image = "ava_gen4.jpg"
-    headline = "Engineering Leader, Builder, Speaker."
-    bio = "Engineering leader, public speaker, and open-source contributor specializing in DevOps, Kubernetes, and cloud infrastructure. Based in Singapore, passionate about cycling and FPV/UAV."
+    headline = "Technology Leader · Cloud Platforms · AI & Infrastructure"
+    bio = "Director of Cloud Foundation at Prudential. 15+ years building cloud infrastructure, developer platforms, and engineering teams at scale. 3 US patents, MBA, conference speaker, and open-source contributor. Based in Singapore."
     links = [
       { linkedin = "https://linkedin.com/in/alexkhaerov" },
       { twitter = "https://twitter.com/hayorov" },

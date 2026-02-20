@@ -1,6 +1,8 @@
 +++
 title = "kubectl tool reinvented to be more reactive and interactive"
 date = "2020-02-17"
+description = "kubelive is a reactive, interactive kubectl tool built with React for live Kubernetes cluster monitoring and pod management."
+tags = ["kubernetes", "devops", "tools"]
 +++
 
 ## What is this

@@ -56,14 +56,38 @@
               {{ if $authorImage }}
               {{ $final := $authorImage }}
               {{ $squareImage := $authorImage }}
+              {{ $optimized := false }}
+              {{ $img1x := $authorImage }}
+              {{ $img2x := $authorImage }}
+              {{ $webp1x := $authorImage }}
+              {{ $webp2x := $authorImage }}
               {{ if not (or $disableImageOptimization (eq $authorImage.MediaType.SubType "svg")) }}
-              {{ $final = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+              {{ $optimized = true }}
+              {{ $q := $.Site.Params.Author.imagequality | default "96" }}
+              {{ $img1x = $authorImage.Fill (printf "192x192 q%s" $q) }}
+              {{ $img2x = $authorImage.Fill (printf "384x384 q%s" $q) }}
+              {{ $webp1x = $authorImage.Fill (printf "192x192 webp q%s" $q) }}
+              {{ $webp2x = $authorImage.Fill (printf "384x384 webp q%s" $q) }}
+              {{ $final = $img2x }}
               {{ $shortSide := int (math.Min $authorImage.Width $authorImage.Height) }}
               {{ $squareImage = $authorImage.Crop (printf "%dx%d" $shortSide $shortSide ) }}
               {{ end }}
-              <div class="flex-shrink-0">
-                <img class="creative-avatar" width="200" height="200"
+              <div class="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
+                {{ if $optimized }}
+                <picture>
+                  <source type="image/webp"
+                    srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x">
+                  <img class="creative-avatar w-full h-full object-cover"
+                    alt="{{ $.Site.Params.Author.name | default `Author` }}"
+                    src="{{ $img1x.RelPermalink }}"
+                    srcset="{{ $img1x.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+                    width="192" height="192"
+                    loading="eager" decoding="async">
+                </picture>
+                {{ else }}
+                <img class="creative-avatar w-full h-full object-cover"
                   alt="{{ $.Site.Params.Author.name | default `Author` }}" src="{{ $final.RelPermalink }}">
+                {{ end }}
               </div>
               {{ end }}
               {{ end }}

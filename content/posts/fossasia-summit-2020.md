@@ -1,6 +1,8 @@
 +++
 title = "Cloud-native pipelines with Tekton"
 date = "2020-03-05"
+description = "Workshop on cloud-native CI/CD pipelines with Tekton at FOSSASIA Summit 2020 in Singapore."
+tags = ["tekton", "kubernetes", "cicd", "conference"]
 +++
 
 ### Workshop at FOSSASIA Summit 2020 http://summit.fossasia.org/

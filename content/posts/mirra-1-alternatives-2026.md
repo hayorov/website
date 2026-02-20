@@ -1,6 +1,8 @@
 +++
 title = "Mirra 1 Alternatives in 2026"
 date = "2026-02-19"
+description = "Practical comparison of Herman Miller Mirra 1 alternatives in 2026, covering premium, mid-range, and budget ergonomic chairs."
+tags = ["ergonomics", "review", "workspace"]
 +++
 
 I still love my decade-old Herman Miller Mirra 1. It is breathable, adjustable, and has a design that feels timeless. If you want the full story, see [My Favorite Chair: Herman Miller Mirra 1](https://hayorov.me/posts/my-favorite-chair-24/). The Mirra 1 is discontinued, parts are harder to find, and that pushed me to research what I would buy in 2026.

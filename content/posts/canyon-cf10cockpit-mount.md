@@ -1,6 +1,8 @@
 +++
 title = "Canyon CF10 Cockpit gear"
 date = "2021-11-26"
+description = "Wahoo GPS and headlight mounting setup for Canyon CF10 aero cockpit with carbon computer mount."
+tags = ["cycling", "gear"]
 +++
 
 #### Wahoo GPS + headlight

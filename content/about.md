@@ -7,14 +7,14 @@ date = "2021-07-03"
 
 ## 📢 Public Speaking
 
-As an active participant in technical conferences, I enjoy public speaking to share knowledge and insights, stay updated with the latest technologies, and expand my network. I believe in the power of communication and strive to contribute to the tech community through meaningful dialogues.
+I speak regularly at international conferences and industry panels on cloud infrastructure, platform engineering, AI adoption, and DevOps leadership. Recent engagements include keynotes and panels at Tech Week Shanghai, HashiDays Singapore, Cloud Expo Asia, F5 AppWorld, and DevOps Summit Singapore.
 
 {{< include-talks >}}
 
-## 🧩 Hobbies and Interests
+## 🧩 Beyond Work
 
-I am an engineer at heart. I enjoy reading popular science literature and actively contribute to open-source projects such as the [helm-gcs project](https://github.com/hayorov/helm-gcs). I am continuously honing my public speaking skills, which I see as essential for effective leadership and collaboration.
+Engineer at heart — I maintain open-source projects like [helm-gcs](https://github.com/hayorov/helm-gcs) (Helm chart repositories on GCP, Helm 4 compatible) and stay close to the tools I advocate for.
 
-In my leisure time, I am an avid road bike rider, exploring the great outdoors and staying fit. I also have a passion for laptop stickers, showcasing my interests and affiliations through my collection. Check out some of my favorites at [devlids.com](https://devlids.com/lids/hayorov).
+Outside of work, I ride road bikes across Singapore and beyond, build FPV drones, and collect laptop stickers — see my [devlids](https://devlids.com/lids/hayorov).
 
 {{< strava 39930728 17a9e3933fcd8007222210caa30300a6bf60087c >}}

@@ -1,6 +1,8 @@
 +++
 title = "DIY Lezyne mount for Canyon handlebar"
 date = "2021-09-04"
+description = "DIY 3D-printed Lezyne GPS mount for Canyon aero handlebars with GoPro-compatible quick release. Free STL download."
+tags = ["cycling", "diy", "3d-printing"]
 +++
 
 #### STL Model

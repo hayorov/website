@@ -1,6 +1,8 @@
 +++
 title = "What Fast-Food Order Screens Can Teach Us About Broken Observability"
 date = "2025-07-12"
+description = "What fast-food order screens reveal about broken observability in engineering, and how to build dashboards that actually help."
+tags = ["observability", "devops", "engineering-culture"]
 +++
 
 {{< foldergallery src="observability-fastfood-img">}}

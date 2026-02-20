@@ -1,12 +1,14 @@
-Technology leader with 14+ years of experience in cloud infrastructure and platform engineering, specializing in large-scale distributed systems and public cloud services. Recognized for driving innovation in cloud-native architectures, self-service platforms, and AI-driven automation. Proven track record of leading global engineering teams, fostering DevOps culture, and shaping industry best practices. Key contributor to open-source projects, a frequent speaker at international conferences, and holder of multiple patents in cloud integration technologies.
+Technology leader with 15+ years building cloud infrastructure, developer platforms, and engineering organizations. I specialize in large-scale distributed systems, cloud-native architectures, and AI-driven automation — with a focus on turning platform engineering into a competitive advantage.
+
+I lead global teams, ship self-service infrastructure platforms, and bridge the gap between technical execution and business outcomes. Holder of 3 US patents in cloud integration, active open-source contributor, and a regular speaker at international conferences.
 
 ## ⭐️ Core Competencies
 
-- **Enterprise Cloud Strategy & Innovation** – Driving the evolution of public cloud services for large-scale enterprise adoption.
-- **Technology & Business Alignment** – Bridging technical innovation with business objectives to create competitive differentiation.
-- **Cloud-Native Architectures & AI-Driven Automation** – Implementing cutting-edge distributed systems and GenAI solutions.
-- **Engineering & Operations Leadership** – Leading global teams to drive cloud infrastructure, security, and DevOps at scale.
-- **SaaS, PaaS & IaaS Development** – Designing and deploying scalable, resilient cloud platforms with multi-tenant capabilities.
+- **Cloud Infrastructure & Platform Engineering** – Designing and operating multi-region cloud foundations, networking, and developer platforms.
+- **AI-Driven Automation & GenAI** – Applying AI/ML to infrastructure operations, cost optimization, and self-service workflows.
+- **Engineering Leadership** – Building and scaling global engineering teams with strong DevOps culture and delivery discipline.
+- **Strategy & Business Alignment** – Connecting infrastructure investments to measurable business outcomes and competitive differentiation.
+- **Cloud-Native Architecture** – Kubernetes, IaC, multi-cloud, SaaS/PaaS/IaaS design with resilience and security built in.
 
 ## 👔 Professional Experience
 
