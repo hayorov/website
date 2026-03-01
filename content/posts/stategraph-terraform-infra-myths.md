@@ -1,7 +1,7 @@
 +++
 title = "Stategraph, 'Terraform Is Dead,' and Other Infra Myths That Won't Die"
 date = "2026-03-01"
-draft = true
+draft = false
 description = "Why Stategraph is a solid execution improvement — not a Terraform replacement — and why IaC isn't going anywhere despite what the hype cycle says."
 tags = ["terraform", "infrastructure", "iac", "platform-engineering"]
 +++
