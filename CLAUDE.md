@@ -140,10 +140,7 @@ Site navigation is configured in `config.toml` with weighted menu items:
 
 ## Node Dependencies
 
-Minimal Node.js setup (requires Node >= 20):
-
-- `mdpdf` - For generating PDFs from markdown
-- Other dependencies are utilities for the build process
+Minimal Node.js setup (requires Node >= 20). No runtime dependencies — Node is only used for npm scripts.
 
 ## Git Workflow
 
