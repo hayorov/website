@@ -1,0 +1,32 @@
+{{/* OG image dimensions — helps Telegram, WhatsApp, Discord, LinkedIn render previews instantly */}}
+{{- $featureImage := false -}}
+{{- $pageImages := .Resources.ByType "image" -}}
+{{- range slice "*featured*" "*cover*" "*thumbnail*" -}}
+  {{- if not $featureImage -}}
+    {{- $featureImage = $pageImages.GetMatch . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $featureImage -}}
+  {{- $img := $featureImage -}}
+  <meta property="og:image:width" content="{{ $img.Width }}">
+  <meta property="og:image:height" content="{{ $img.Height }}">
+  <meta property="og:image:type" content="{{ $img.MediaType }}">
+  <meta name="twitter:image:alt" content="{{ .Title }}">
+{{- else -}}
+  {{- with .Site.Params.defaultSocialImage -}}
+    {{- $socialImage := resources.Get . -}}
+    {{- with $socialImage -}}
+      <meta property="og:image:width" content="{{ .Width }}">
+      <meta property="og:image:height" content="{{ .Height }}">
+      <meta property="og:image:type" content="{{ .MediaType }}">
+    {{- end -}}
+  {{- end -}}
+  {{- if .IsHome }}
+  <meta name="twitter:image:alt" content="{{ .Site.Params.Author.name }} — {{ .Site.Params.Author.headline }}">
+  {{- else }}
+  <meta name="twitter:image:alt" content="{{ .Title }} — {{ .Site.Title }}">
+  {{- end }}
+{{- end -}}
+
+{{/* Telegram channel link — enables "Join Channel" in Telegram Instant View */}}
+{{/* <meta property="telegram:channel" content="your_channel"> */}}
