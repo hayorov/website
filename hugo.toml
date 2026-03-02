@@ -21,6 +21,7 @@ googleAnalytics = "G-757Y123ZRP"
   keywords = ["DevOps", "Kubernetes", "cloud infrastructure", "platform engineering", "Singapore", "Alex Khaerov"]
   enableStructuredBreadcrumbs = true
   disableImageZoom = true
+  defaultSocialImage = "ava_gen4.jpg"
 
   [params.author]
     name = "Alex Khaerov"
@@ -95,3 +96,11 @@ googleAnalytics = "G-757Y123ZRP"
     weight = 100
     identifier = "covid"
     url = "/posts/covid-signs"
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

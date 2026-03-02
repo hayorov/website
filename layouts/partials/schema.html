@@ -1,0 +1,137 @@
+{{ if .IsHome -}}
+  {{- $authorImage := resources.Get (site.Params.Author.image) -}}
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": {{ site.Home.Permalink | safeURL }},
+      "name": "{{ .Site.Title | safeJS }}",
+      {{ with .Site.Params.description }}"description": "{{ . | safeJS }}",{{ end }}
+      {{ with .Site.LanguageCode }}"inLanguage": "{{ . }}",{{ end }}
+      "url": {{ site.Home.Permalink | safeURL }},
+      {{ with .Site.Params.keywords }}"keywords": {{ . }},{{ end }}
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.Author.name | safeJS }}"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "{{ site.Home.Permalink | safeURL }}#person",
+      "name": "{{ .Site.Params.Author.name | safeJS }}",
+      "jobTitle": "Director, Cloud Foundation",
+      {{ with .Site.Params.Author.bio }}"description": "{{ . | safeJS }}",{{ end }}
+      {{ with $authorImage }}"image": "{{ .Permalink }}",{{ end }}
+      "url": {{ site.Home.Permalink | safeURL }},
+      "email": "alex@hayorov.me",
+      "sameAs": [
+        "https://linkedin.com/in/alexkhaerov",
+        "https://twitter.com/hayorov",
+        "https://github.com/hayorov",
+        "https://akhaerov.medium.com",
+        "https://scholar.google.com/citations?user=pphTJAoAAAAJ"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Prudential"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Quantic School of Business and Technology"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Volga State University"
+        }
+      ],
+      "knowsAbout": [
+        "Cloud Infrastructure",
+        "Platform Engineering",
+        "Kubernetes",
+        "DevOps",
+        "Developer Platforms",
+        "AI Infrastructure",
+        "Engineering Leadership",
+        "Open Source"
+      ],
+      "nationality": {
+        "@type": "Country",
+        "name": "Russia"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Singapore",
+        "addressLocality": "Singapore"
+      }
+    }
+  ]
+  </script>
+{{ else }}
+  {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+  {{- $authorImage := resources.Get (site.Params.Author.image) -}}
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "{{ (site.GetPage .Section).Title | safeJS }}",
+    "name": "{{ .Title | safeJS }}",
+    "headline": "{{ .Title | safeJS }}",
+    {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
+    {{ with .Site.LanguageCode }}"inLanguage": "{{ . }}",{{ end }}
+    "url" : {{ .Permalink }},
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.Author.name | safeJS }}",
+      {{ with $authorImage }}"image": "{{ .Permalink }}",{{ end }}
+      "url": {{ site.Home.Permalink | safeURL }},
+      "sameAs": [
+        "https://linkedin.com/in/alexkhaerov",
+        "https://twitter.com/hayorov",
+        "https://github.com/hayorov",
+        "https://akhaerov.medium.com",
+        "https://scholar.google.com/citations?user=pphTJAoAAAAJ"
+      ]
+    },
+    {{ with .PublishDate }}"copyrightYear": "{{ .Format "2006" }}",{{ end }}
+    {{ with .Date }}"dateCreated": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .PublishDate }}"datePublished": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .ExpiryDate }}"expires": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .Lastmod }}"dateModified": "{{ .Format $iso8601 }}",{{ end }}
+    {{ if .Keywords }}
+    {{ with .Keywords }}"keywords": {{ . }},{{ end }}
+    {{ else }}
+    {{ with .Params.tags }}"keywords": {{ . }},{{ end }}
+    {{ end }}
+    "mainEntityOfPage": "true",
+    "wordCount": "{{ .WordCount }}"
+  }{{ if site.Params.enableStructuredBreadcrumbs | default false }},
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{- $position := 0 -}}
+      {{- range .Ancestors -}}
+        {{- if not .IsHome -}}
+          {{- $position = add $position 1 -}}
+          {
+            "@type": "ListItem",
+            "position": {{ $position }},
+            "name": "{{ .Title }}",
+            "item": {{ .Permalink }}
+          },
+        {{- end -}}
+      {{- end -}}
+      {{- $position = add $position 1 -}}
+      {
+        "@type": "ListItem",
+        "position": {{ $position }},
+        "name": "{{ .Title }}",
+        "item": {{ .Permalink }}
+      }
+    ]
+  }{{ end }}]
+  </script>
+{{ end }}

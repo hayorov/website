@@ -1,6 +1,7 @@
 +++
 title = "About Me"
 date = "2021-07-03"
+description = "Alex Khaerov — technology leader with 15+ years in cloud infrastructure, platform engineering, and AI-driven automation. Director of Cloud Foundation at Prudential, Singapore. Speaker, patent holder, open-source contributor."
 +++
 
 {{< include-resume >}}

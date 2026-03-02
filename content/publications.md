@@ -1,6 +1,7 @@
 +++
 title = "Publications"
 date = "2021-07-03"
+description = "Technical publications and articles by Alex Khaerov on Internal Developer Platforms, cloud security, containers, Kubernetes, and infrastructure engineering. Published on Medium and Habr."
 +++
 
 ## 📚 Publications

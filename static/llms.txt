@@ -1,0 +1,38 @@
+# Alex Khaerov — Personal Website
+
+> Technology leader building cloud platforms, developer infrastructure, and engineering teams at scale.
+
+Alex Khaerov is Director of Cloud Foundation at Prudential in Singapore with 15+ years of experience in cloud infrastructure, platform engineering, and AI-driven automation. He holds 3 US patents in cloud integration, an MBA from Quantic School of Business and Technology, and is an active open-source contributor and international conference speaker.
+
+## Site Structure
+
+- [Home](https://hayorov.me/): Overview and recent blog posts
+- [About Me](https://hayorov.me/about/): Professional background, resume, speaking engagements, and personal interests
+- [Blog Posts](https://hayorov.me/posts/): Technical articles on cloud infrastructure, platform engineering, DevOps, and AI
+- [My Talks](https://hayorov.me/talks/): Conference presentations at HashiDays, Cloud Expo Asia, DevOps Summit, FOSSASIA, and more
+- [Publications](https://hayorov.me/publications/): Technical publications on Medium, Habr, and academic works
+- [FPV & UAV](https://hayorov.me/fpv/): FPV drone building hobby
+- [Cycling](https://hayorov.me/cycling/): Road cycling in Singapore
+
+## Key Topics
+
+- Cloud Infrastructure & Platform Engineering
+- Kubernetes & Cloud-Native Architecture
+- Internal Developer Platforms (IDPs)
+- AI-Driven Automation & GenAI
+- DevOps & Engineering Leadership
+- Terraform & Infrastructure as Code
+- Multi-cloud Architecture
+
+## Professional Links
+
+- LinkedIn: https://linkedin.com/in/alexkhaerov
+- GitHub: https://github.com/hayorov
+- Medium: https://akhaerov.medium.com
+- Google Scholar: https://scholar.google.com/citations?user=pphTJAoAAAAJ
+- Twitter: https://twitter.com/hayorov
+
+## Notable Projects
+
+- [helm-gcs](https://github.com/hayorov/helm-gcs): Helm chart repositories on Google Cloud Platform
+- [kubelive](https://github.com/nickolaev/kubelive): Real-time Kubernetes dashboard

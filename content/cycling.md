@@ -1,6 +1,7 @@
 +++
 title = "Cycling"
 date = "2021-07-03"
+description = "Alex Khaerov's road cycling adventures in Singapore and beyond. Rides, routes, bikes (Canyon Endurace & Ultimate), and a visual timeline of cycling highlights."
 +++
 
 Cycling is my main way to explore new places, clear my head, and stay consistent with fitness. I ride mostly on the road with a focus on long steady efforts, scenic routes, and occasional tempo blocks when I am training for an event. The bike is also my preferred way to discover Singapore and nearby regions on trips.
