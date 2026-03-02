@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Alex Khaerov — technology leader building cloud platforms, developer infrastructure, and engineering teams at scale. Director of Cloud Foundation at Prudential, Singapore."
 date: 2023-01-01
 ---
 

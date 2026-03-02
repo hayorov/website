@@ -3,6 +3,7 @@ languageCode = "en"
 title = "Alex Khaerov"
 theme = "blowfish"
 enableRobotsTXT = true
+enableGitInfo = true
 googleAnalytics = "G-757Y123ZRP"
 
 [services.googleAnalytics]
