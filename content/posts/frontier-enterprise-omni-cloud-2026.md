@@ -48,8 +48,6 @@ I've written about this dynamic in more detail in my series on [Internal Develop
 
 Vendor lock-in becomes obvious once teams start using provider-specific services — BigQuery, DynamoDB, and so on. The model shifts from "one cloud fits all" to "place workloads where they fit best."
 
-Important nuance: multi-cloud is **not symmetry** — it's **intentional fragmentation**. I covered the engineering side of this in [Building Resilient Multi-Cloud Architectures]({{< ref "/posts/resilient-multi-cloud-architectures" >}}).
-
 ### 4. Platform Engineering and Abstraction
 
 At scale, developers shouldn't care about which cloud, which networking model, or which infra primitives. So we introduced Internal Developer Platforms, abstraction layers, and application-centric interfaces.
