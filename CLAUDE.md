@@ -106,7 +106,7 @@ The site auto-deploys to Netlify on push to master branch:
 
 - **Build command**: `hugo --minify --gc` (with garbage collection and minification)
 - **Publish directory**: `public`
-- **Hugo version**: 0.151.2 (extended)
+- **Hugo version**: 0.160.1 (extended)
 - **Node version**: 20
 - **Production environment**: `HUGO_ENV=production`, `HUGO_ENABLEGITINFO=true`
 
