@@ -5,6 +5,10 @@ description = "The mechanical keyboard scene passed its peak. Some thoughts on t
 tags = ["keyboards", "hardware", "engineering", "review"]
 +++
 
+> ⌨️ **Topic:** Mechanical Keyboards — After the Hype
+> 📍 **Location:** Singapore
+> 📅 **Written:** March 2026
+
 The mechanical keyboard space went through a pretty classic cycle:
 
 **innovation → hype → speculation → correction**
@@ -21,7 +25,7 @@ The point is simple — the scene has likely **already passed its peak**. And wh
 
 ---
 
-## Hardware is brutal
+## 🔩 Hardware is brutal
 
 There's this perception that keyboard makers are running some hugely profitable operation. Aluminium cases, limited drops, high prices — must be printing money, right?
 
@@ -39,7 +43,7 @@ A niche market can look huge during hype phase. The actual sustainable demand? U
 
 ---
 
-## Where I stand with keyboards
+## 🧑‍💻 Where I stand with keyboards
 
 I'm not deep in the mechanical keyboard rabbit hole. Lucky, probably — there's enough dopamine in this hobby to lose your mind completely. New switches, new plates, new mounts, new keycaps. Never ends.
 
@@ -57,7 +61,7 @@ How small mechanical tweaks change the feel and sound — that part is genuinely
 
 ---
 
-## Monokei
+## 🇸🇬 Monokei
 
 This one hits closer to home.
 
@@ -77,7 +81,7 @@ What's clear is that they, like many other small keyboard makers, are struggling
 
 ---
 
-## Grab one while you still can
+## 🛒 Grab one while you still can
 
 Right now Monokei is clearing out remaining **Standard** stock at about **$50 SGD**.
 
@@ -89,7 +93,7 @@ If you need a decent daily driver keyboard — just get it. And if you want to s
 
 ---
 
-## After the hype
+## 🔮 After the hype
 
 Mechanical keyboards aren't going anywhere. But the scene is shifting from hype to something more stable. Some brands will fold. Some will consolidate. The community will get smaller but probably healthier.
 

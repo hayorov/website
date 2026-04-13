@@ -6,6 +6,10 @@ description = "My interview with Frontier Enterprise on cloud evolution at Prude
 tags = ["cloud", "platform-engineering", "multi-cloud", "interview"]
 +++
 
+> 📰 **Publication:** Frontier Enterprise 2026 — A Special Issue
+> ☁️ **Topic:** Cloud Evolution at Prudential
+> 🎙️ **Format:** Interview — distilled with added context
+
 I recently had the opportunity to share my perspective on cloud evolution at Prudential in the *Frontier Enterprise 2026 Special Issue*. The full magazine is available here:
 
 👉 [Frontier Enterprise 2026 — A Special Issue](https://www.frontier-enterprise.com/frontier-enterprise-2026-a-special-issue/)
@@ -16,7 +20,7 @@ This post is a distilled version of that conversation — with more context and 
 
 ---
 
-## The Real Story Behind "Cloud Transformation"
+## 🔍 The Real Story Behind "Cloud Transformation"
 
 Most enterprises like to tell a clean story: *we moved to cloud, got faster, cheaper, better.* Reality is messier.
 
@@ -28,7 +32,7 @@ At Prudential, the journey started like many others — large-scale migration, h
 
 That realization triggered the real transformation.
 
-## What Actually Happens: Phases of Cloud Evolution
+## 🔄 What Actually Happens: Phases of Cloud Evolution
 
 After more than a decade in cloud infrastructure, I've seen this pattern repeat across organizations. It's not linear and it's never clean, but the phases are recognizable.
 
@@ -64,7 +68,7 @@ But let's be precise — AI is not replacing engineers. It's **compressing cogni
 
 ---
 
-## The Next Step: Omni-Cloud
+## 🚀 The Next Step: Omni-Cloud
 
 This is the concept I'm most excited about.
 
@@ -76,7 +80,7 @@ Developers interact with one system. The system decides *where and how* to run t
 
 ---
 
-## What Actually Matters
+## 🎯 What Actually Matters
 
 After all phases, tools, and trends — here's where I land:
 
@@ -90,7 +94,7 @@ After all phases, tools, and trends — here's where I land:
 
 ---
 
-## Final Thought
+## 💡 Final Thought
 
 Enterprise cloud is no longer about infrastructure. It's about **reducing cognitive load while increasing control**. That's the real balancing act — and it's what makes this work interesting.
 

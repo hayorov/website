@@ -7,11 +7,17 @@ tags = ["observability", "devops", "engineering-culture"]
 
 {{< foldergallery src="observability-fastfood-img">}}
 
+> 📊 **Topic:** Observability & Monitoring  
+> 🍔 **Analogy:** Fast-food order screens  
+> 🎯 **Takeaway:** Build dashboards engineers actually trust and use
+
 Ever stood at the most popular fast-food chain in Singapore (where, in my opinion, this issue feels especially pronounced), staring at the giant digital order screen that supposedly tells you when your food is ready? It looks slick—numbers updating in real time, animations flying—but you’re still standing there five minutes after your number disappeared. Or your food is ready before it even shows up. The system’s working—but no one believes it anymore.
 
 That’s exactly the kind of trap we fall into with observability in engineering teams.
 
-## When Observability Exists But Doesn’t Help
+---
+
+## 🔍 When Observability Exists But Doesn’t Help
 
 We all know when monitoring is missing—that’s obvious. But there's a sneakier problem: dashboards, alerts, and metrics that exist but don’t actually help anyone.
 
@@ -26,7 +32,9 @@ Here’s the usual setup:
 3. **Alerts & Incident Response**  
    Without context and clear ownership, alerts turn into background noise. Nobody wants to be paged for a spike that recovers in 30 seconds. If the alert doesn’t help fix or prevent something, it’s just noise.
 
-## The Fast-Food Display Syndrome
+---
+
+## 🍔 The Fast-Food Display Syndrome
 
 Back to the food court analogy: the screen is up and running, but it doesn’t match reality. The staff are doing their thing, orders are flying, but what’s shown on screen has little to do with what’s actually happening. People start ignoring it.
 
@@ -37,7 +45,9 @@ Same thing happens to your dashboards if they’re disconnected from what your s
 - 🧪 **Performance Slips Under the Radar**: Gradual regressions sneak past everyone.
 - 📉 **Nobody Maintains Dashboards**: They rot because nobody's using them.
 
-## How to Build Observability Engineers Actually Use
+---
+
+## 🛠️ How to Build Observability Engineers Actually Use
 
 Let’s get back to basics:
 
@@ -62,7 +72,9 @@ Check who’s acknowledging alerts. When was the last time a dashboard was opene
 ### 5. Make Observability Part of the Routine
 Don’t wait for a P1 to look at dashboards. Bring them into standups, retro, postmortems. Ask “what would’ve made this easier to catch?”
 
-## Final Thought: Are You Building Control Towers or Eye Candy?
+---
+
+## 💭 Final Thought: Are You Building Control Towers or Eye Candy?
 
 Observability should help you *run* your systems—not just decorate your wiki or status board. If your team doesn’t trust your metrics or ignores your dashboards, that’s not just an ops issue—it’s a broken feedback loop.
 

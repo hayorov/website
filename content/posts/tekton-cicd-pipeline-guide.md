@@ -5,11 +5,18 @@ description = "Step-by-step guide to setting up CI/CD pipelines with Tekton on K
 tags = ["tekton", "kubernetes", "cicd", "devops"]
 +++
 
+> 🔧 **Tool**: Tekton Pipelines v1.3.x LTS
+> ☸️ **Platform**: Kubernetes v1.27+
+> 📦 **Scope**: CI/CD — Build, Test, Scan, Deploy
+> 🕐 **Updated**: February 2026
+
 Setting up a **CI/CD pipeline** with **Tekton** transforms how you handle continuous integration and delivery in Kubernetes environments. This guide walks you through every step - from installation to running a production-ready pipeline - using the latest Tekton practices as of early 2026, enabling you to automate builds, tests, scans, and deployments efficiently on your cluster.
 
 Tekton stands out as a **cloud-native CI/CD framework** because it runs entirely within Kubernetes as custom resources, eliminating the need for external servers. You'll learn to create reusable **Tasks**, orchestrate them in **Pipelines**, and execute **PipelineRuns** with real-world examples, including security scanning and multi-environment deployments. By the end, you'll have a scalable setup that boosts developer productivity and reliability.
 
-## Why Choose Tekton for Your CI/CD Needs
+---
+
+## 🚀 Why Choose Tekton for Your CI/CD Needs
 
 **Tekton Pipelines** excels in Kubernetes-native environments by defining workflows as declarative YAML manifests. Unlike traditional tools like Jenkins, Tekton leverages Kubernetes pods for execution, making it highly scalable and portable across clusters.
 
@@ -25,7 +32,9 @@ The latest Tekton v1.3.1 LTS (released August 2025, supported through August 202
 
 Visit [hayorov.me](https://hayorov.me) for more insights into optimizing your Kubernetes workflows with modern DevOps tools.
 
-## Prerequisites for Tekton Installation
+---
+
+## 📋 Prerequisites for Tekton Installation
 
 Before diving in, ensure your environment meets these requirements:
 
@@ -49,7 +58,9 @@ sudo tar xvzf tkn_0.43.0_Linux_x86_64.tar.gz -C /usr/local/bin/ tkn
 tkn version
 ```
 
-## Installing Tekton Pipelines on Your Cluster
+---
+
+## ⚙️ Installing Tekton Pipelines on Your Cluster
 
 Tekton installation is straightforward via YAML manifests. Use the latest LTS release for production stability.
 
@@ -84,7 +95,9 @@ Access it via port-forward: `kubectl port-forward -n tekton-pipelines service/te
 
 **Pro Tip**: For production environments, pin to specific LTS versions for stability. The current LTS v1.3.1 is supported through August 2026.
 
-## Understanding Tekton Core Components
+---
+
+## 🧩 Understanding Tekton Core Components
 
 Master these building blocks to build flexible pipelines:
 
@@ -98,7 +111,9 @@ Master these building blocks to build flexible pipelines:
 
 **Important Note**: ClusterTasks are deprecated in favor of the **cluster resolver**. Use `resolver: cluster` in taskRef to reference cluster-scoped tasks.
 
-## Creating Your First Simple Task
+---
+
+## ✏️ Creating Your First Simple Task
 
 Start with a basic **git-clone Task** using the Tekton Hub resolver - the modern way to reference tasks.
 
@@ -142,7 +157,9 @@ Apply: `kubectl apply -f taskrun.yaml`, then check logs: `tkn taskrun logs test-
 
 This clones the repo into a Workspace, foundational for pipelines.
 
-## Building a Basic Pipeline: Clone, Build, and Push
+---
+
+## 🔨 Building a Basic Pipeline: Clone, Build, and Push
 
 Combine Tasks into a **Pipeline** for a classic flow: clone → build → push.
 
@@ -218,7 +235,9 @@ spec:
 
 Apply: `kubectl apply -f basic-pipeline.yaml`.
 
-## Executing Your First PipelineRun
+---
+
+## ▶️ Executing Your First PipelineRun
 
 Create a PVC for Workspace:
 
@@ -277,7 +296,9 @@ Apply with: `kubectl create -f pipelinerun.yaml` (note: use create for generateN
 
 Success! Your code is cloned, built with Kaniko (no Docker daemon needed), and pushed.
 
-## Advanced Pipeline: Full CI/CD with Tests, Scans, and Deployments
+---
+
+## 🏗️ Advanced Pipeline: Full CI/CD with Tests, Scans, and Deployments
 
 Scale to production with testing, security scanning, and multi-stage deploys.
 
@@ -443,7 +464,9 @@ Key enhancements:
 - **Pipeline-level Results**: Capture deployable artifacts like image digests.
 - **Timeouts**: Prevent resource hogs with task and pipeline-level timeouts.
 
-## Service Accounts, Secrets, and Security Best Practices
+---
+
+## 🔐 Service Accounts, Secrets, and Security Best Practices
 
 Secure your pipeline with proper RBAC and secret management:
 
@@ -522,7 +545,9 @@ computeResources:
 - Version pipelines in Git alongside application code (GitOps approach).
 - Use **OPA Gatekeeper** or Kyverno for policy enforcement.
 
-## Event-Driven Automation with Tekton Triggers
+---
+
+## ⚡ Event-Driven Automation with Tekton Triggers
 
 Automate pipeline execution using webhooks with Tekton Triggers and EventListeners.
 
@@ -611,7 +636,9 @@ kubectl port-forward service/el-github-listener 8080:8080
 
 Configure your GitHub repository webhook to point to the EventListener URL (use ngrok or Ingress for external access).
 
-## Monitoring, Troubleshooting, and Optimization
+---
+
+## 📊 Monitoring, Troubleshooting, and Optimization
 
 - **Logs**:
 
@@ -647,7 +674,9 @@ kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/
 | Resolver error | Check Hub connectivity or use specific versions |
 | Workspace error | Ensure PVC/secret exists and is accessible |
 
-## Scaling Tekton for Enterprise Workloads
+---
+
+## 🏢 Scaling Tekton for Enterprise Workloads
 
 For large teams and production environments:
 
@@ -672,7 +701,9 @@ For large teams and production environments:
   - Generate SBOMs (Software Bill of Materials)
   - Implement policy enforcement with OPA/Kyverno
 
-## What's New in Tekton 2026
+---
+
+## 🆕 What's New in Tekton 2026
 
 Recent advancements in Tekton v1.3.x (2026) include:
 
@@ -684,7 +715,9 @@ Recent advancements in Tekton v1.3.x (2026) include:
 - **Performance Improvements**: Faster webhook processing and controller responsiveness.
 - **Tekton Chains Integration**: Built-in support for artifact signing and SLSA provenance.
 
-## Conclusion
+---
+
+## 🎯 Conclusion
 
 Mastering Tekton unlocks Kubernetes-native CI/CD that grows with your applications. This guide covered installation, basic and advanced pipelines, security best practices, event-driven automation, and enterprise scaling patterns using the latest Tekton v1 APIs and tooling available in 2026.
 
@@ -692,7 +725,9 @@ Start with the basic clone-build-push example, iterate to advanced flows with te
 
 Explore more DevOps automation patterns and Kubernetes best practices at [hayorov.me](https://hayorov.me) to continue elevating your cloud-native journey.
 
-## Additional Resources
+---
+
+## 📚 Additional Resources
 
 - [Official Tekton Documentation](https://tekton.dev/docs/)
 - [Tekton Hub](https://hub.tekton.dev/) - Reusable Tasks and Pipelines

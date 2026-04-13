@@ -5,7 +5,12 @@ description = "Python coding challenge: normalize table row lengths by filling m
 tags = ["python", "coding-challenge"]
 +++
 
-### Given the next structure that represents a data table
+> 🧩 Challenge: Normalize table row lengths
+> 🐍 Language: Python
+
+## 📋 Problem
+
+Given a structure that represents a data table:
 
 ```python
 [
@@ -16,7 +21,9 @@ tags = ["python", "coding-challenge"]
 
 N rows, M items in a row, an item is `<label>:<value>`
 
-Return a new structure with null values for items with no label e.g. constant row length.
+Return a new structure with null values for items with no label — ensuring constant row length.
+
+## ✅ Expected Output
 
 ```python
 [
@@ -25,7 +32,9 @@ Return a new structure with null values for items with no label e.g. constant ro
 ]
 ```
 
-labels can arbitrary repeat e.g.:
+## 🔁 Edge Case: Repeating Labels
+
+Labels can repeat arbitrarily:
 
 ```python
 [
@@ -34,8 +43,8 @@ labels can arbitrary repeat e.g.:
 ]
 ```
 
-the consequence of labels in output can arbitrary.
+The order of labels in the output can be arbitrary.
 
-### Limitations
+## ⚠️ Limitations
 
 N < 10^6, M < 10^6

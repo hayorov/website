@@ -5,6 +5,14 @@ description = "kubelive is a reactive, interactive kubectl tool built with React
 tags = ["kubernetes", "devops", "tools"]
 +++
 
-## What is this
+> 🛠️ Tool: kubelive
+> 📦 Stack: React, Kubernetes
+> 🔗 Repo: [github.com/ameerthehacker/kubelive](https://github.com/ameerthehacker/kubelive)
 
-This tool helps you to get live data on pods, services, replicationcontrollers and nodes from your Kubernetes cluster and also lets you to delete them or copy their names right from the console. It is built using React. It is an opensource project and it is available [here](https://github.com/ameerthehacker/kubelive)
+A reactive, interactive alternative to `kubectl`. Live cluster data, right in your terminal.
+
+## What It Does
+
+- Get live data on pods, services, replication controllers, and nodes
+- Delete resources or copy their names directly from the console
+- Built with React for a responsive, interactive experience

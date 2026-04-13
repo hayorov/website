@@ -5,15 +5,16 @@ description = "Workshop on cloud-native CI/CD pipelines with Tekton at FOSSASIA 
 tags = ["tekton", "kubernetes", "cicd", "conference"]
 +++
 
-### Workshop at FOSSASIA Summit 2020 http://summit.fossasia.org/
+> 🎤 Event: [FOSSASIA Summit 2020](http://summit.fossasia.org/)
+> 📍 Location: Singapore, March 19-21 2020
+> 🏷️ Track: Cloud, Containers, DevOps
 
-### Singapore, March 19-21 2020
+## 🔧 What This Workshop Covers
 
-### Section: Cloud, Containers, DevOps
+Tekton is one of the fast-growing CNCF projects — a powerful yet flexible Kubernetes-native way of building CI/CD pipelines.
 
-### Description
-Tekton is one of the fast-growing CNCF projects last year, it provides a powerful yet flexible Kubernetes-native open-source way of building integration and delivery (CI/CD) pipelines. During the workshop, Alex will demonstrate how to install and run tekton on local minikube cluster and write a very first cloud-native pipeline for your web application. All processes will be in realtime, absolutely practical sessions.
+In this hands-on session, I demonstrate how to install and run Tekton on a local minikube cluster and write your very first cloud-native pipeline for a web application. Everything in realtime, absolutely practical.
 
-### Workshop materials
+## 📦 Workshop Materials
 
-https://github.com/hayorov/tekton-ws
+- [github.com/hayorov/tekton-ws](https://github.com/hayorov/tekton-ws)

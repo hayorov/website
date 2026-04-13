@@ -6,6 +6,10 @@ tags = ["cycling", "gear", "diy"]
 draft = false
 +++
 
+> 🚲 Bike: Decathlon Riverside hybrid  
+> 🔧 Upgrade: TOSEEK carbon rigid fork  
+> 📍 Part 1 of the Riverside upgrade series
+
 My commuter is a [Decathlon Riverside](https://www.decathlon.sg/) — a practical step-through hybrid that handles daily duties: grocery runs, short errands, and the occasional evening spin around the neighborhood. It came with a Zoom suspension fork branded "63 COMFORT," which sounds reassuring until you realize it adds unnecessary weight and flex on smooth tarmac.
 
 {{< figure src="/riverside-upgrade/riverside-stock.png" caption="The Riverside in its stock form — Zoom 63 Comfort suspension fork, B'Twin Trekking Speed tires, and flat bar cockpit." >}}
@@ -18,7 +22,7 @@ My commuter is a [Decathlon Riverside](https://www.decathlon.sg/) — a practica
 
 ---
 
-## Why Swap the Fork
+## 🔍 Why Swap the Fork
 
 The stock Zoom suspension fork is heavy, vague, and designed for terrain I never ride. On flat Singapore roads it just bobs under pedaling effort and adds dead weight. A rigid fork is the single best upgrade for a hybrid used primarily on pavement:
 
@@ -31,7 +35,7 @@ The stock Zoom suspension fork is heavy, vague, and designed for terrain I never
 
 ---
 
-## The Fork: TOSEEK Carbon Rigid
+## 🆕 The Fork: TOSEEK Carbon Rigid
 
 I went with a [TOSEEK carbon rigid fork](https://www.aliexpress.com/item/1005004954479868.html) from AliExpress. Key specs that had to match the stock geometry:
 
@@ -51,13 +55,13 @@ I went with a [TOSEEK carbon rigid fork](https://www.aliexpress.com/item/1005004
 
 ---
 
-## Old vs. New
+## ⚖️ Old vs. New
 
 {{< figure src="/riverside-upgrade/forks-comparison.png" caption="Side by side — the worn Zoom suspension fork with rusted stanchions (right) next to the new TOSEEK carbon rigid (left). The weight and bulk difference is obvious." >}}
 
 ---
 
-## Setup
+## 🛠️ Setup
 
 The swap is straightforward if you have basic tools and a crown race setter:
 
@@ -72,16 +76,22 @@ The swap is straightforward if you have basic tools and a crown race setter:
 
 ---
 
-## Result
+## ✅ Result
 
 The bike feels noticeably lighter at the front and steers with more precision. Braking is more direct without the fork compressing. For a commuter that lives on tarmac and park connectors, it is the right call. The ride is marginally harsher over bumps, but nothing the 38mm tires at lower pressure cannot absorb.
 
 ---
 
-## Gear
+## 🧾 Gear
 
 | Part | Link | Price |
 |---|---|---|
 | TOSEEK Carbon Rigid Fork 29" | [AliExpress](https://www.aliexpress.com/item/1005004954479868.html) | ~80 SGD |
 | Decathlon Riverside hybrid | stock | — |
 | B'Twin Trekking Speed 700×38C | stock | — |
+
+---
+
+## 🔮 What's Next
+
+With the front end sorted, the next weak link became obvious — the stock B'Twin square-taper crankset and bottom bracket. In [Part 2: Shimano CUES Drivetrain Swap](/posts/riverside-commuter-shimano-cues-drivetrain/) I replace the drivetrain with a Shimano CUES 1x setup for smoother shifting and a cleaner chainline.
