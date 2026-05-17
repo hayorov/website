@@ -1,10 +1,26 @@
 +++
 title = "About Me"
 date = "2021-07-03"
-description = "Alex Khaerov — technology leader with 15+ years in cloud infrastructure, platform engineering, and AI-driven automation. Director of Cloud Foundation at Prudential, Singapore. Speaker, patent holder, open-source contributor."
+description = "Alex Khaerov — technology leader with 15+ years in cloud infrastructure, platform engineering, and AI-driven automation. Director, Head of GTIS Cloud at Prudential plc, Singapore. Guest lecturer, speaker, patent holder, open-source contributor."
 +++
 
 {{< include-resume >}}
+
+---
+
+## 🎓 Academic & Research
+
+I serve as a **guest lecturer** in platform engineering and cloud architecture, bridging Fortune 500 infrastructure practice with university computing programs. My academic interests focus on Internal Developer Platforms (IDPs), multi-cloud architecture, AI infrastructure, and socio-technical systems at enterprise scale.
+
+**Research Contributions**:
+- 3 US Patents in cloud automation and platform integration
+- 3 Academic publications in Next Generation Networks
+- 15+ Technical articles (50,000+ cumulative views)
+- 14 Conference presentations (2019-2025)
+
+For a comprehensive overview of my academic credentials, research interests, patents, publications, and professional contributions, see my [**Academic Profile**](/academic/).
+
+---
 
 ## 📢 Public Speaking
 

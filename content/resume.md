@@ -12,12 +12,12 @@ I lead global teams, ship self-service infrastructure platforms, and bridge the 
 
 ## 👔 Professional Experience
 
-- **Director, Cloud Foundation**
-  [Prudential, GT Engineering](https://www.prudential.com.sg/), Singapore\
+- **Director, Head of GTIS Cloud**
+  [Prudential plc](https://www.prudential.com.sg/), Singapore\
    _Dec 2019 – Present_\
-   I lead the development of our cloud infrastructure foundations and global network backbones. My focus is on both people and technology leadership, shaping our Infrastructure Developer Platform (IDP) and promoting best practices through infrastructure engineering.
-  In my role, I manage the creation and upkeep of our cloud infrastructure and global networks. I also advise on and curate engineering operations to continuously improve our systems.
-  I am committed to building scalable, secure, and efficient cloud solutions that support our developers and drive business success. My work fosters a collaborative and innovative environment where technology and teamwork go hand in hand.
+   I lead multi-cloud infrastructure, AI platforms, and developer experience across 12 Asia-Africa markets at Prudential plc. My responsibilities span platform engineering, Internal Developer Platforms (IDPs), cloud governance, and engineering culture at Fortune 500 scale.
+  Key achievements include architecting the Prudential Global AI Lab infrastructure (2024) in partnership with Google Cloud and Singapore MDDI, establishing unified developer platforms serving 15,000+ employees, and maintaining 99.85% platform availability while optimizing infrastructure costs by 15%.
+  I serve as HashiCorp Customer Advisory Board (E-CAB) Singapore representative and Google Cloud Innovators member, bridging industry advisory roles with hands-on platform engineering leadership. Additionally, I contribute as a guest lecturer in platform engineering and cloud architecture, connecting Fortune 500 practice with academic computing programs.
 
 - **Software Engineering Manager**
   [Chainstack](https://chainstack.com) ([Acronis'](https://acronis.com) spinoff), Singapore\
