@@ -7,3 +7,6 @@ static/cv/alex-khaerov-resume-latest.pdf
 .hugo_build.lock
 .env
 .amp/
+.claude/
+skills-lock.json
+tmp/
