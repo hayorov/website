@@ -105,7 +105,7 @@ PSUTI | 2011–2012
 - **Khaerov, A.** (2024). "Comparison of UFW, iptables, and nftables on Alpine Linux" *Medium*.
 
 **Publication Metrics**: 15+ technical articles, cumulative 50,000+ views (2011–2025)  
-**Platforms**: [Medium](https://akhaerov.medium.com/), [Habr](https://habr.com/en/users/hayorov/posts/), [SpeakerDeck](https://speakerdeck.com/hayorov)
+**Platforms**: [Medium](https://akhaerov.medium.com/), [Habr](https://habr.com/en/users/allexx/articles/), [SpeakerDeck](https://speakerdeck.com/hayorov)
 
 ---
 
@@ -214,7 +214,7 @@ Community leader and technical expert in GCP ecosystem. Profile: https://g.dev/k
 
 **Prudential Global AI Lab Launch** (2024)  
 Press Release: "Prudential officially launches global AI Lab in Singapore" (Nov 19, 2024, Ministerial participation — Singapore MDDI)  
-https://www.prudentialplc.com/about/newsroom/press-release/2024/prudential-officially-launches-global-ai-lab-in-singapore
+https://www.prudentialplc.com/en/newsroom/company-news/2024/prudential-officially-launches-global-ai-lab-in-singapore/
 
 **Chainstack – Google Cloud Case Study** (2019)  
 https://cloud.google.com/customers/chainstack

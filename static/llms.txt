@@ -2,14 +2,14 @@
 
 > Technology leader building cloud platforms, developer infrastructure, and engineering teams at scale.
 
-Alex Khaerov is Director of Cloud Foundation at Prudential in Singapore with 15+ years of experience in cloud infrastructure, platform engineering, and AI-driven automation. He holds 3 US patents in cloud integration, an MBA from Quantic School of Business and Technology, and is an active open-source contributor and international conference speaker.
+Alex Khaerov is Director, Head of GTIS Cloud at Prudential in Singapore with 15+ years of experience in cloud infrastructure, platform engineering, and AI-driven automation. He holds 3 US patents in cloud integration, an MBA from Quantic School of Business and Technology, and is an active open-source contributor and international conference speaker.
 
 ## Site Structure
 
 - [Home](https://hayorov.me/): Overview and recent blog posts
 - [About Me](https://hayorov.me/about/): Professional background, resume, speaking engagements, and personal interests
 - [Blog Posts](https://hayorov.me/posts/): Technical articles on cloud infrastructure, platform engineering, DevOps, and AI
-- [My Talks](https://hayorov.me/talks/): Conference presentations at HashiDays, Cloud Expo Asia, DevOps Summit, FOSSASIA, and more
+- [My Talks](https://hayorov.me/talks/): Conference presentations at IBM Think, HashiDays, Tech Week Shanghai, Cloud Expo Asia, DevOps Summit, FOSSASIA, and more
 - [Publications](https://hayorov.me/publications/): Technical publications on Medium, Habr, and academic works
 - [FPV & UAV](https://hayorov.me/fpv/): FPV drone building hobby
 - [Cycling](https://hayorov.me/cycling/): Road cycling in Singapore
