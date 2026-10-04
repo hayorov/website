@@ -690,6 +690,12 @@ div.gallery a img {
         display: none;
     }
 
+    /* Blowfish's "skip to main content" link (#the-top) is translated off-screen
+       and otherwise prints as a stray rounded block at the top of the page */
+    #the-top {
+        display: none !important;
+    }
+
     .sidebar {
         display: none;
     }

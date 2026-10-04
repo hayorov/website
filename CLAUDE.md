@@ -73,6 +73,8 @@ GA4 (`G-757Y123ZRP`) configured in `hugo.toml` (`[services.googleAnalytics]`) an
 
 Auto-deploys to Netlify on push to `master`. Deploy previews use a staging environment with future-dated content enabled.
 
+`hugo server` (`npm run dev`) renders into `public/` too ("Serving pages from disk"), so re-run `npm run build` before inspecting production output, and never run the dev server while verifying a build.
+
 Pre-deploy check: `npm run build` must complete without errors or warnings (other than the Hugo version-window notice when the local Hugo is newer than the theme's declared max); spot-check pages and shortcodes with `npm run dev`.
 
 Theme upgrade: `git -C themes/blowfish fetch --tags && git -C themes/blowfish checkout vX.Y.Z`, then diff the overridden partials (see Layouts) against upstream, rebuild, and bump `HUGO_VERSION` in `netlify.toml` to the max in `themes/blowfish/config.toml`. `./generate-academic-pdf.sh` should be re-run whenever `content/academic.md` changes.
