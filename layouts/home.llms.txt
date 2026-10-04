@@ -1,0 +1,88 @@
+{{- /* /llms.txt — site index for LLMs and AI agents (https://llmstxt.org). Links point at Markdown twins of each page. */ -}}
+{{- $profile := hugo.Data.profile -}}
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $pages := slice -}}{{- $seen := slice -}}
+{{- range slice "/about" "/academic" "/talks" "/publications" "/fpv" "/cycling" "/ai" "/resume" -}}
+  {{- with site.GetPage . }}{{ $pages = $pages | append . }}{{ $seen = $seen | append .RelPermalink }}{{ end -}}
+{{- end -}}
+{{- range where site.RegularPages "Section" "" -}}
+  {{- if not (in $seen .RelPermalink) }}{{ $pages = $pages | append . }}{{ end -}}
+{{- end -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+{{ $profile.summary }}
+
+Key facts:
+
+- Name: {{ $profile.name }}
+- Role: {{ $profile.job_title }} at [{{ $profile.employer }}]({{ $profile.employer_url }})
+- Location: {{ $profile.location }}
+- Contact: {{ $profile.email }}
+- Experience: {{ $profile.years_of_experience }} years in cloud infrastructure, platform engineering and engineering leadership
+- Patents: {{ len $profile.patents }} US patents in cloud service integration
+- Education: {{ range $i, $e := $profile.education }}{{ if $i }}; {{ end }}{{ $e.degree }}, {{ $e.institution }} ({{ $e.start }}–{{ $e.end }}){{ end }}
+- Languages: {{ range $i, $l := $profile.languages }}{{ if $i }}, {{ end }}{{ $l.language }} ({{ $l.level }}){{ end }}
+
+## How to read this site
+
+Every HTML page has a Markdown twin at `<page-url>index.md` and a JSON twin at `<page-url>index.json`. The links below point at the Markdown versions; drop the trailing `index.md` for the HTML page. All endpoints are static, need no API key, and are served with permissive CORS.
+
+- [llms-full.txt]({{ "llms-full.txt" | absURL }}): the whole site as one Markdown document
+- [For AI agents & tools]({{ "ai/index.md" | absURL }}): guide to every machine-readable endpoint
+- [OpenAPI description]({{ "openapi.json" | absURL }}): the read-only endpoints as an OpenAPI 3.1 document, ready for tool/function definitions
+- [Profile (JSON)]({{ "about/index.json" | absURL }}): structured profile under `data` — roles, experience, education, certifications, patents, memberships, links
+- [Talks (JSON)]({{ "talks/index.json" | absURL }}): every talk under `data` — year, title, event, location, type
+- [Publications (JSON)]({{ "publications/index.json" | absURL }}): articles and books under `data`
+- [Blog index (JSON)]({{ "posts/index.json" | absURL }}): every post with metadata and links to its Markdown and JSON
+- [JSON Feed]({{ "feed.json" | absURL }}): all posts with full HTML and plain-text content (JSON Feed 1.1)
+- [RSS]({{ "index.xml" | absURL }}), [Sitemap]({{ "sitemap.xml" | absURL }}), [Search index (JSON)]({{ "index.json" | absURL }})
+
+## Pages
+{{ range $pages }}
+{{- $md := .Permalink }}{{ with .OutputFormats.Get "markdown" }}{{ $md = .Permalink }}{{ end }}
+- [{{ .Title | plainify }}]({{ $md }}){{ with .Description }}: {{ . }}{{ end }}
+{{- end }}
+
+## Blog posts
+{{ range $posts }}
+{{- $md := .Permalink }}{{ with .OutputFormats.Get "markdown" }}{{ $md = .Permalink }}{{ end }}
+- [{{ .Title | plainify }}]({{ $md }}): {{ .Date.Format "2006-01-02" }}{{ with .Description }} — {{ . }}{{ end }}
+{{- end }}
+
+## Talks
+{{ range hugo.Data.talks }}
+- {{ .year }}: [{{ .title }}]({{ .url }}) — {{ .event }}, {{ .location }}{{ with .type }} ({{ . }}){{ end }}
+{{- end }}
+
+## Publications
+{{ range hugo.Data.publications.articles }}
+- {{ .year }}: [{{ .title }}]({{ .url }}) — {{ .platform }}, {{ .language }}
+{{- end }}
+{{- range hugo.Data.publications.offline }}
+- {{ .year }}: {{ .authors }} — {{ .title_english }} ({{ .title_original }}). {{ .details }}
+{{- end }}
+
+## Patents
+{{ range $profile.patents }}
+- [{{ .id }}]({{ .url }}): {{ .title }} — filed {{ .filed }}, published {{ .published }}, assignee {{ .assignee }}
+{{- end }}
+
+## Open source
+{{ range $profile.open_source }}
+- [{{ .name }}]({{ .url }}): {{ .description }} ({{ .role }})
+{{- end }}
+
+## Profiles elsewhere
+{{ range $k, $v := $profile.links }}
+- {{ $k | humanize }}: {{ $v }}
+{{- end }}
+
+## Optional
+
+- [Academic CV (PDF)]({{ "files/khaerov-academic-cv.pdf" | absURL }}): full academic curriculum vitae
+{{- with resources.Get site.Params.Author.image }}
+- [Portrait photo]({{ .Permalink }}): author image used across the site
+{{- end }}
+- Photo galleries (cycling, FPV builds, keyboards, 3D-printed mounts) are listed as image links inside each page's Markdown twin.

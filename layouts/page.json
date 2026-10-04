@@ -1,0 +1,23 @@
+{{- /* Structured JSON for a single page. Pages with `dataset = "<name>"` in front matter also embed data/<name>.yaml under "data". */ -}}
+{{- $md := "" }}{{ with .OutputFormats.Get "markdown" }}{{ $md = .Permalink }}{{ end -}}
+{{- $js := "" }}{{ with .OutputFormats.Get "json" }}{{ $js = .Permalink }}{{ end -}}
+{{- $d := dict
+  "title" (.Title | plainify)
+  "description" .Description
+  "url" .Permalink
+  "markdown_url" $md
+  "json_url" $js
+  "type" (cond (eq .Section "posts") "article" "page")
+  "section" .Section
+  "language" site.Language.Lang
+  "author" (dict "name" site.Params.Author.name "url" site.BaseURL "email" hugo.Data.profile.email)
+  "tags" (.Params.tags | default slice)
+  "word_count" .WordCount
+  "reading_time_minutes" .ReadingTime
+  "content_markdown" (partial "llm/body.md" .)
+  "content_text" (.Plain | htmlUnescape)
+-}}
+{{- if not .Date.IsZero }}{{ $d = merge $d (dict "date" (.Date.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+{{- if not .Lastmod.IsZero }}{{ $d = merge $d (dict "lastmod" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+{{- with .Params.dataset }}{{ $d = merge $d (dict "dataset" . "data" (index hugo.Data .)) }}{{ end -}}
+{{- $d | jsonify (dict "indent" "  " "noHTMLEscape" true) -}}

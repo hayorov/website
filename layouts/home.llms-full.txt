@@ -1,0 +1,50 @@
+{{- /* /llms-full.txt — every page of the site concatenated as Markdown. /resume is skipped: it is embedded verbatim in /about. */ -}}
+{{- $pages := slice -}}
+{{- range slice "/about" "/academic" "/talks" "/publications" "/fpv" "/cycling" "/ai" -}}
+  {{- with site.GetPage . }}{{ $pages = $pages | append . }}{{ end -}}
+{{- end -}}
+{{- range where site.RegularPages "Section" "" -}}
+  {{- if and (not (in $pages .)) (ne .RelPermalink "/resume/") }}{{ $pages = $pages | append . }}{{ end -}}
+{{- end -}}
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- define "llm_page" }}
+
+---
+
+<!-- page: {{ .Permalink }} -->
+# {{ .Title | plainify }}
+
+- URL: {{ .Permalink }}
+{{- with .OutputFormats.Get "markdown" }}
+- Markdown: {{ .Permalink }}
+{{- end }}
+{{- with .OutputFormats.Get "json" }}
+- JSON: {{ .Permalink }}
+{{- end }}
+{{- if not .Date.IsZero }}
+- Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+- Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Params.tags }}
+- Tags: {{ delimit . ", " }}
+{{- end }}
+{{- with .Description }}
+
+> {{ . }}
+{{- end }}
+
+{{ partial "llm/body.md" . }}
+{{ end -}}
+# {{ site.Title }} — full site content
+
+> {{ site.Params.description }}
+
+This document concatenates every page of {{ site.BaseURL }} as Markdown ({{ add (len $pages) (len $posts) }} pages, generated {{ now.Format "2006-01-02" }}). Each page starts with a horizontal rule, an HTML comment holding its canonical URL, and a metadata list. A shorter index lives at {{ "llms.txt" | absURL }}; structured data endpoints are described at {{ "ai/" | absURL }}.
+
+# Part 1 — Pages
+{{ range $pages }}{{ template "llm_page" . }}{{ end }}
+
+# Part 2 — Blog posts (newest first)
+{{ range $posts }}{{ template "llm_page" . }}{{ end }}

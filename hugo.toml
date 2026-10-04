@@ -122,5 +122,47 @@ enableGitInfo = true
   priority = 0.5
   filename = "sitemap.xml"
 
+# ---------------------------------------------------------------------------
+# Machine-readable outputs for LLMs / AI agents (see CLAUDE.md "LLM-friendly outputs")
+#   /llms.txt, /llms-full.txt        -> layouts/home.llms.txt, layouts/home.llms-full.txt
+#   /feed.json (JSON Feed 1.1)        -> layouts/home.jsonfeed.json
+#   /openapi.json                     -> layouts/home.openapi.json
+#   <page>/index.md                   -> layouts/page.md, layouts/section.md
+#   <page>/index.json                 -> layouts/page.json, layouts/section.json
+#   /index.json stays the Blowfish search index.
+# ---------------------------------------------------------------------------
+[mediaTypes]
+  [mediaTypes."application/feed+json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+    rel = "alternate"
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats."llms-full"]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.jsonfeed]
+    mediaType = "application/feed+json"
+    baseName = "feed"
+    isPlainText = true
+    rel = "alternate"
+  [outputFormats.openapi]
+    mediaType = "application/json"
+    baseName = "openapi"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "llms", "llms-full", "jsonfeed", "openapi"]
+  section = ["HTML", "RSS", "markdown", "JSON"]
+  page = ["HTML", "markdown", "JSON"]

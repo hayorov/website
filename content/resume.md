@@ -1,3 +1,8 @@
++++
+title = "Resume"
+description = "Resume of Alex Khaerov — Director, Head of GTIS Cloud at Prudential plc, Singapore. Experience, core competencies, education, certifications, and US patents."
++++
+
 Technology leader with 15+ years building cloud infrastructure, developer platforms, and engineering organizations. I specialize in large-scale distributed systems, cloud-native architectures, and AI-driven automation — with a focus on turning platform engineering into a competitive advantage.
 
 I lead global teams, ship self-service infrastructure platforms, and bridge the gap between technical execution and business outcomes. Holder of 3 US patents in cloud integration, active open-source contributor, and a regular speaker at international conferences.

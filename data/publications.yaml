@@ -1,0 +1,76 @@
+# Publications. Single source of truth for /publications/ (rendered by the
+# publications-table and publications-offline shortcodes), /publications/index.json,
+# /publications/index.md and /llms.txt. Newest first.
+
+articles:
+  - year: 2024
+    title: "Part 2 | Why Building IDPs is a Challenging Business?"
+    url: "https://akhaerov.medium.com/part-2-why-building-idps-is-a-challenging-business-41112f2fb834"
+    language: English
+    platform: Medium
+  - year: 2024
+    title: "Comparison of UFW, iptables, and nftables on Alpine Linux"
+    url: "https://akhaerov.medium.com/comparison-of-ufw-iptables-and-nftables-on-alpine-linux-f0f4b99c9890"
+    language: English
+    platform: Medium
+  - year: 2024
+    title: "Part 1 | IDPs: What Comes to Your Mind?"
+    url: "https://akhaerov.medium.com/part-1-idps-what-comes-to-your-mind-3127269b2a6e"
+    language: English
+    platform: Medium
+  - year: 2020
+    title: "Could Containers be Secured?"
+    url: "https://habr.com/en/company/oleg-bunin/blog/480630/"
+    language: Russian
+    platform: Habr
+  - year: 2019
+    title: "Helm Security"
+    url: "https://habr.com/en/company/oleg-bunin/blog/462665"
+    language: Russian
+    platform: Habr
+  - year: 2019
+    title: "Public and Private Smart Contracts with JP Morgan Quorum"
+    url: "https://habr.com/en/post/456368/"
+    language: Russian
+    platform: Habr
+  - year: 2018
+    title: "Browser Voxel 3D Game in Python"
+    url: "https://habr.com/en/company/oleg-bunin/blog/359130/"
+    language: Russian
+    platform: Habr
+  - year: 2011
+    title: "Virtual Juniper's Mythbusters: Policies & Filters"
+    url: "https://habr.com/en/post/112390/"
+    language: Russian
+    platform: Habr
+  - year: 2011
+    title: "Installing Juniper JunOS 10 M/T Series"
+    url: "https://habr.com/en/post/111974/"
+    language: Russian
+    platform: Habr
+  - year: 2011
+    title: "Virtualization Juniper JunOS in GNS3 Environment"
+    url: "https://habr.com/en/post/111172/"
+    language: Russian
+    platform: Habr
+
+# Books and registered electronic resources (academic, offline).
+offline:
+  - year: 2012
+    type: registered-electronic-resource
+    authors: "Roslyakov A.V., Kudryavceva E.N., Lysikov A.A., Khaerov A.A."
+    title_original: "Baza dannykh oborudovaniya multiservisnykh platform setey sleduyushchego pokoleniya NGN"
+    title_english: "The Next Generation Network Multiservice Platform Equipment Database"
+    details: "The registration certificate of electronic resources, Electronic Resources Industry Foundation «Science and Education», Russia, №18650, 12.11.2012."
+  - year: 2012
+    type: registered-electronic-resource
+    authors: "Roslyakov A.V., Kudryavceva E.N., Lysikov A.A., Khaerov A.A."
+    title_original: "Portal platform setey sleduyushchego pokoleniya NGN"
+    title_english: "Next Generation Networks Platform’s Portal"
+    details: "The registration certificate of electronic resources, Electronic Resources Industry Foundation «Science and Education», Russia, №18651, 12.11.2012."
+  - year: 2012
+    type: book
+    authors: "Roslyakov A.V., Grebeshkov A.U., Vanyashin S.V., Khaerov A.A."
+    title_original: "Multiservisnye platformy setey sleduyushchego pokoleniya NGN. Zarubezhnye sistemy"
+    title_english: "Multiservice Platforms of the Next Generation Networks. V. 2. Foreign Manufacture Systems"
+    details: "Samara, PSUTI Publ., 2012. 344 p."

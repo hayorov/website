@@ -2,36 +2,35 @@ User-agent: *
 Allow: /
 Sitemap: {{ "sitemap.xml" | absURL }}
 
-# AI Crawlers - Welcome
+# Machine-readable entry points for LLMs and AI agents
+# Index:      {{ "llms.txt" | absURL }}
+# Full text:  {{ "llms-full.txt" | absURL }}
+# Guide:      {{ "ai/" | absURL }}
+# Every page has a Markdown twin (<page>/index.md) and a JSON twin (<page>/index.json).
+
+# AI crawlers, assistants and search agents are welcome
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Anthropic
-Allow: /
-
+User-agent: OAI-SearchBot
 User-agent: ClaudeBot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Cohere-ai
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: YouBot
+User-agent: Kagibot
 Allow: /

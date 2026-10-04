@@ -1,0 +1,149 @@
+# Conference talks, panels and other speaking engagements.
+# Single source of truth for /talks/ (rendered by the talks-table shortcode),
+# /talks/index.json, /talks/index.md and /llms.txt.
+# Newest first. `type`: talk | panel | workshop | podcast | advisory
+
+- year: 2026
+  title: "Design an Automation Fabric for the Agentic Era"
+  url: "https://www.ibm.com/events/think/singapore"
+  event: "IBM Think Singapore"
+  event_url: "https://www.ibm.com/events/think/singapore"
+  location: "Singapore"
+  type: talk
+
+- year: 2026
+  title: "Panel: Enabling High-Velocity Engineering with Cloud Platforms and AI"
+  url: "https://chinatechbridge.com/shows/21/38.html"
+  event: "Tech Week Shanghai"
+  event_url: "https://techweeksh.digitalexpo.com/pc/micro-page?microPageId=10011052025072300017532510497859728597511753186&channelId=0021927269967692611584&contentId=10011052025072300017532510497859728597511753186&eid=10015032025071600017526323194428928557583597996&tohome=true"
+  location: "Shanghai"
+  type: panel
+
+- year: 2026
+  title: "Advisory Board Member"
+  url: "https://exito-e.com/devopssummit/singapore/#speakers"
+  event: "Exito DevOps Summit Singapore"
+  event_url: "https://exito-e.com/devopssummit/singapore/"
+  location: "Singapore"
+  type: advisory
+
+- year: 2025
+  title: "Automating Infrastructure Management with Cloud-Native Services"
+  url: "https://www.singaporetechnologyweek.com/tech-week-singapore-mainstage-2025"
+  event: "Cloud & AI Infrastructure Asia"
+  event_url: "https://www.singaporetechnologyweek.com/tech-week-singapore-mainstage-2025"
+  location: "Singapore"
+  type: talk
+
+- year: 2025
+  title: "Panel: AI & Automation: Enhancing and Streamlining DevOps Workflows"
+  url: "https://forefrontevents.co/event/devops-summit-singapore-2025/"
+  event: "DevOps Summit Singapore 2025"
+  event_url: "https://forefrontevents.co/event/devops-summit-singapore-2025/"
+  location: "Singapore"
+  type: panel
+
+- year: 2025
+  title: "Anatomy of Self-Service Enterprise Infra Platforms"
+  url: "https://www.hashicorp.com/en/conferences/hashidays/singapore"
+  event: "HashiDays 2025 in Singapore"
+  event_url: "https://www.hashicorp.com/en/conferences/hashidays/singapore"
+  location: "Singapore"
+  type: talk
+
+- year: 2025
+  title: "Panel: Shadow AI and LLM Security – Risks, Governance, and the Innovation Balance"
+  url: "https://www.linkedin.com/posts/tsangstanley_cybersecurity-aisecurity-aigovernance-activity-7334120539227115520-6mXb/"
+  event: "F5 AppWorld 2025"
+  event_url: "https://www.f5.com/appworld"
+  location: "Singapore"
+  type: panel
+
+- year: 2025
+  title: "Panel: Unpacking the Cloud & Infrastructure Foundations Needed to Thrive in the AI Age"
+  url: "https://forefrontevents.co/event/cloud-it-infrastructure-summit-sing/"
+  event: "Cloud & IT Infrastructure Summit"
+  event_url: "https://forefrontevents.co/event/cloud-it-infrastructure-summit-sing/"
+  location: "Singapore"
+  type: panel
+
+- year: 2024
+  title: "GenAI Adoption Path for Self-Services & Internal Developer Platforms"
+  url: "https://1drv.ms/b/s!AnRTaPU_RuJRtDe0sk7HLLGjS8zh?e=K24d4D"
+  event: "Cloud Expo Asia"
+  event_url: "https://web.archive.org/web/20240911192904/https://www.cloudexpoasia.com/2024-conference-programme/genai-adoption-path-for-self-services-internal-developer-platforms"
+  location: "Singapore"
+  type: talk
+
+- year: 2023
+  title: "Terraform and ArgoCD: Managing k8s Lifecycle"
+  url: "https://1drv.ms/b/s!AnRTaPU_RuJRrkpFEP2YS6fGPbJg?e=AVbNz9"
+  event: "Kubernetes User Group Meetup"
+  event_url: "https://www.meetup.com/k8s-sg/events/292826519/"
+  location: "Singapore"
+  type: talk
+
+- year: 2022
+  title: "Facilitating and Simplifying AIOps Platform Adoption with Chaos Mesh"
+  url: "https://www.youtube.com/watch?v=tQSYyAGtJaM"
+  event: "Bay Area Cloud Native Infra Meetup"
+  event_url: "https://www.meetup.com/Bay-Area-Cloud-Native-Database-Meetup/events/283613507/"
+  location: "San Mateo, CA"
+  type: talk
+
+- year: 2020
+  title: "Workshop: Cloud-Native Pipelines with Tekton"
+  url: "https://summit.fossasia.org/event/schedule.html#6088"
+  event: "FOSSASIA Summit"
+  event_url: "https://summit.fossasia.org/"
+  location: "Singapore"
+  type: workshop
+
+- year: 2020
+  title: "Pouekhavshie - Singapore (Russian)"
+  url: "https://linkmeup.ru/blog/541.html"
+  event: "Linkmeup Podcast"
+  event_url: "https://linkmeup.ru"
+  location: "Singapore"
+  type: podcast
+  language: Russian
+
+- year: 2019
+  title: "Securing Containers: A Necessary Precaution"
+  url: "https://www.youtube.com/watch?v=QltHmfevCo8&list=PLtFn4-Uxnqyn2ZnJ8iaCBTvTzuMvnGQeb&index=16"
+  event: "DevOps Conference"
+  event_url: "https://devopsconf.io/"
+  location: "Moscow"
+  type: talk
+
+- year: 2019
+  title: "Entangled in Dependencies: A Look at Pipenv & Poetry"
+  url: "https://speakerdeck.com/hayorov/entangled-in-dependencies-pipenv-and-poetry"
+  event: "Python User Group SG"
+  event_url: "https://pugs.org.sg/"
+  location: "Singapore"
+  type: talk
+
+- year: 2019
+  title: 'Creating a "Family Budget" in Minutes with Chainstack'
+  url: "https://speakerdeck.com/hayorov/family-budget-in-minutes-with-chainstack"
+  event: "Law Blockchain Festival"
+  event_url: "https://www.meetup.com/Legal-Technology-Singapore/events/261249518/"
+  location: "Singapore"
+  type: talk
+
+- year: 2019
+  title: "Entering the Service Mesh Era: Our First Experience with Istio"
+  url: "https://speakerdeck.com/hayorov/welcome-to-the-service-mesh-era"
+  event: "Singapore Kubernetes User Group"
+  event_url: "https://www.meetup.com/Singapore-Kubernetes-User-Group/"
+  location: "Singapore"
+  type: talk
+
+- year: 2019
+  title: "Quick Start to Quorum with Chainstack"
+  url: "https://speakerdeck.com/hayorov/quorum-in-minutes-with-chainstack"
+  event: "DApps Dev Club"
+  event_url: "https://dappsdev.org/blog/2019-04-12-dapps-dev-club-4th-session-roundup/"
+  location: "Singapore"
+  type: talk

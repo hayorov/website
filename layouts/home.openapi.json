@@ -1,0 +1,126 @@
+{{- /* /openapi.json — OpenAPI 3.1 description of the site's read-only JSON/Markdown endpoints, for AI tool and function definitions. */ -}}
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $postSlugs := slice }}{{ range $posts }}{{ $postSlugs = $postSlugs | append (path.Base .RelPermalink) }}{{ end -}}
+{{- $pageSlugs := slice }}{{ range where site.RegularPages "Section" "" }}{{ $pageSlugs = $pageSlugs | append (path.Base .RelPermalink) }}{{ end -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "{{ site.Title }} — site data API",
+    "version": "{{ now.Format "2006-01-02" }}",
+    "summary": "Read-only, static JSON and Markdown endpoints for the personal website of {{ site.Params.Author.name }}.",
+    "description": "Every HTML page on {{ site.BaseURL }} has a Markdown twin (<page>/index.md) and a JSON twin (<page>/index.json). No authentication, permissive CORS, standard HTTP caching. Start with /llms.txt for an index written for LLMs.",
+    "contact": { "name": "{{ site.Params.Author.name }}", "url": "{{ site.BaseURL }}", "email": "{{ hugo.Data.profile.email }}" }
+  },
+  "servers": [ { "url": "{{ $base }}" } ],
+  "paths": {
+    "/llms.txt": {
+      "get": { "operationId": "getLlmsIndex", "summary": "llms.txt index of the whole site (Markdown)", "responses": { "200": { "description": "OK", "content": { "text/plain": { "schema": { "type": "string" } } } } } }
+    },
+    "/llms-full.txt": {
+      "get": { "operationId": "getLlmsFull", "summary": "Every page concatenated as Markdown", "responses": { "200": { "description": "OK", "content": { "text/plain": { "schema": { "type": "string" } } } } } }
+    },
+    "/about/index.json": {
+      "get": { "operationId": "getProfile", "summary": "About page plus structured profile (roles, experience, education, certifications, patents, memberships, links) under `data`", "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "allOf": [ { "$ref": "#/components/schemas/Page" }, { "type": "object", "properties": { "dataset": { "const": "profile" }, "data": { "$ref": "#/components/schemas/Profile" } } } ] } } } } } }
+    },
+    "/talks/index.json": {
+      "get": { "operationId": "getTalks", "summary": "Talks page plus every talk as structured records under `data`", "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "allOf": [ { "$ref": "#/components/schemas/Page" }, { "type": "object", "properties": { "dataset": { "const": "talks" }, "data": { "type": "array", "items": { "$ref": "#/components/schemas/Talk" } } } } ] } } } } } }
+    },
+    "/publications/index.json": {
+      "get": { "operationId": "getPublications", "summary": "Publications page plus articles and books as structured records under `data`", "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "allOf": [ { "$ref": "#/components/schemas/Page" }, { "type": "object", "properties": { "dataset": { "const": "publications" }, "data": { "type": "object", "properties": { "articles": { "type": "array", "items": { "$ref": "#/components/schemas/Article" } }, "offline": { "type": "array", "items": { "$ref": "#/components/schemas/OfflinePublication" } } } } } } ] } } } } } }
+    },
+    "/posts/index.json": {
+      "get": { "operationId": "listPosts", "summary": "Index of all blog posts (metadata and links; no bodies)", "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SectionIndex" } } } } } }
+    },
+    "/posts/{slug}/index.json": {
+      "get": { "operationId": "getPost", "summary": "One blog post with Markdown and plain-text content", "parameters": [ { "name": "slug", "in": "path", "required": true, "schema": { "type": "string", "enum": {{ $postSlugs | jsonify }} } } ], "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Page" } } } }, "404": { "description": "Unknown slug" } } }
+    },
+    "/posts/{slug}/index.md": {
+      "get": { "operationId": "getPostMarkdown", "summary": "One blog post as Markdown with YAML front matter", "parameters": [ { "name": "slug", "in": "path", "required": true, "schema": { "type": "string", "enum": {{ $postSlugs | jsonify }} } } ], "responses": { "200": { "description": "OK", "content": { "text/markdown": { "schema": { "type": "string" } } } }, "404": { "description": "Unknown slug" } } }
+    },
+    "/{page}/index.json": {
+      "get": { "operationId": "getPage", "summary": "A top-level page (about, academic, talks, publications, fpv, cycling, ai, resume) as JSON", "parameters": [ { "name": "page", "in": "path", "required": true, "schema": { "type": "string", "enum": {{ $pageSlugs | jsonify }} } } ], "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Page" } } } }, "404": { "description": "Unknown page" } } }
+    },
+    "/{page}/index.md": {
+      "get": { "operationId": "getPageMarkdown", "summary": "A top-level page as Markdown with YAML front matter", "parameters": [ { "name": "page", "in": "path", "required": true, "schema": { "type": "string", "enum": {{ $pageSlugs | jsonify }} } } ], "responses": { "200": { "description": "OK", "content": { "text/markdown": { "schema": { "type": "string" } } } }, "404": { "description": "Unknown page" } } }
+    },
+    "/feed.json": {
+      "get": { "operationId": "getJsonFeed", "summary": "JSON Feed 1.1 of all posts with full HTML and plain-text content", "responses": { "200": { "description": "OK", "content": { "application/feed+json": { "schema": { "type": "object" } } } } } }
+    },
+    "/index.json": {
+      "get": { "operationId": "getSearchIndex", "summary": "Client-side search index: every page with title, section, summary, plain-text content and permalink", "responses": { "200": { "description": "OK", "content": { "application/json": { "schema": { "type": "array", "items": { "type": "object", "properties": { "title": { "type": "string" }, "section": { "type": "string" }, "summary": { "type": "string" }, "content": { "type": "string" }, "permalink": { "type": "string" }, "date": { "type": "string" }, "type": { "type": "string" } } } } } } } } }
+    },
+    "/index.xml": {
+      "get": { "operationId": "getRss", "summary": "RSS 2.0 feed of all posts", "responses": { "200": { "description": "OK", "content": { "application/rss+xml": { "schema": { "type": "string" } } } } } }
+    },
+    "/sitemap.xml": {
+      "get": { "operationId": "getSitemap", "summary": "XML sitemap", "responses": { "200": { "description": "OK", "content": { "application/xml": { "schema": { "type": "string" } } } } } }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Page": {
+        "type": "object",
+        "required": [ "title", "url", "type", "content_markdown", "content_text" ],
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "url": { "type": "string", "format": "uri", "description": "Canonical HTML URL" },
+          "markdown_url": { "type": "string", "format": "uri" },
+          "json_url": { "type": "string", "format": "uri" },
+          "type": { "type": "string", "enum": [ "article", "page" ] },
+          "section": { "type": "string" },
+          "language": { "type": "string" },
+          "author": { "type": "object", "properties": { "name": { "type": "string" }, "url": { "type": "string" }, "email": { "type": "string" } } },
+          "date": { "type": "string", "format": "date-time" },
+          "lastmod": { "type": "string", "format": "date-time" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "word_count": { "type": "integer" },
+          "reading_time_minutes": { "type": "integer" },
+          "content_markdown": { "type": "string", "description": "Body as Markdown; galleries become image lists, embeds become links, links are absolute" },
+          "content_text": { "type": "string", "description": "Body as plain text" },
+          "dataset": { "type": "string", "description": "Present when the page carries a structured dataset (profile, talks, publications)" },
+          "data": { "description": "Structured dataset; shape depends on `dataset`" }
+        }
+      },
+      "SectionIndex": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" }, "description": { "type": "string" }, "url": { "type": "string" }, "markdown_url": { "type": "string" }, "type": { "const": "section" }, "language": { "type": "string" }, "count": { "type": "integer" },
+          "items": { "type": "array", "items": { "type": "object", "properties": { "title": { "type": "string" }, "description": { "type": "string" }, "url": { "type": "string" }, "markdown_url": { "type": "string" }, "json_url": { "type": "string" }, "date": { "type": "string", "format": "date-time" }, "lastmod": { "type": "string", "format": "date-time" }, "tags": { "type": "array", "items": { "type": "string" } }, "word_count": { "type": "integer" }, "reading_time_minutes": { "type": "integer" } } } }
+        }
+      },
+      "Talk": {
+        "type": "object",
+        "properties": { "year": { "type": "integer" }, "title": { "type": "string" }, "url": { "type": "string" }, "event": { "type": "string" }, "event_url": { "type": "string" }, "location": { "type": "string" }, "type": { "type": "string", "enum": [ "talk", "panel", "workshop", "podcast", "advisory" ] }, "language": { "type": "string" } }
+      },
+      "Article": {
+        "type": "object",
+        "properties": { "year": { "type": "integer" }, "title": { "type": "string" }, "url": { "type": "string" }, "language": { "type": "string" }, "platform": { "type": "string" } }
+      },
+      "OfflinePublication": {
+        "type": "object",
+        "properties": { "year": { "type": "integer" }, "type": { "type": "string" }, "authors": { "type": "string" }, "title_original": { "type": "string" }, "title_english": { "type": "string" }, "details": { "type": "string" } }
+      },
+      "Profile": {
+        "type": "object",
+        "description": "Structured profile of {{ site.Params.Author.name }}",
+        "properties": {
+          "name": { "type": "string" }, "headline": { "type": "string" }, "job_title": { "type": "string" }, "employer": { "type": "string" }, "employer_url": { "type": "string" }, "location": { "type": "string" }, "email": { "type": "string" }, "website": { "type": "string" }, "years_of_experience": { "type": "string" }, "summary": { "type": "string" },
+          "handles": { "type": "object", "additionalProperties": { "type": "string" } },
+          "links": { "type": "object", "additionalProperties": { "type": "string" } },
+          "core_competencies": { "type": "array", "items": { "type": "string" } },
+          "expertise": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
+          "experience": { "type": "array", "items": { "type": "object", "properties": { "title": { "type": "string" }, "company": { "type": "string" }, "company_url": { "type": [ "string", "null" ] }, "location": { "type": [ "string", "null" ] }, "start": { "type": "string" }, "end": { "type": [ "string", "null" ] }, "current": { "type": "boolean" }, "summary": { "type": "string" }, "highlights": { "type": "array", "items": { "type": "string" } } } } },
+          "education": { "type": "array", "items": { "type": "object", "properties": { "degree": { "type": "string" }, "institution": { "type": "string" }, "country": { "type": "string" }, "start": { "type": "integer" }, "end": { "type": "integer" }, "note": { "type": "string" } } } },
+          "certifications": { "type": "array", "items": { "type": "object", "properties": { "name": { "type": "string" }, "url": { "type": "string" } } } },
+          "patents": { "type": "array", "items": { "type": "object", "properties": { "id": { "type": "string" }, "title": { "type": "string" }, "url": { "type": "string" }, "filed": { "type": "string" }, "published": { "type": "string" }, "assignee": { "type": "string" } } } },
+          "advisory_and_memberships": { "type": "array", "items": { "type": "object", "properties": { "role": { "type": "string" }, "since": { "type": "integer" } } } },
+          "open_source": { "type": "array", "items": { "type": "object", "properties": { "name": { "type": "string" }, "role": { "type": "string" }, "url": { "type": "string" }, "description": { "type": "string" } } } },
+          "languages": { "type": "array", "items": { "type": "object", "properties": { "language": { "type": "string" }, "level": { "type": "string" } } } },
+          "interests": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

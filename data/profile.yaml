@@ -1,0 +1,192 @@
+# Structured profile. Served as /about/index.json (the `data` key) and used by
+# /llms.txt. Keep in sync with content/resume.md and content/academic.md.
+
+name: "Alex Khaerov"
+headline: "Technology Leader · Cloud Platforms · AI & Infrastructure"
+job_title: "Director, Head of GTIS Cloud"
+employer: "Prudential plc"
+employer_url: "https://www.prudential.com.sg/"
+location: "Singapore"
+email: "alex@hayorov.me"
+website: "https://hayorov.me/"
+years_of_experience: "15+"
+summary: >-
+  Technology leader with 15+ years building cloud infrastructure, developer platforms,
+  and engineering organizations. Specialises in large-scale distributed systems,
+  cloud-native architectures, and AI-driven automation, with a focus on turning
+  platform engineering into a competitive advantage. Leads global teams, ships
+  self-service infrastructure platforms, and bridges technical execution and business
+  outcomes. Holder of 3 US patents in cloud integration, open-source maintainer,
+  guest lecturer, and regular speaker at international conferences.
+
+handles:
+  github: "hayorov"
+  twitter: "hayorov"
+  linkedin: "alexkhaerov"
+  medium: "akhaerov"
+
+links:
+  linkedin: "https://linkedin.com/in/alexkhaerov"
+  github: "https://github.com/hayorov"
+  twitter: "https://twitter.com/hayorov"
+  medium: "https://akhaerov.medium.com"
+  google_scholar: "https://scholar.google.com/citations?user=pphTJAoAAAAJ"
+  speakerdeck: "https://speakerdeck.com/hayorov"
+  google_developers: "https://g.dev/khaerov"
+  patents: "https://patents.google.com/?inventor=Khaerov"
+  habr: "https://habr.com/en/users/allexx/articles/"
+  devlids: "https://devlids.com/lids/hayorov"
+
+core_competencies:
+  - "Cloud Infrastructure & Platform Engineering"
+  - "AI-Driven Automation & GenAI"
+  - "Engineering Leadership"
+  - "Strategy & Business Alignment"
+  - "Cloud-Native Architecture (Kubernetes, IaC, multi-cloud)"
+
+expertise:
+  cloud_platforms: ["Microsoft Azure", "Google Cloud Platform", "AWS"]
+  containers: ["Kubernetes", "Docker", "OpenShift", "Helm"]
+  infrastructure_as_code: ["Terraform", "Terragrunt", "Ansible", "Pulumi"]
+  programming: ["Python (Django, Flask)", "Go", "JavaScript", "Shell"]
+  cicd_gitops: ["ArgoCD", "Tekton", "GitHub Actions", "GitLab CI"]
+  developer_platforms: ["Backstage", "Internal Developer Platforms (IDPs)"]
+  observability: ["Grafana", "Prometheus", "ELK Stack"]
+  ai_ml_infrastructure: ["Azure AI Foundry", "Google Vertex AI", "MLOps platforms"]
+  methodologies: ["SRE", "DevOps", "Platform Engineering", "FinOps", "Agile"]
+
+experience:
+  - title: "Director, Head of GTIS Cloud"
+    company: "Prudential plc"
+    company_url: "https://www.prudential.com.sg/"
+    location: "Singapore"
+    start: "2019-12"
+    end: null
+    current: true
+    summary: >-
+      Leads multi-cloud infrastructure (Azure, GCP), AI platforms, and developer
+      experience across 12 Asia-Africa markets; owns platform engineering, Internal
+      Developer Platforms, cloud governance and engineering culture at Fortune 500 scale.
+    highlights:
+      - "Technical architect of the Prudential Global AI Lab infrastructure (2024), in partnership with Google Cloud and Singapore MDDI"
+      - "Unified Internal Developer Platform (Backstage, ArgoCD, Terraform) serving 15,000+ employees in 12 markets"
+      - "99.85% platform availability while reducing infrastructure cost by 15%"
+      - "HashiCorp Customer Advisory Board (E-CAB) Singapore representative; Google Cloud Innovators member"
+      - "Guest lecturer in platform engineering and cloud architecture"
+  - title: "Software Engineering Manager"
+    company: "Chainstack (Acronis spin-off)"
+    company_url: "https://chainstack.com"
+    location: "Singapore"
+    start: "2018-09"
+    end: "2019-12"
+    current: false
+    summary: >-
+      Built and led the founding global engineering team of a blockchain-as-a-service
+      platform; shipped the first version of the multi-cloud (GCP, AWS, Azure) service
+      from concept to production in 9 months.
+    highlights:
+      - "Featured in the Google Cloud customer case study “Chainstack: Making blockchain work for enterprises and developers with Google Cloud” (2019)"
+  - title: "Software Engineering Manager"
+    company: "Ingram Micro Cloud (now CloudBlue)"
+    company_url: null
+    location: null
+    start: "2015-12"
+    end: "2018-09"
+    current: false
+    summary: >-
+      Managed a ~35-engineer software development unit across three teams building the
+      APS Connect / CloudBlue Connect platform (Python/Django/Flask, JS/Vue/Angular,
+      GCP/AWS); work in this role produced 3 US patents in cloud service automation.
+    highlights: []
+  - title: "DevOps Manager & Senior Software Developer"
+    company: "Parallels"
+    company_url: "https://parallels.com"
+    location: "Moscow, Russia"
+    start: "2011-05"
+    end: "2015-12"
+    current: false
+    summary: >-
+      Led infrastructure and virtualization engineering for Parallels Business
+      Automation, combining hands-on development with DevOps leadership and
+      continuous integration/deployment practices.
+    highlights: []
+
+education:
+  - degree: "Master of Business Administration (MBA)"
+    institution: "Quantic School of Business and Technology"
+    country: "United States"
+    start: 2025
+    end: 2026
+    note: "Expected completion October 2026"
+  - degree: "Master of Engineering (M.Eng) with Honors, Communication Networks and Systems"
+    institution: "Volga State University of Telecommunications and Informatics (PSUTI)"
+    country: "Russia"
+    start: 2006
+    end: 2011
+    note: "Thesis on Next Generation Networks (NGN) platform architecture; Best Postgraduate Student Award (2011)"
+
+certifications:
+  - name: "Google Cloud Professional Cloud Architect"
+    url: "https://google.accredible.com/4db3ac85-6442-45d5-8cc7-e6087fbe98a1"
+  - name: "Google Cloud Professional Cloud Security Engineer"
+    url: "https://www.credential.net/b92ced5a-134b-4aa5-b216-53c74fd6027b"
+  - name: "Google Cloud Associate Cloud Engineer"
+    url: "https://www.credential.net/f0c6c335-ddcd-4e66-a657-88964970ffa9"
+  - name: "HashiCorp Certified: Terraform Associate"
+    url: "https://www.credly.com/badges/16331cd7-3c14-41f9-afd0-717f5a216485"
+  - name: "Kubernetes Networking and Security using Calico (Certified Calico Operator: Level 1)"
+    url: "https://courses.academy.tigera.io/certificates/39ae5d6f9dc748fd8946d8e7632bb00a"
+
+patents:
+  - id: "US20180300115A1"
+    title: "Technologies for creating and distributing integration connectors in a cloud service brokerage system"
+    url: "https://patents.google.com/patent/US20180300115A1/en"
+    filed: "2017-04"
+    published: "2018-10"
+    assignee: "Ingram Micro Inc."
+  - id: "US20180191718A1"
+    title: "Technologies for securely extending cloud service APIs in a cloud service marketplace"
+    url: "https://patents.google.com/patent/US20180191718A1/en"
+    filed: "2016-12"
+    published: "2018-07"
+    assignee: "Ingram Micro Inc."
+  - id: "US20190132410A1"
+    title: "System and method for integrating cloud applications into a cloud service broker platform using an automated, universal connector package"
+    url: "https://patents.google.com/patent/US20190132410A1/en"
+    filed: "2017-10"
+    published: "2019-05"
+    assignee: "Ingram Micro Inc."
+
+advisory_and_memberships:
+  - role: "Singapore Representative, HashiCorp Customer Advisory Board (E-CAB)"
+    since: 2023
+  - role: "Member, Google Cloud Innovators Program"
+    since: 2022
+  - role: "Professional Member, Singapore Computer Society (SCS)"
+    since: 2020
+  - role: "Voting Member, Python User Group Singapore"
+    since: 2019
+  - role: "Member, IEEE Computer Society"
+    since: 2016
+
+open_source:
+  - name: "helm-gcs"
+    role: "maintainer"
+    url: "https://github.com/hayorov/helm-gcs"
+    description: "Google Cloud Storage plugin for Helm chart repositories (Helm 4 compatible)"
+  - name: "kubelive"
+    role: "contributor"
+    url: "https://github.com/nickolaev/kubelive"
+    description: "Real-time Kubernetes dashboard"
+
+languages:
+  - language: "English"
+    level: "professional fluency"
+  - language: "Russian"
+    level: "native"
+
+interests:
+  - "Road cycling (Singapore and beyond)"
+  - "FPV / UAV drone building (3.5\" to 5\" DIY builds, DJI O3)"
+  - "Mechanical keyboards"
+  - "3D printing (bike mounts and accessories)"
