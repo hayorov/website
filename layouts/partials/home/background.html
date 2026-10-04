@@ -7,7 +7,7 @@
     <div class="absolute inset-x-0 bottom-0 h-1/2"></div>
     <div class="mx-auto max-w-7xl p-0">
       <div class="relative sm:overflow-hidden">
-        <div class="fixed inset-x-0 top-0 -z-10">
+        <div class="pointer-events-none fixed inset-x-0 top-0 -z-10">
           {{ $useDefault := true }}
           {{ $homepageImage := "" }}
           {{ with .Site.Params.defaultBackgroundImage }}
@@ -26,7 +26,14 @@
           {{ $useDefault = false }}
           {{ end }}
           {{ end }}
+          {{/* The site-wide background canvas already renders the default image. */}}
+          {{ if and $useDefault (site.Params.backgroundCanvas | default false) }}
+          {{ $homepageImage = "" }}
+          {{ end }}
           {{ if $homepageImage }}
+          {{/* This layout paints its own fixed page background, so the
+            site-wide background canvas must not render behind it. */}}
+          {{ $.Store.Set "suppressBackgroundCanvas" true }}
           {{ $style := "" }}
           {{ $defaultPosition := cond $useDefault site.Params.imagePosition false }}
           {{ with $.Params.imagePosition | default $defaultPosition }}
@@ -43,7 +50,7 @@
           </div>
           {{ end }}
         </div>
-        <div class="relative flex flex-col items-center justify-center px-1 py-1 text-center">
+        <div class="relative z-10 flex flex-col items-center justify-center px-1 py-1 text-center">
           <div class="glass-container w-full">
             <div class="flex flex-col items-center justify-center gap-8 text-center">
               {{ with .Site.Params.Author.image }}
@@ -82,11 +89,12 @@
                     src="{{ $img1x.RelPermalink }}"
                     srcset="{{ $img1x.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
                     width="192" height="192"
-                    loading="eager" decoding="async">
+                    loading="eager" fetchpriority="high" decoding="async">
                 </picture>
                 {{ else }}
                 <img class="creative-avatar w-full h-full object-cover"
-                  alt="{{ $.Site.Params.Author.name | default `Author` }}" src="{{ $final.RelPermalink }}">
+                  alt="{{ $.Site.Params.Author.name | default `Author` }}" src="{{ $final.RelPermalink }}"
+                  loading="eager" fetchpriority="high">
                 {{ end }}
               </div>
               {{ end }}

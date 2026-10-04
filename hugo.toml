@@ -1,22 +1,19 @@
 baseURL = "https://hayorov.me/"
-languageCode = "en"
+locale = "en"
 title = "Alex Khaerov"
 theme = "blowfish"
 enableRobotsTXT = true
 enableGitInfo = true
-googleAnalytics = "G-757Y123ZRP"
 
 [services.googleAnalytics]
   id = "G-757Y123ZRP"
 
 [params]
   colorScheme = "congo"
-  defaultTheme = "dark"
+  defaultAppearance = "dark"
   defaultBackgroundImage = "background.svg"
   autoSwitchAppearance = true
   enableSearch = true
-  enableImageCopy = true
-  enableTypewriter = true
   customCSS = ["custom.css"]
   description = "Alex Khaerov — technology leader building cloud platforms, developer infrastructure, and engineering teams at scale. Director, Head of GTIS Cloud at Prudential plc, Singapore."
   keywords = ["DevOps", "Kubernetes", "cloud infrastructure", "platform engineering", "Singapore", "Alex Khaerov"]
@@ -52,8 +49,30 @@ googleAnalytics = "G-757Y123ZRP"
 
   [params.footer]
     showCopyright = true
-    showTheme = false
-    showPoweredBy = false
+    showThemeAttribution = false
+
+# Markup settings Blowfish requires (mirrors the theme's config/_default/markup.toml,
+# which Hugo does not merge from themes). `unsafe = true` allows inline HTML such as
+# <br> inside Markdown tables; `noClasses = false` enables theme-aware code highlighting.
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
 
 [menu]
   [[menu.main]]

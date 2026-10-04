@@ -8,7 +8,7 @@
       "@id": {{ site.Home.Permalink | safeURL }},
       "name": "{{ .Site.Title | safeJS }}",
       {{ with .Site.Params.description }}"description": "{{ . | safeJS }}",{{ end }}
-      {{ with .Site.LanguageCode }}"inLanguage": "{{ . }}",{{ end }}
+      {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
       "url": {{ site.Home.Permalink | safeURL }},
       {{ with .Site.Params.keywords }}"keywords": {{ . }},{{ end }}
       "publisher": {
@@ -29,7 +29,7 @@
       "@type": "Person",
       "@id": "{{ site.Home.Permalink | safeURL }}#person",
       "name": "{{ .Site.Params.Author.name | safeJS }}",
-      "jobTitle": "Director, Cloud Foundation",
+      "jobTitle": "Director, Head of GTIS Cloud",
       {{ with .Site.Params.Author.bio }}"description": "{{ . | safeJS }}",{{ end }}
       {{ with $authorImage }}"image": "{{ .Permalink }}",{{ end }}
       "url": {{ site.Home.Permalink | safeURL }},
@@ -88,7 +88,7 @@
     "name": "{{ .Title | safeJS }}",
     "headline": "{{ .Title | safeJS }}",
     {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.LanguageCode }}"inLanguage": "{{ . }}",{{ end }}
+    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
     "url" : {{ .Permalink }},
     "author": {
       "@type": "Person",
@@ -123,7 +123,7 @@
       "@type": "WebPage",
       "@id": {{ .Permalink }}
     },
-    "wordCount": "{{ .WordCount }}"
+    "wordCount": {{ .WordCount | int }}
   }{{ if site.Params.enableStructuredBreadcrumbs | default false }},
   {
     "@context": "https://schema.org",

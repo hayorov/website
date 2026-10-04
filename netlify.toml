@@ -4,10 +4,10 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.160.1"
+  HUGO_VERSION = "0.166.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
 # Production context
 [context.production]

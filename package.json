@@ -5,7 +5,7 @@
   "author": "Alex Khaerov",
   "license": "MIT",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "build": "hugo",
