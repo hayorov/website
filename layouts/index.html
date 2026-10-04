@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{/* Override of Blowfish v3 layouts/index.html: the site's home/background.html partial
+       already renders the recent-articles list at the top of the page, so the theme's
+       trailing <section>{{ partial "recent-articles/main.html" . }}</section> is omitted
+       here to avoid listing the same posts twice. */}}
+  {{ if .Site.Params.homepage.layoutSwitcher | default false }}
+    {{ partial "home/layout-switcher.html" . }}
+  {{ else }}
+    {{ $partial := print "home/" .Site.Params.homepage.layout ".html" }}
+    {{ if templates.Exists ( printf "partials/%s" $partial ) }}
+      {{ partial $partial . }}
+    {{ else }}
+      {{ partial "home/profile.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

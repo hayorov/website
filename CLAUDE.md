@@ -4,7 +4,7 @@ Guidance for Claude Code when working in this repository.
 
 ## Project Overview
 
-Personal website of Alex Khaerov (<https://hayorov.me/>), built with **Hugo** and the **Blowfish** theme (git submodule at `themes/blowfish`). Deployed to Netlify. Content: blog posts, resume, talks, publications, academic profile, and hobbies (cycling, FPV/UAV).
+Personal website of Alex Khaerov (<https://hayorov.me/>), built with **Hugo** and the **Blowfish v3** theme (git submodule at `themes/blowfish`, pinned to a release tag — currently `v3.8.0`). Deployed to Netlify. Content: blog posts, resume, talks, publications, academic profile, and hobbies (cycling, FPV/UAV).
 
 ## Commands
 
@@ -20,8 +20,8 @@ hugo new posts/my-post.md  # Create a new blog post
 
 ### Configuration
 
-- `hugo.toml` — single source of config: site params, Blowfish theme settings (`colorScheme = "congo"`, dark theme, background homepage layout), author profile, menus, GA4 ID, search/outputs (`config/_default/` exists but is empty)
-- `netlify.toml` — Hugo 0.160.1, Node 20, build `hugo --minify --gc`, `HUGO_ENV=production`, `HUGO_ENABLEGITINFO=true`; deploy previews build with `--buildFuture`; security headers (CSP, HSTS), 1-year immutable caching for assets, `hayorov.ru → hayorov.me` redirects, Lighthouse plugin
+- `hugo.toml` — single source of config: site params, Blowfish theme settings (`colorScheme = "congo"`, `defaultAppearance = "dark"`, background homepage layout), author profile, menus, GA4 ID (`[services.googleAnalytics]`), `[markup]` block (Blowfish's required Goldmark/highlight settings — Hugo does not merge a theme's markup config, so they must live here), search/outputs (`config/_default/` exists but is empty)
+- `netlify.toml` — Hugo 0.166.0 (the max version Blowfish v3.8.0 declares; a newer local Hugo only prints an advisory "not compatible" warning), Node 22, build `hugo --minify --gc`, `HUGO_ENV=production`, `HUGO_ENABLEGITINFO=true`; deploy previews build with `--buildFuture`; security headers (CSP, HSTS), 1-year immutable caching for assets, `hayorov.ru → hayorov.me` redirects, Lighthouse plugin
 
 ### Content (`content/`)
 
@@ -32,13 +32,15 @@ hugo new posts/my-post.md  # Create a new blog post
 ### Layouts (`layouts/`, override Blowfish defaults)
 
 - `shortcodes/`: `include-resume.html`, `include-talks.html`, `strava.html`, `foldergallery.html`, `biketimeline.html`
-- `partials/`: `analytics/ga.html` (GA4), `head.html`, `extend-head.html` (SEO/geo meta), `extend-head-uncached.html`, `gallery-deps.html` (shared jQuery 3.4.1 + Fancybox 3.5.7 loader), `schema.html` (JSON-LD), `home/background.html`, `recent-articles/`
+- `index.html` — home layout; same as Blowfish's but without the trailing recent-articles section (the background partial already renders that list at the top)
+- `partials/`: `analytics/ga.html` (GA4, lazy-loaded on first interaction), `head.html` (Blowfish's with a `summary_large_image` Twitter-card block), `extend-head.html` (SEO/geo meta), `extend-head-uncached.html`, `favicons.html` (points at `static/favico/`), `gallery-deps.html` (shared jQuery 3.4.1 + Fancybox 3.5.7 loader), `schema.html` (JSON-LD), `home/background.html`, `recent-articles/`
+- `head.html`, `home/background.html`, `recent-articles/*`, `schema.html` are modified copies of Blowfish partials. When bumping the theme, diff each against `themes/blowfish/layouts/...` and re-port the site's customisations onto the new upstream version
 - `robots.txt`
 
 ### Assets & Static Files
 
-- `assets/` — Hugo pipes: `css/custom.css` (loaded via `customCSS` param), `lib/fuse/` (Fuse.js for Blowfish search — required, build fails without it), `ava_gen4.jpg`, `background.svg`
-- `static/` — images per topic (`cycling/`, `fpv/`, `rides/`, etc.), `favico/`, `files/` (PDFs), `stl-models/`, `llms.txt`
+- `assets/` — Hugo pipes: `css/custom.css` (loaded via `customCSS` param), `ava_gen4.jpg`, `background.svg`. `lib/fuse/` is an unused legacy copy of Fuse.js (the theme bundles its own) and can be deleted
+- `static/` — images per topic (`cycling/`, `fpv/`, `rides/`, etc.), `favico/` (favicon set + `manifest.json`, wired in via `layouts/partials/favicons.html`; `static/favicon.ico` is a copy so `/favicon.ico` isn't the theme's default), `files/` (PDFs), `stl-models/`, `llms.txt`
 - `public/` — generated output (gitignored)
 
 ## Content Authoring
@@ -65,13 +67,15 @@ Standalone pages (e.g. `academic.md`) use YAML front matter with Blowfish displa
 
 ## Analytics
 
-GA4 (`G-757Y123ZRP`) configured in `hugo.toml` and rendered via `layouts/partials/analytics/ga.html` with privacy settings (IP anonymization, no Google Signals, no ad personalization). Loads in production only.
+GA4 (`G-757Y123ZRP`) configured in `hugo.toml` (`[services.googleAnalytics]`) and rendered via `layouts/partials/analytics/ga.html` with privacy settings (IP anonymization, no Google Signals, no ad personalization). Loads in production only.
 
 ## Deployment
 
 Auto-deploys to Netlify on push to `master`. Deploy previews use a staging environment with future-dated content enabled.
 
-Pre-deploy check: `npm run build` must complete without errors; spot-check pages and shortcodes with `npm run dev`.
+Pre-deploy check: `npm run build` must complete without errors or warnings (other than the Hugo version-window notice when the local Hugo is newer than the theme's declared max); spot-check pages and shortcodes with `npm run dev`.
+
+Theme upgrade: `git -C themes/blowfish fetch --tags && git -C themes/blowfish checkout vX.Y.Z`, then diff the overridden partials (see Layouts) against upstream, rebuild, and bump `HUGO_VERSION` in `netlify.toml` to the max in `themes/blowfish/config.toml`. `./generate-academic-pdf.sh` should be re-run whenever `content/academic.md` changes.
 
 ## Conventions
 
