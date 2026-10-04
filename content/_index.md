@@ -4,11 +4,11 @@ description: "Alex Khaerov — technology leader building cloud platforms, devel
 date: 2023-01-01
 ---
 
-I'm Alex — a technology leader building cloud platforms and engineering organizations at scale.
+I'm Alex — I build cloud platforms and the engineering organizations that run them.
 
-As **Director, Head of GTIS Cloud** at [Prudential](https://www.prudential.com.sg/) in Singapore, I lead multi-cloud infrastructure, AI platforms, and developer experience across 12 Asia-Africa markets. My work spans platform engineering, Internal Developer Platforms (IDPs), and engineering culture at Fortune 500 scale.
+As **Director, Head of GTIS Cloud** at [Prudential](https://www.prudential.com.sg/) in Singapore, I lead multi-cloud infrastructure, AI platforms, and developer experience for the group's markets across Asia and Africa. Day to day that means platform engineering: Internal Developer Platforms (IDPs), self-service infrastructure, and the engineering culture it takes to make them stick at Fortune 500 scale.
 
-I also serve as a **guest lecturer** in platform engineering and cloud architecture, bridging industry practice with academic computing programs. [View academic profile](/academic/).
+I also teach as a **guest lecturer** in platform engineering and cloud architecture, bringing industry practice into university computing programs. [View academic profile](/academic/).
 
 15+ years in infrastructure · 3 [US patents](https://patents.google.com/?inventor=Khaerov) · [MBA](https://quantic.edu) · [conference speaker](/talks/) · [open-source contributor](https://github.com/hayorov)
 

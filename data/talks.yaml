@@ -4,6 +4,14 @@
 # Newest first. `type`: talk | panel | workshop | podcast | advisory
 
 - year: 2026
+  title: "From Zero Trust to Autonomous Containment: Engineering Cyber Resilience in Multi-Cloud"
+  url: "https://www.linkedin.com/posts/cswaconference1080-x-13501-1-share-7503633373848854528-FtB5/"
+  event: "Cyber Security World Asia 2026"
+  event_url: "https://www.singaporetechnologyweek.com/cyber-security-world"
+  location: "Singapore"
+  type: talk
+
+- year: 2026
   title: "Design an Automation Fabric for the Agentic Era"
   url: "https://www.ibm.com/events/think/singapore"
   event: "IBM Think Singapore"
